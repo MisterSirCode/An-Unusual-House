@@ -1,0 +1,13 @@
+<prefab version="1.5.3">
+	<group name="Media Case" pos="12.7 0.0 0.8" rot="0 -90 0" prop0="prop=true">
+		<voxbox pos="0.2 0.4 0.0" density="3.0" size="50 34 10">
+			<voxbox pos="0.1 0.1 0.1" prop="false" size="8 8 10" brush="hole"/>
+			<voxbox pos="0.1 1.0 0.1" prop="false" size="8 23 10" brush="hole"/>
+			<voxbox pos="4.1 1.0 0.1" prop="false" size="8 23 10" brush="hole"/>
+			<voxbox pos="4.1 0.1 0.1" prop="false" size="8 8 10" brush="hole"/>
+			<voxbox pos="1.0 0.1 0.1" prop="false" size="30 8 10" brush="hole"/>
+			<voxbox pos="1.0 1.0 0.1" prop="false" size="30 23 10" brush="hole"/>
+		</voxbox>
+	</group>
+</prefab>
+
