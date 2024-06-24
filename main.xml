@@ -2935,9 +2935,7 @@
 						<voxbox name="Backbrace" pos="0.05 0.0 0.0" rot="-5.0 10.0 0.0" size="1 5 1">
 							<voxbox name="Backbrace" pos="-0.04 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
 						</voxbox>
-						<voxbox name="Backbrace" pos="0.25 0.0 -0.03" rot="-5.0 00.0 0.0" size="1 5 1">
-							<voxbox name="Backbrace" pos="-0.05 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
-						</voxbox>
+						<voxbox name="Backbrace" pos="0.2 0.40109 -0.03498" rot="-5.0 0.0 0.0" size="2 4 1"/>
 						<voxbox name="Backbrace" pos="0.55 0.0 0.0" rot="0.0 -100.0 5.0" size="1 5 1">
 							<voxbox name="Backbrace" pos="0.03 0.4 0.16" rot="0.0 90.0 0.0" size="2 4 1"/>
 						</voxbox>
@@ -2950,9 +2948,33 @@
 						<voxbox name="Backbrace" pos="0.05 0.0 0.0" rot="-5.0 10.0 0.0" size="1 5 1">
 							<voxbox name="Backbrace" pos="-0.04 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
 						</voxbox>
-						<voxbox name="Backbrace" pos="0.25 0.0 -0.03" rot="-5.0 00.0 0.0" size="1 5 1">
-							<voxbox name="Backbrace" pos="-0.05 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
+						<voxbox name="Backbrace" pos="0.2 0.40109 -0.03498" rot="-5.0 0.0 0.0" size="2 4 1"/>
+						<voxbox name="Backbrace" pos="0.55 0.0 0.0" rot="0.0 -100.0 5.0" size="1 5 1">
+							<voxbox name="Backbrace" pos="0.03 0.4 0.16" rot="0.0 90.0 0.0" size="2 4 1"/>
 						</voxbox>
+						<voxbox name="Leg" pos="0.05 -0.5 0.05" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.45 -0.5 0.05" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.45 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.05 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
+					</voxbox>
+					<voxbox name="Chairtop" pos="-0.2 0.5 1.1" rot="0 90 0" prop="true" size="6 1 6">
+						<voxbox name="Backbrace" pos="0.05 0.0 0.0" rot="-5.0 10.0 0.0" size="1 5 1">
+							<voxbox name="Backbrace" pos="-0.04 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
+						</voxbox>
+						<voxbox name="Backbrace" pos="0.2 0.40109 -0.03498" rot="-5.0 0.0 0.0" size="2 4 1"/>
+						<voxbox name="Backbrace" pos="0.55 0.0 0.0" rot="0.0 -100.0 5.0" size="1 5 1">
+							<voxbox name="Backbrace" pos="0.03 0.4 0.16" rot="0.0 90.0 0.0" size="2 4 1"/>
+						</voxbox>
+						<voxbox name="Leg" pos="0.05 -0.5 0.05" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.45 -0.5 0.05" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.45 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
+						<voxbox name="Leg" pos="0.05 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
+					</voxbox>
+					<voxbox name="Chairtop" pos="-0.2 0.5 2.0" rot="0 90 0" prop="true" size="6 1 6">
+						<voxbox name="Backbrace" pos="0.05 0.0 0.0" rot="-5.0 10.0 0.0" size="1 5 1">
+							<voxbox name="Backbrace" pos="-0.04 0.4 0.03" rot="0.0 0.0 0.0" size="2 4 1"/>
+						</voxbox>
+						<voxbox name="Backbrace" pos="0.2 0.40109 -0.03498" rot="-5.0 0.0 0.0" size="2 4 1"/>
 						<voxbox name="Backbrace" pos="0.55 0.0 0.0" rot="0.0 -100.0 5.0" size="1 5 1">
 							<voxbox name="Backbrace" pos="0.03 0.4 0.16" rot="0.0 90.0 0.0" size="2 4 1"/>
 						</voxbox>
