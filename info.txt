@@ -1,3 +1,3 @@
-name = An Unusual House v2
+name = An Unusual House V3
 author = SirCode
 description = The most realistic / performance-heavy house I could make. Sorry for the minimal updates... Im doing college stuff
