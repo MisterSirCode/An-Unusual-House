@@ -2461,18 +2461,20 @@
 						<voxbox name="Cabinet Cutter" pos="0.0 0.0 5.6" size="11 13 11" brush="hole"/>
 					</group>
 					<group name="Upper Cabinets" pos="0.0 2.9 0.0">
-						<voxbox name="Cutter" pos="0.8 0.6 0.0" size="22 1 10" brush="hole"/>
+						<voxbox name="Cutter" pos="0.8 0.6 0.0" size="43 1 10" brush="hole"/>
 						<voxbox name="Cutter" pos="0.0 0.6 0.0" size="10 1 96" brush="hole"/>
 						<voxbox pos="0.0 0.0 -0.001" size="9 7 96">
 							<voxbox pos="0.9 -0.1 0.9" size="1 8 87"/>
 						</voxbox>
-						<voxbox pos="0.899 0.0 0.0" size="21 7 9">
-							<voxbox pos="0.1 -0.1 0.9" size="20 8 1"/>
+						<voxbox pos="0.899 0.0 0.0" size="42 7 9">
+							<voxbox pos="0.1 -0.1 0.9" size="41 8 1"/>
 						</voxbox>
-						<voxbox name="Cutter" pos="0.8 0.1 0.1" size="21 5 7" brush="hole"/>
+						<voxbox name="Cutter" pos="0.8 0.1 0.1" size="42 5 7" brush="hole"/>
 						<voxbox name="Cutter" pos="0.1 0.1 0.1" size="7 5 94" brush="hole"/>
 						<voxbox name="Cabinet Cutter" pos="1.1 0.1 0.8" size="8 4 3" brush="hole"/>
 						<voxbox name="Cabinet Cutter" pos="2.0 0.1 0.8" size="8 4 3" brush="hole"/>
+						<voxbox name="Cabinet Cutter" pos="2.9 0.1 0.8" size="8 4 3" brush="hole"/>
+						<voxbox name="Cabinet Cutter" pos="3.8 0.1 0.8" size="8 4 3" brush="hole"/>
 						<voxbox name="Cabinet Cutter" pos="0.8 0.1 1.1" size="3 4 8" brush="hole"/>
 						<voxbox name="Cabinet Cutter" pos="0.8 0.1 2.0" size="3 4 8" brush="hole"/>
 						<voxbox name="Cabinet Cutter" pos="0.8 0.1 2.9" size="3 4 8" brush="hole"/>
@@ -2503,44 +2505,44 @@
 							<voxbox name="Marble" pos="0.05 0.1 1.65" texture="18 0.7" size="1 3 13"/>
 						</voxbox>
 					</group>
-					<group name="Fridge" pos="3.2 0.0 0.2" prop0="material=metal" prop1="color=0.71 0.71 0.71" prop2="pbr=0.2 0.2 0.5 0">
-						<voxbox name="Fridge Base" pos="-0.1 0.1 0.0" density="2.0" prop="false" size="12 28 6">
-							<voxbox name="Cutter" pos="0.1 0.1 0.1" size="10 26 6" brush="hole"/>
-							<voxbox name="Center Bar" pos="0.1 1.45 0.1" size="10 1 5"/>
-							<group name="Lightbulb" pos="0.15 2.7 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+					<group name="Fridge" pos="3.15 -0.05 0.2" prop0="material=metal" prop1="color=0.71 0.71 0.71" prop2="pbr=0.2 0.2 0.5 0">
+						<voxbox name="Fridge Base" pos="-0.1 0.1 0.0" density="2.0" prop="false" size="12 27 6">
+							<voxbox name="Cutter" pos="0.1 0.1 0.1" size="10 25 6" brush="hole"/>
+							<voxbox name="Center Bar" pos="0.1 1.35 0.1" size="10 1 5"/>
+							<group name="Lightbulb" pos="0.15 2.6 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.01 0.05" rot="0" size="2 1 8" color="1.0 0.99 0.73 0.1">
 									<light pos="0.2 0.3 0.4">
 										<voxbox pos="-0.15 -0.3 -0.35" rot="0.0 0.0 0.0" size="1 1 7" color="1.0 0.93 0.78" pbr="0 0 0 15"/>
 									</light>
 								</voxbox>
 							</group>
-							<group name="Lightbulb" pos="0.15 1.4 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+							<group name="Lightbulb" pos="0.15 1.3 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="2 1 8" color="1.0 0.99 0.73 0.1">
 									<light pos="0.2 0.2 0.4">
 										<voxbox pos="-0.15 -0.19 -0.35" rot="0.0 0.0 0.0" size="1 1 7" color="1.0 0.93 0.78" pbr="0 0 0 15"/>
 									</light>
 								</voxbox>
 							</group>
-							<voxbox name="Feet" pos="0.05 -0.1 0.35" size="2 1 2"/>
-							<voxbox name="Feet" pos="0.05 -0.1 0.05" size="2 1 2"/>
-							<voxbox name="Feet" pos="0.95 -0.1 0.35" size="2 1 2"/>
-							<voxbox name="Feet" pos="0.95 -0.1 0.05" size="2 1 2"/>
-							<voxbox name="Back" pos="0.05 0.1 -0.1" density="6.0" size="11 27 1"/>
+							<voxbox name="Feet" pos="0.05 -0.05 0.35" size="2 1 2"/>
+							<voxbox name="Feet" pos="0.05 -0.05 0.05" size="2 1 2"/>
+							<voxbox name="Feet" pos="0.95 -0.05 0.35" size="2 1 2"/>
+							<voxbox name="Feet" pos="0.95 -0.05 0.05" size="2 1 2"/>
+							<voxbox name="Back" pos="0.05 0.1 -0.1" density="6.0" size="11 26 1"/>
 						</voxbox>
 						<body name="Door Body" tags="activebodies nocull" pos="0.6 0.2 0.8" dynamic="true">
-							<voxbox name="Door Bottom" pos="-0.7 -0.02 -0.18" size="12 14 2">
-								<voxbox name="Door Bottom" pos="0.1 0.1 -0.05" size="10 12 1" color="0.86 0.86 0.86" pbr="0.2 0.2 0 0"/>
-								<voxbox name="Guard" pos="0.05 0.05 -0.02" size="11 13 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0"/>
-								<voxbox name="Handlebar" pos="0.15 0.75 0.18" rot="135 0 180" size="1 2 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0">
+							<voxbox name="Door Bottom" pos="-0.7 -0.02 -0.18" size="12 13 2">
+								<voxbox name="Door Bottom" pos="0.1 0.1 -0.05" size="10 11 1" color="0.86 0.86 0.86" pbr="0.2 0.2 0 0"/>
+								<voxbox name="Guard" pos="0.05 0.05 -0.02" size="11 12 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0"/>
+								<voxbox name="Handlebar" pos="0.15 0.65 0.18" rot="135 0 180" size="1 2 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0">
 									<voxbox name="Handlebar" pos="0.0 0.2 0.0" rot="45 0 0" size="1 5 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0">
 										<voxbox name="Handlebar" pos="0.0 0.4 0.1" rot="0 0 0" size="1 1 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0"/>
 									</voxbox>
 								</voxbox>
-								<joint pos="1.2 1.2 0.0" rot="90 0 0" type="hinge" rotstrength="0.01" limits="-90"/>
+								<joint pos="1.2 1.1 0.0" rot="90 0 0" type="hinge" rotstrength="0.01" limits="-90"/>
 								<joint pos="1.2 0.2 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 							</voxbox>
 						</body>
-						<body name="Door Body" tags="activebodies nocull" pos="0.6 1.5 0.8" dynamic="true">
+						<body name="Door Body" tags="activebodies nocull" pos="0.6 1.4 0.8" dynamic="true">
 							<voxbox name="Door Top" pos="-0.7 0.1 -0.18" size="12 13 2" color="0.71 0.71 0.71" pbr="0.2 0.2 0.5 0">
 								<joint pos="1.2 1.1 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 								<joint pos="1.2 0.2 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
