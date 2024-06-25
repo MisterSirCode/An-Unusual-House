@@ -2477,8 +2477,8 @@
 							<voxbox name="Feet" pos="0.95 -0.1 0.05" size="2 1 2"/>
 							<voxbox name="Back" pos="0.05 0.1 -0.1" density="6.0" size="11 27 1"/>
 						</voxbox>
-						<body tags="activebodies nocull" pos="0.6 0.2 0.8" dynamic="true">
-							<voxbox name="Door Bottom" pos="-0.7 -0.02 -0.18" prop="true" size="12 14 2">
+						<body name="Door Body" tags="activebodies nocull" pos="0.6 0.2 0.8" dynamic="true">
+							<voxbox name="Door Bottom" pos="-0.7 -0.02 -0.18" size="12 14 2">
 								<voxbox name="Door Bottom" pos="0.1 0.1 -0.05" size="10 12 1" color="0.86 0.86 0.86" pbr="0.2 0.2 0 0"/>
 								<voxbox name="Guard" pos="0.05 0.05 -0.02" size="11 13 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0"/>
 								<voxbox name="Handlebar" pos="0.15 0.75 0.18" rot="135 0 180" size="1 2 1" material="plaster" color="0.2 0.2 0.2" pbr="0.2 0.2 0 0">
@@ -2490,8 +2490,8 @@
 								<joint pos="1.2 0.2 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 							</voxbox>
 						</body>
-						<body tags="activebodies nocull" pos="0.6 1.5 0.8" dynamic="true">
-							<voxbox name="Door Top" pos="-0.7 0.1 -0.18" prop="true" size="12 13 2" color="0.71 0.71 0.71" pbr="0.2 0.2 0.5 0">
+						<body name="Door Body" tags="activebodies nocull" pos="0.6 1.5 0.8" dynamic="true">
+							<voxbox name="Door Top" pos="-0.7 0.1 -0.18" size="12 13 2" color="0.71 0.71 0.71" pbr="0.2 0.2 0.5 0">
 								<joint pos="1.2 1.1 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 								<joint pos="1.2 0.2 0.0" rot="90 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 								<voxbox name="Door Bottom" pos="0.1 0.1 -0.05" size="10 11 1" color="0.86 0.86 0.86" pbr="0.2 0.2 0 0"/>
@@ -3023,7 +3023,7 @@
 		<spawnpoint name="Player Spawnpoint" pos="4.2 1.6 17.1" rot="-100"/>
 		<voxbox name="Plate" pos="-102.4 0.1 -102.4" size="2048 2 2048" color="1.0 1.0 1.0"/>
 		<environment name="Environment" template="sunny" skyboxrot="35" constant="0 0 0" ambientexponent="2.0" nightlight="true"/>
-		<script name="World Script"/>
+		<script name="World Script" file="MOD/script/world.lua"/>
 	</group>
 </scene>
 
