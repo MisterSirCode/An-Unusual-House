@@ -18,7 +18,9 @@
 					<voxbox name="bathroom" pos="13.3 0.3 0.4" texture="11 0.4" size="68 1 56" material="masonry" color="0.46 0.46 0.46" pbr="0.3 0.6 0.1 0"/>
 					<voxbox name="floor" pos="10.5 0.3 10.4" texture="5 0.2" size="96 2 97" material="masonry" color="0.77 0.77 0.77" pbr="0 0.2 0 0"/>
 					<voxbox name="floor" pos="0.4 4.3 0.4" texture="11 0.4" size="197 1 96"/>
-					<voxbox name="floor" pos="10.5 4.3 10.5" texture="11 0.4" size="96 1 96"/>
+					<voxbox name="floor" pos="17.7 4.3 10.5" texture="11 0.4" size="24 1 96"/>
+					<voxbox name="floor" pos="10.5 4.3 12.0" texture="11 0.4" size="72 1 81"/>
+					<voxbox name="floor" pos="10.5 4.3 10.5" texture="11 0.4" size="51 1 15"/>
 				</group>
 				<group name="Side Walls" pos="-0.1 0.3 0.0" layer="-inner" prop0="texture=6 0.5" prop1="color=1.0 0.77 0.54">
 					<voxbox name="wall" pos="0.0 0.0 10.4" texture="6 0.5" size="101 83 1"/>
@@ -275,7 +277,7 @@
 					<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
 				</group>
 			</group>
-			<group name="Wood Stuff" pos="10.3 -0.5 10.2" prop0="material=wood" prop1="strength=30">
+			<group name="Wood Stuff" pos="10.3 -0.5 10.2" layer="-wood" prop0="material=wood" prop1="strength=30">
 				<group name="Roof Cut" pos="-10.3 8.9 -10.2" prop0="tags=nocull" prop2="tag">
 					<group name="supports">
 						<group name="rafter">
@@ -804,11 +806,10 @@
 				</voxagon>
 			</group>
 			<group name="Insulation" pos="0.0 0.0 0.0" layer="-insul" prop0="color=1 1 1 1" prop1="texture=12 0.8">
-				<voxagon pos="0.25 0.0 0.0" rot="0 0 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
-					<vertex pos="0.4 0.3"/>
-					<vertex pos="8.5 0.3"/>
-					<vertex pos="11.4 5.2"/>
-					<vertex pos="8.5 10.1"/>
+				<voxagon pos="0.25 0.2 0.0" rot="0 0 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
+					<vertex pos="0.2 0.3"/>
+					<vertex pos="8.3 0.3"/>
+					<vertex pos="11.1 5.2"/>
 					<vertex pos="8.3 10.1"/>
 					<vertex pos="8.3 1.5"/>
 					<vertex pos="1.3 1.5"/>
@@ -831,7 +832,7 @@
 					<vertex pos="7.1 7.4"/>
 					<vertex pos="8.3 7.4"/>
 					<vertex pos="8.3 10.1"/>
-					<vertex pos="0.4 10.1"/>
+					<vertex pos="0.2 10.1"/>
 				</voxagon>
 				<voxagon pos="-0.25 4.05 -0.1" rot="0 0 " strength="1" extrude="2" material="wood" pbr="0 0 0 0">
 					<vertex pos="0.4 0.3"/>
@@ -880,32 +881,32 @@
 					<vertex pos="8.5 10.1"/>
 					<vertex pos="8.3 10.1"/>
 					<vertex pos="8.3 1.5"/>
-					<vertex pos="1.3 1.5"/>
-					<vertex pos="1.3 3.0"/>
-					<vertex pos="3.1 3.0"/>
-					<vertex pos="3.1 1.5"/>
-					<vertex pos="5.3 1.5"/>
-					<vertex pos="5.3 3.0"/>
-					<vertex pos="7.1 3.0"/>
-					<vertex pos="7.1 1.5"/>
+					<vertex pos="1.6 1.5"/>
+					<vertex pos="1.6 3.0"/>
+					<vertex pos="3.4 3.0"/>
+					<vertex pos="3.4 1.5"/>
+					<vertex pos="5.6 1.5"/>
+					<vertex pos="5.6 3.0"/>
+					<vertex pos="7.4 3.0"/>
+					<vertex pos="7.4 1.5"/>
 					<vertex pos="8.3 1.5"/>
 					<vertex pos="8.3 7.4"/>
-					<vertex pos="1.3 7.4"/>
-					<vertex pos="1.3 8.9"/>
-					<vertex pos="3.1 8.9"/>
-					<vertex pos="3.1 7.4"/>
-					<vertex pos="5.3 7.4"/>
-					<vertex pos="5.3 8.9"/>
-					<vertex pos="7.1 8.9"/>
-					<vertex pos="7.1 7.4"/>
+					<vertex pos="1.6 7.4"/>
+					<vertex pos="1.6 8.9"/>
+					<vertex pos="3.4 8.9"/>
+					<vertex pos="3.4 7.4"/>
+					<vertex pos="5.6 7.4"/>
+					<vertex pos="5.6 8.9"/>
+					<vertex pos="7.4 8.9"/>
+					<vertex pos="7.4 7.4"/>
 					<vertex pos="8.3 7.4"/>
 					<vertex pos="8.3 10.1"/>
 					<vertex pos="0.4 10.1"/>
 				</voxagon>
-				<voxagon pos="0.0 0.0 0.05" rot="0 90 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
-					<vertex pos="0.4 0.3"/>
-					<vertex pos="8.3 0.3"/>
-					<vertex pos="8.3 3.0"/>
+				<voxagon pos="0.0 0.3 0.05" rot="0 90 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
+					<vertex pos="0.1 0.3"/>
+					<vertex pos="8.0 0.3"/>
+					<vertex pos="8.0 3.0"/>
 					<vertex pos="7.1 3.0"/>
 					<vertex pos="7.1 1.5"/>
 					<vertex pos="5.3 1.5"/>
@@ -914,8 +915,8 @@
 					<vertex pos="3.1 1.5"/>
 					<vertex pos="1.3 1.5"/>
 					<vertex pos="1.3 3.0"/>
-					<vertex pos="8.3 3.0"/>
-					<vertex pos="8.3 10.9"/>
+					<vertex pos="8.0 3.0"/>
+					<vertex pos="8.0 10.9"/>
 					<vertex pos="7.1 10.9"/>
 					<vertex pos="7.1 9.4"/>
 					<vertex pos="5.3 9.4"/>
@@ -924,8 +925,8 @@
 					<vertex pos="3.1 9.4"/>
 					<vertex pos="1.3 9.4"/>
 					<vertex pos="1.3 10.9"/>
-					<vertex pos="8.3 10.9"/>
-					<vertex pos="8.3 19.0"/>
+					<vertex pos="8.0 10.9"/>
+					<vertex pos="8.0 19.0"/>
 					<vertex pos="7.1 19.0"/>
 					<vertex pos="7.1 17.5"/>
 					<vertex pos="5.3 17.5"/>
@@ -934,55 +935,67 @@
 					<vertex pos="3.1 17.5"/>
 					<vertex pos="1.3 17.5"/>
 					<vertex pos="1.3 19.0"/>
-					<vertex pos="8.3 19.0"/>
-					<vertex pos="8.3 20.2"/>
-					<vertex pos="0.4 20.2"/>
+					<vertex pos="8.0 19.0"/>
+					<vertex pos="8.0 20.2"/>
+					<vertex pos="0.1 20.2"/>
 				</voxagon>
-				<voxagon pos="0.0 0.0 10.15" rot="0 90 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
-					<vertex pos="0.4 0.3"/>
-					<vertex pos="8.3 0.3"/>
-					<vertex pos="8.3 3.0"/>
+				<voxagon pos="0.0 0.3 10.15" rot="0 90 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
+					<vertex pos="0.1 0.3"/>
+					<vertex pos="8.0 0.3"/>
+					<vertex pos="8.0 3.0"/>
 					<vertex pos="7.1 3.0"/>
 					<vertex pos="7.1 1.5"/>
 					<vertex pos="5.3 1.5"/>
 					<vertex pos="5.3 3.0"/>
-					<vertex pos="3.1 3.0"/>
-					<vertex pos="3.1 1.5"/>
-					<vertex pos="1.3 1.5"/>
-					<vertex pos="1.3 3.0"/>
-					<vertex pos="8.3 3.0"/>
-					<vertex pos="8.3 10.1"/>
-					<vertex pos="0.4 10.1"/>
-					<vertex pos="0.4 8.3"/>
+					<vertex pos="8.0 3.0"/>
+					<vertex pos="8.0 10.1"/>
+					<vertex pos="0.1 10.1"/>
+					<vertex pos="0.1 8.3"/>
 					<vertex pos="7.1 8.3"/>
 					<vertex pos="7.1 6.8"/>
 					<vertex pos="5.3 6.8"/>
 					<vertex pos="5.3 8.3"/>
 					<vertex pos="3.3 8.3"/>
 					<vertex pos="3.3 6.6"/>
-					<vertex pos="0.4 6.6"/>
+					<vertex pos="0.1 6.6"/>
 				</voxagon>
-				<voxagon pos="10.35 0.0 10.1" rot="0 0 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
-					<vertex pos="0.4 0.3"/>
-					<vertex pos="8.3 0.3"/>
-					<vertex pos="8.3 3.6"/>
+				<voxagon pos="10.35 0.3 10.1" rot="0 0 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
+					<vertex pos="3.6 1.8"/>
+					<vertex pos="0.1 1.8"/>
+					<vertex pos="0.1 0.3"/>
+					<vertex pos="8.0 0.3"/>
+					<vertex pos="8.0 3.6"/>
 					<vertex pos="7.1 3.6"/>
 					<vertex pos="7.1 2.1"/>
 					<vertex pos="5.3 2.1"/>
 					<vertex pos="5.3 3.6"/>
-					<vertex pos="8.3 3.6"/>
-					<vertex pos="8.3 10.1"/>
-					<vertex pos="0.4 10.1"/>
-					<vertex pos="0.4 8.9"/>
+					<vertex pos="8.0 3.6"/>
+					<vertex pos="8.0 10.1"/>
+					<vertex pos="0.1 10.1"/>
+					<vertex pos="0.1 9.2"/>
+					<vertex pos="3.6 9.2"/>
+					<vertex pos="5.3 8.9"/>
 					<vertex pos="7.1 8.9"/>
 					<vertex pos="7.1 7.4"/>
 					<vertex pos="5.3 7.4"/>
 					<vertex pos="5.3 8.9"/>
-					<vertex pos="0.4 8.9"/>
+					<vertex pos="3.6 9.2"/>
 				</voxagon>
 				<voxagon pos="20.45 0.0 0.0" rot="0 0 90" strength="1" extrude="2" material="wood" pbr="0 0 0 0">
 					<vertex pos="0.4 0.3"/>
 					<vertex pos="8.3 0.3"/>
+					<vertex pos="8.3 1.5"/>
+					<vertex pos="5.6 1.5"/>
+					<vertex pos="5.6 3.0"/>
+					<vertex pos="7.4 3.0"/>
+					<vertex pos="7.4 1.5"/>
+					<vertex pos="8.3 1.5"/>
+					<vertex pos="8.3 19.0"/>
+					<vertex pos="7.4 19.0"/>
+					<vertex pos="7.4 17.5"/>
+					<vertex pos="5.6 17.5"/>
+					<vertex pos="5.6 19.0"/>
+					<vertex pos="8.3 19.0"/>
 					<vertex pos="8.3 20.2"/>
 					<vertex pos="0.4 20.2"/>
 				</voxagon>
@@ -1035,7 +1048,7 @@
 					<vertex pos="0.4 10.1"/>
 				</voxagon>
 			</group>
-			<group name="Doors" prop0="texture=5 0.2">
+			<group name="Doors" layer="-doors" prop0="texture=5 0.2">
 				<group name="Front Door" pos="-0.1 0.1 0.0">
 					<voxbox name="cutter" pos="6.8 0.25 10.4" rot="0.0 0.0 0.0" size="15 29 3" brush="hole"/>
 					<voxbox name="front door" pos="6.8 0.3 10.0" size="15 28 5" color="1.0 1.0 1.0"/>
@@ -1214,7 +1227,7 @@
 						<voxbox name="frame" pos="1.5 0.0 0.15" rot="180 -20 180" size="2 29 1" color="1.0 1.0 1.0"/>
 						<voxbox name="frame" pos="-0.2 2.9 0.15" rot="200 0 0 " size="17 2 1" color="1.0 1.0 1.0"/>
 					</group>
-					<group name="Actual Door" pos="8.2 0.48 10.2" rot="0 180 0" layer="-doors" prop0="texture=17 0.4" prop1="color=0.62 0.38 0.15">
+					<group name="Actual Door" pos="8.2 0.48 10.2" rot="0 180 0" prop0="texture=17 0.4" prop1="color=0.62 0.38 0.15">
 						<voxbox name="Door" tags="nocull awake dynamic" pos="0.0 -0.1 0.0" strength="30" prop="true" size="13 26 1">
 							<voxbox name="door plate" pos="0.1 1.4 0.01" size="11 11 1" color="0.52 0.31 0.12"/>
 							<voxbox name="door plate" pos="0.1 0.1 0.01" size="11 11 1" color="0.52 0.31 0.12"/>
@@ -1393,7 +1406,7 @@
 					<voxbox name="Header" pos="6.2 3.2 10.1" rot="0.0 0.0 0.0" size="26 3 3"/>
 				</group>
 			</group>
-			<group name="Windows" pos="0.0 0.2 0.0" prop0="color=1.0 1.0 1.0">
+			<group name="Windows" pos="0.0 0.2 0.0" layer="-windows" prop0="color=1.0 1.0 1.0">
 				<instance pos="11.6 5.3 20.1" rot="0.0 0.0 0.0" file="MOD/assets/window.xml"/>
 				<instance name="window" pos="17.5 5.3 20.1" rot="0.0 0.0 0.0" file="MOD/assets/window.xml"/>
 				<instance name="window" pos="17.5 1.3 20.1" rot="0.0 0.0 0.0" file="MOD/assets/window.xml"/>
@@ -1416,12 +1429,12 @@
 				<instance pos="20.1 5.3 19.0" rot="0.0 -270.0 0.0" file="MOD/assets/window.xml"/>
 			</group>
 			<group name="Garage" pos="0.0 0.0 0.0">
-				<group name="Door Internals" pos="10.1 0.4 12.7" rot="0 -90 0">
+				<group name="Door Internals" pos="10.1 0.4 12.7" rot="0 -90 0" layer="-doors">
 					<voxbox name="cutter" pos="-0.8 -0.15 0.0" rot="0.0 0.0 0.0" size="74 36 3" brush="hole"/>
 					<voxbox name="front door" pos="-0.8 0.0 -0.4" rot="0.0 0.0 0.0" size="74 34 5" color="1.0 1.0 1.0"/>
 					<voxbox name="cutter" pos="-0.7 0.0 -0.4" rot="0.0 0.0 0.0" size="72 33 6" brush="hole"/>
 				</group>
-				<group name="Door Frame" pos="10.0 0.3 12.0" rot="0.0 -90.0 0.0" prop0="texture=5 0.2">
+				<group name="Door Frame" pos="10.0 0.3 12.0" rot="0.0 -90.0 0.0" layer="-doors" prop0="texture=5 0.2">
 					<voxbox name="frame" pos="-0.2 3.6 0.15" rot="180 20 0" size="2 36 1" color="1.0 1.0 1.0"/>
 					<voxbox name="frame" pos="7.4 0.0 0.15" rot="180 -20 180" size="2 36 1" color="1.0 1.0 1.0"/>
 					<voxbox name="frame" pos="-0.2 3.6 0.15" rot="200 0 0 " size="76 2 1" color="1.0 1.0 1.0"/>
@@ -1429,7 +1442,7 @@
 					<voxbox name="frame" pos="-0.2 0.2 0.2" rot="102 0 0 " size="76 10 2" material="masonry" color="0.77 0.77 0.77"/>
 				</group>
 				<group name="Fixed Renovations" pos="10.5 0.5 10.5">
-					<group name="Wall Desk" pos="9.6 0.0 3.2">
+					<group name="Wall Desk" pos="9.6 0.0 3.2" layer="-furniture">
 						<voxbox name="Bar" pos="-0.6 1.1 0.2" rot="45.0 -90.0 0.0" texture="4 0.8" size="55 2 1" material="metal" color="0.38 0.38 0.38"/>
 						<voxbox name="Desk" pos="0.0 1.1 -0.1" rot="0.0 -90.0 0.0" texture="23 0.9" size="61 2 10" color="1.0 0.83 0.64"/>
 						<voxbox name="Cork" pos="0.0 1.3 0.1" rot="0.0 -90.0 0.0" texture="23 0.6" size="57 15 1" offset="0 0 1" color="1.0 0.66 0.29">
@@ -1642,7 +1655,7 @@
 					</group>
 				</group>
 			</group>
-			<group name="Crown Molding" pos="0.0 -0.1 0.0" prop0="texture=5 0.2">
+			<group name="Crown Molding" pos="0.0 -0.1 0.0" layer="-molding" prop0="texture=5 0.2">
 				<voxbox name="main" pos="6.0 0.5 0.35" rot="0.0 0.0 0.0" texture="11 0.4" size="68 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="68 1 1" color="1 1 1"/>
 				</voxbox>
@@ -1751,11 +1764,8 @@
 				<voxbox name="main" pos="0.35 4.5 10.0" rot="0.0 90.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="10.45 4.5 20.1" rot="0.0 90.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1"/>
-				</voxbox>
-				<voxbox name="main" pos="10.5 4.5 10.45" rot="0.0 0.0 0.0" texture="11 0.4" size="51 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="51 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="10.45 4.5 20.1" rot="0.0 90.0 0.0" texture="11 0.4" size="81 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="81 1 1" color="1 1 1"/>
 				</voxbox>
 				<voxbox name="main" pos="17.7 4.5 10.45" rot="0.0 0.0 0.0" texture="11 0.4" size="3 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="3 1 1" color="1 1 1"/>
@@ -1770,7 +1780,7 @@
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1"/>
 				</voxbox>
 			</group>
-			<group name="Attic Vents" prop0="color=1 0.9 0.8" prop1="texture=5 0.1">
+			<group name="Attic Vents" layer="-windows" prop0="color=1 0.9 0.8" prop1="texture=5 0.1">
 				<group name="Vent" pos="0.0 9.4 5.2">
 					<voxagon name="Cutter" pos="-0.2 0.5 0.0" rot="0 0 -90" brush="hole" extrude="6">
 						<vertex pos="-0.5 -0.5"/>
@@ -1850,7 +1860,7 @@
 					</group>
 				</group>
 			</group>
-			<group name="Staircase">
+			<group name="Staircase" layer="-wood">
 				<voxbox name="Hole Cutter" pos="15.2 3.8 10.1" rot="0.0 180.0 0.0" size="48 5 17" brush="hole"/>
 				<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
 				<group name="Main Rigid Supports" pos="13.2 0.1 9.3">
@@ -1968,7 +1978,7 @@
 					</voxbox>
 				</group>
 			</group>
-			<group name="Staircase" pos="25.9 4.0 0.2" rot="0 -90 0">
+			<group name="Staircase" pos="25.9 4.0 0.2" rot="0 -90 0" layer="-wood">
 				<voxbox name="Hole Cutter" pos="15.2 3.8 10.1" rot="0.0 180.0 0.0" size="48 5 17" brush="hole"/>
 				<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
 				<group name="Main Rigid Supports" pos="13.2 0.1 9.3">
@@ -2026,8 +2036,8 @@
 					</voxbox>
 				</group>
 			</group>
-			<group name="Fixed In Place Stuff">
-				<group name="Water Heater" pos="13.7 4.4 11.0" prop0="pbr=0 0.5 0.5" prop1="color=0.45 0.45 0.45" prop2="material=metal">
+			<group name="Fixed In Place Stuff" layer="-fixedinplace">
+				<group name="Water Heater" pos="10.0 0.45 11.0" prop0="pbr=0 0.5 0.5" prop1="color=0.45 0.45 0.45" prop2="material=metal">
 					<voxbox name="Wall Piece" pos="1.1 0.1 -0.3" rot="0.0 0.0 0.0" size="2 25 1">
 						<voxbox name="Wall Piece" pos="0.2 0.0 0.0" rot="0 -22.5" size="2 25 1" material="metal" color="0.45 0.45 0.45"/>
 						<voxbox name="Wall Piece" pos="0.38478 0.0 0.07654" rot="0.0 -45.0 0.0" size="2 25 1" material="metal" color="0.45 0.45 0.45"/>
@@ -2117,18 +2127,19 @@
 					<voxbox name="Roof Access" pos="0.85 3.4 -0.3" rot="0.0 0.0 0.0" size="7 1 8" color="0.31 0.31 0.31"/>
 					<voxbox name="Roof Access" pos="0.85 0.0 -0.15" rot="0.0 0.0 0.0" size="7 1 7" color="0.31 0.31 0.31"/>
 				</group>
-				<group name="Electrical Panel" pos="11.0 6.0 10.4" prop0="pbr=0 0.5 0.5" prop1="color=0.45 0.45 0.45" prop2="material=metal">
+				<group name="Electrical Panel" pos="12.7 2.0 10.5" prop0="pbr=0 0.5 0.5" prop1="color=0.45 0.45 0.45" prop2="material=metal">
 					<voxbox name="Case" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" size="9 12 5">
 						<voxbox name="Case" pos="0.1 0.1 0.1" size="7 10 2" brush="hole"/>
 						<voxbox name="Case" pos="0.2 0.2 0.3" size="5 8 2" brush="hole"/>
 						<voxbox name="Door Cutter" pos="0.1 0.1 0.4" size="7 10 1" brush="hole"/>
 					</voxbox>
-					<joint name="Door Joint" pos="0.8 0.9 0.5" rot="-90.0 0.0 0.0" type="hinge" collide="false" limits="0 100" sound="true"/>
-					<joint name="Door Joint" pos="0.8 0.3 0.5" rot="-90.0 0.0 0.0" type="hinge" collide="false" limits="0 100" sound="true"/>
-					<voxbox name="Door Door" tags="nocull dynamic" pos="0.1 0.1 0.4" rot="0.0 0.0 0.0" prop="true" size="7 10 1" color="0.37 0.37 0.37">
-						<voxbox name="Door Door" pos="0.1 0.4 0.01" size="1 2 1" color="0.17 0.17 0.17"/>
-					</voxbox>
-					<voxbox name="Wall Piece" pos="0.15 1.2 0.2" rot="0.0 0.0 0.0" size="1 8 1">
+					<body name="Door Body" tags="activebodies nocull" pos="0.5 0.1 0.5" dynamic="true">
+						<voxbox name="Door" tags="nocull dynamic" pos="-0.4 0.0 -0.1" rot="0.0 0.0 0.0" size="7 10 1" color="0.37 0.37 0.37">
+							<voxbox name="Door Bit" pos="0.1 0.4 0.01" size="1 2 1" color="0.17 0.17 0.17"/>
+							<joint name="Door Joint" pos="0.7 0.5 0.1" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.0001" collide="false" limits="0 100" sound="true"/>
+						</voxbox>
+					</body>
+					<voxbox name="Wall Piece" pos="0.15 1.2 0.1" rot="0.0 0.0 0.0" size="1 8 1">
 						<voxbox name="Wall Piece" pos="0.1 0.0 0.0" rot="0.0 -45 0.0" size="1 8 1"/>
 						<voxbox name="Wall Piece" pos="0.17071 0.0 0.07071" rot="0.0 -90.0 0.0" size="1 8 1"/>
 						<voxbox name="Wall Piece" pos="0.17071 0.0 0.17071" rot="0.0 -135.0 0.0" size="1 8 1"/>
@@ -2139,7 +2150,7 @@
 					</voxbox>
 				</group>
 				<group name="Light Fixtures">
-					<group name="Simple Roof Light" pos="18.85 7.9 12.7" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Simple Roof Light" pos="15.35 7.9 15.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2157,16 +2168,16 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<light name="light" pos="0.15 0.25 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10.0">
+										<voxbox pos="-0.1 -0.27 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
+									</light>
+								</voxbox>
+							</group>
 						</voxbox>
-						<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
-							<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
-								<light name="light" pos="0.15 0.25 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2">
-									<voxbox pos="-0.1 -0.27 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
-								</light>
-							</voxbox>
-						</group>
 					</group>
-					<group name="Simple Roof Light" pos="12.95 7.9 12.7" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Simple Roof Light" pos="13.1 3.9 11.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2184,14 +2195,14 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<light name="light" tags="nocull electric c1" pos="0.15 0.25 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="5.0">
+										<voxbox pos="-0.1 -0.27 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
+									</light>
+								</voxbox>
+							</group>
 						</voxbox>
-						<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
-							<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
-								<light name="light" pos="0.15 0.25 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2">
-									<voxbox pos="-0.1 -0.27 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
-								</light>
-							</voxbox>
-						</group>
 					</group>
 					<group name="Frontroom Mood Light" pos="11.15 3.9 5.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
@@ -2211,12 +2222,12 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
+								<light name="light" tags="nocull electric c3" pos="0.05 0.0 0.25" rot="-90.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4">
+									<voxbox pos="-0.05 -0.05 -0.15" size="1 1 1" pbr="0 0 0 8"/>
+								</light>
+							</group>
 						</voxbox>
-						<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
-							<light name="light" pos="0.05 0.0 0.25" rot="-90.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4">
-								<voxbox pos="-0.05 -0.05 -0.15" size="1 1 1" pbr="0 0 0 8"/>
-							</light>
-						</group>
 					</group>
 					<group name="Frontroom Mood Light" pos="11.15 3.9 1.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
@@ -2236,18 +2247,18 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
+								<light name="light" tags="nocull electric c3" pos="0.05 0.0 0.25" rot="-90.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4">
+									<voxbox pos="-0.05 -0.05 -0.15" size="1 1 1" pbr="0 0 0 8"/>
+								</light>
+							</group>
 						</voxbox>
-						<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
-							<light name="light" pos="0.05 0.0 0.25" rot="-90.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4">
-								<voxbox pos="-0.05 -0.05 -0.15" size="1 1 1" pbr="0 0 0 8"/>
-							</light>
-						</group>
 					</group>
 					<group name="Roof Strip Light" pos="18.75 3.9 14.3" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox pos="0.4 -0.0 2.4" rot="0 180 0" size="4 1 30">
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
-									<light name="light" pos="0.15 0.25 1.45" rot="00.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="1" size="3 0.2">
+									<light name="light" tags="nocull electric c1" pos="0.15 0.25 1.45" rot="00.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="1" size="3 0.2">
 										<voxbox pos="-0.12 -0.27 -1.4" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 										<voxbox pos="0.02 -0.27 -1.4" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 									</light>
@@ -2259,7 +2270,7 @@
 						<voxbox pos="0.0 0.0 0.0" size="4 1 30">
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
-									<light name="light" pos="0.15 0.25 1.45" rot="00.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="1" size="3 0.2">
+									<light name="light" tags="nocull electric c1" pos="0.15 0.25 1.45" rot="00.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="1" size="3 0.2">
 										<voxbox pos="-0.12 -0.27 -1.4" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 										<voxbox pos="0.02 -0.27 -1.4" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 									</light>
@@ -2330,7 +2341,7 @@
 						</location>
 						<group name="Lightbulb" pos="-0.377 0.3 0.3" rot="90 0 0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 							<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
-								<light name="light" pos="0.1 0.25 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2">
+								<light name="light" tags="nocull electric c1" pos="0.1 0.25 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10">
 									<voxbox pos="-0.05 -0.2 -0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 								</light>
 							</voxbox>
@@ -2400,14 +2411,14 @@
 						</location>
 						<group name="Lightbulb" pos="-0.377 0.3 0.3" rot="90 0 0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 							<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
-								<light name="light" pos="0.1 0.25 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2">
+								<light name="light" tags="nocull electric c1" pos="0.1 0.25 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10">
 									<voxbox pos="-0.05 -0.2 -0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
 								</light>
 							</voxbox>
 							<voxbox pos="0.0 -0.1 0.2" size="1 2 1" material="metal" color="0.6 0.6 0.6"/>
 						</group>
 					</group>
-					<group name="Simple Roof Light" pos="4.65 3.9 5.35" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Simple Roof Light" pos="3.15 3.9 5.95" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2425,14 +2436,14 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<light name="light" tags="nocull electric c2" pos="0.15 0.35 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10">
+										<voxbox pos="-0.1 -0.37 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
+									</light>
+								</voxbox>
+							</group>
 						</voxbox>
-						<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
-							<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
-								<light name="light" pos="0.15 0.35 0.15" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10">
-									<voxbox pos="-0.1 -0.37 -0.1" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32"/>
-								</light>
-							</voxbox>
-						</group>
 					</group>
 				</group>
 				<group name="Cables"/>
@@ -2505,20 +2516,20 @@
 							<voxbox name="Marble" pos="0.05 0.1 1.65" texture="18 0.7" size="1 3 13"/>
 						</voxbox>
 					</group>
-					<group name="Fridge" pos="3.15 -0.05 0.2" prop0="material=metal" prop1="color=0.71 0.71 0.71" prop2="pbr=0.2 0.2 0.5 0">
+					<group name="Fridge" pos="3.15 -0.05 0.2" layer="-furniture" prop0="material=metal" prop1="color=0.71 0.71 0.71" prop2="pbr=0.2 0.2 0.5 0">
 						<voxbox name="Fridge Base" pos="-0.1 0.1 0.0" density="2.0" prop="false" size="12 27 6">
 							<voxbox name="Cutter" pos="0.1 0.1 0.1" size="10 25 6" brush="hole"/>
 							<voxbox name="Center Bar" pos="0.1 1.35 0.1" size="10 1 5"/>
 							<group name="Lightbulb" pos="0.15 2.6 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.01 0.05" rot="0" size="2 1 8" color="1.0 0.99 0.73 0.1">
-									<light pos="0.2 0.3 0.4">
+									<light tags="nocull electric c2" pos="0.2 0.3 0.4">
 										<voxbox pos="-0.15 -0.3 -0.35" rot="0.0 0.0 0.0" size="1 1 7" color="1.0 0.93 0.78" pbr="0 0 0 15"/>
 									</light>
 								</voxbox>
 							</group>
 							<group name="Lightbulb" pos="0.15 1.3 0.1" rot="180 -90" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="2 1 8" color="1.0 0.99 0.73 0.1">
-									<light pos="0.2 0.2 0.4">
+									<light tags="nocull electric c2" pos="0.2 0.2 0.4">
 										<voxbox pos="-0.15 -0.19 -0.35" rot="0.0 0.0 0.0" size="1 1 7" color="1.0 0.93 0.78" pbr="0 0 0 15"/>
 									</light>
 								</voxbox>
@@ -3037,7 +3048,7 @@
 					</voxbox>
 				</group>
 			</group>
-			<group name="Random Bits">
+			<group name="Random Bits" layer="-extra">
 				<group name="Window Curtains">
 					<group name="Frontroom Window" pos="9.3 3.4 0.4" prop0="material=foliage" prop1="color=0.65 0.41 0.21" prop2="texture=23 0.8">
 						<voxbox name="Bar" pos="0.1 0.0 -0.1" size="15 1 2" material="wood" color="0.84 0.58 0.36">
