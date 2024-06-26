@@ -1433,9 +1433,9 @@
 							<voxbox name="Main Rail" pos="-4.6 -0.0 -1.0" rot="0.0 0.0 0.0" size="1 15 1"/>
 							<voxbox name="Main Rail" pos="-4.6 -0.0 -1.4" rot="0.0 0.0 0.0" size="1 15 1"/>
 						</voxbox>
-						<voxbox name="Main Rail" pos="14.82 5.62 8.65" rot="-180.0 0.0 0.0" size="2 1 4">
-							<voxbox name="Main Rail" pos="0.0 0.0 0.2" rot="0.0 -90.0 0.0" size="2 1 46"/>
-							<voxbox name="Main Rail" pos="-4.4 0.0 0.2" rot="0.0 180.0 0.0" size="2 1 16">
+						<voxbox name="Main Rail" pos="14.92 5.62 8.65" rot="-180.0 0.0 0.0" size="2 1 4">
+							<voxbox name="Main Rail" pos="0.0 0.0 0.2" rot="0.0 -90.0 0.0" size="2 1 47"/>
+							<voxbox name="Main Rail" pos="-4.5 0.0 0.2" rot="0.0 180.0 0.0" size="2 1 16">
 								<voxbox name="Main Rail" pos="0.0 0.1 1.6" rot="-90.0 0.0 0.0" size="2 1 12"/>
 							</voxbox>
 						</voxbox>
@@ -2436,7 +2436,7 @@
 				</group>
 				<group name="Electrical Panel" pos="12.7 2.0 10.5" prop0="pbr=0 0.5 0.5" prop1="color=0.45 0.45 0.45" prop2="material=metal">
 					<script name="Electrical Grid" file="MOD/script/electric.lua">
-						<voxbox name="Case" tags="panel nocull" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" size="9 12 5">
+						<voxbox name="Case" tags="panel nocull explosive=0.5" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" size="9 12 5">
 							<voxbox name="Case" pos="0.1 0.1 0.1" size="7 10 2" brush="hole"/>
 							<voxbox name="Case" tags="nocull explosive=0.5" pos="0.2 0.2 0.3" size="5 8 2" brush="hole"/>
 							<voxbox name="Door Cutter" pos="0.1 0.1 0.4" size="7 10 1" brush="hole"/>
@@ -2591,34 +2591,32 @@
 							</group>
 						</voxbox>
 					</group>
-					<group name="External Lamp" pos="9.9 3.7 11.2" rot="90 0 0" prop0="color=1.0 1.0 1.0">
+					<group name="External Lamp" pos="9.9 3.7 11.2" rot="90 0 0" prop0="color=1.0 1.0 1.0" prop1="tags=nocull host">
 						<script name="Simple Light Body" file="MOD/script/slb.lua">
-							<voxbox name="Plate" tags="nocull host" pos="0.0 -0.0 -0.4" rot="0.0 0.0 0.0" size="1 1 2">
-								<voxbox pos="0.0 0.1 0.0" rot="22.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.09239 0.03827" rot="-22.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.1631 0.10898" rot="-45.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.20137 0.20137" rot="-67.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.20137 0.30137" rot="-90.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.1631 0.39375" rot="-112.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.09239 0.46447" rot="-135.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.0 0.50273" rot="-157.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.1 0.50273" rot="-180.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.19239 0.46447" rot="157.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.2631 0.39375" rot="135.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.30137 0.30137" rot="112.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.30137 0.20137" rot="90.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.2631 0.10898" rot="67.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.19239 0.03827" rot="45.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.08 0.0 0.3" rot="0.0 180.0 0.0" size="2 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-									<voxbox pos="0.2 0.0 0.1" rot="180 -77.5 180" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-										<voxbox pos="0.0 -0.0 0.1" rot="0 22.5 0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-											<voxbox pos="0.0 -0.0 0.1" rot="0 22.5 0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-												<voxbox pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 1 2" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
-											</voxbox>
-										</voxbox>
-									</voxbox>
+							<voxbox name="base" pos="0.0 0.0 -0.2" size="2 1 1">
+								<voxbox name="Plate" tags="nocull host" pos="0.0 -0.0 -0.2" rot="0.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.1 -0.2" rot="22.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.09239 -0.16173" rot="-22.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.1631 -0.09102" rot="-45.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.20137 0.00137" rot="-67.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.20137 0.10137" rot="-90.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.1631 0.19375" rot="-112.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.09239 0.26447" rot="-135.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.0 0.30273" rot="-157.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.1 0.30273" rot="180.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.19239 0.26447" rot="157.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.2631 0.19375" rot="135.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.30137 0.10137" rot="112.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.30137 0.00137" rot="90.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.2631 -0.09102" rot="67.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.19239 -0.16173" rot="45.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.08 0.0 0.1" rot="0.0 -180.0 0.0" size="2 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
+									<voxbox name="arm" pos="0.2 0.0 0.1" rot="180 -77.5 180" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.29763 -0.0 0.07836" rot="0.0 125.0 0.0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.37954 -0.0 0.021" rot="0.0 147.5 0.0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.43327 -0.0 -0.06334" rot="0.0 170.0 0.0" size="1 1 2" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</voxbox>
-								<location name="Lamphead Arms" pos="-0.327 0.05 0.5" rot="0.0 0.0 45.0">
+								<location name="Lamphead Arms" pos="-0.327 0.05 0.3" rot="0.0 0.0 45.0">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
 										<voxbox pos="0.0 0.3 0.0" rot="70 0 0" size="1 6 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									</voxbox>
@@ -2634,25 +2632,25 @@
 									<voxbox name="RoundBits" pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.0 -0.21 0.65" rot="0 0 45" size="3 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 22.5">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 22.5">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 0.0">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 0.0">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 -22.5">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 -22.5">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<group name="Lightbulb" pos="-0.377 0.3 0.7" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
 											<light name="light" tags="nocull electric c1" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
@@ -2665,32 +2663,30 @@
 					</group>
 					<group name="External Lamp" pos="9.9 3.7 19.9" rot="90 0 0" prop0="color=1.0 1.0 1.0">
 						<script name="Simple Light Body" file="MOD/script/slb.lua">
-							<voxbox name="Plate" tags="nocull host" pos="0.0 -0.0 -0.4" rot="0.0 0.0 0.0" size="1 1 2">
-								<voxbox pos="0.0 0.1 0.0" rot="22.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.09239 0.03827" rot="-22.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.1631 0.10898" rot="-45.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.20137 0.20137" rot="-67.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.20137 0.30137" rot="-90.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.1631 0.39375" rot="-112.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.09239 0.46447" rot="-135.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 -0.0 0.50273" rot="-157.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.1 0.50273" rot="-180.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.19239 0.46447" rot="157.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.2631 0.39375" rot="135.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.30137 0.30137" rot="112.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.30137 0.20137" rot="90.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.2631 0.10898" rot="67.5 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.0 0.19239 0.03827" rot="45.0 0.0 0.0" size="1 1 2"/>
-								<voxbox pos="0.08 0.0 0.3" rot="0.0 180.0 0.0" size="2 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-									<voxbox pos="0.2 0.0 0.1" rot="180 -77.5 180" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-										<voxbox pos="0.0 -0.0 0.1" rot="0 22.5 0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-											<voxbox pos="0.0 -0.0 0.1" rot="0 22.5 0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
-												<voxbox pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 1 2" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
-											</voxbox>
-										</voxbox>
-									</voxbox>
+							<voxbox name="base" pos="0.0 0.0 -0.2" size="2 1 1">
+								<voxbox name="Plate" tags="nocull host" pos="0.0 -0.0 -0.2" rot="0.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.1 -0.2" rot="22.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.09239 -0.16173" rot="-22.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.1631 -0.09102" rot="-45.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.20137 0.00137" rot="-67.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.20137 0.10137" rot="-90.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.1631 0.19375" rot="-112.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 -0.09239 0.26447" rot="-135.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.0 0.30273" rot="-157.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.1 0.30273" rot="180.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.19239 0.26447" rot="157.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.2631 0.19375" rot="135.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.30137 0.10137" rot="112.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.30137 0.00137" rot="90.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.2631 -0.09102" rot="67.5 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.0 0.19239 -0.16173" rot="45.0 0.0 0.0" size="1 1 2"/>
+								<voxbox name="plate" pos="0.08 0.0 0.1" rot="0.0 -180.0 0.0" size="2 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
+									<voxbox name="arm" pos="0.2 0.0 0.1" rot="180 -77.5 180" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.29763 -0.0 0.07836" rot="0.0 125.0 0.0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.37954 -0.0 0.021" rot="0.0 147.5 0.0" size="1 1 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
+									<voxbox name="arm" pos="0.43327 -0.0 -0.06334" rot="0.0 170.0 0.0" size="1 1 2" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</voxbox>
-								<location name="Lamphead Arms" pos="-0.327 0.05 0.5" rot="0.0 0.0 45.0">
+								<location name="Lamphead Arms" pos="-0.327 0.05 0.3" rot="0.0 0.0 45.0">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0">
 										<voxbox pos="0.0 0.3 0.0" rot="70 0 0" size="1 6 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									</voxbox>
@@ -2706,25 +2702,25 @@
 									<voxbox name="RoundBits" pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.0 -0.21 0.65" rot="0 0 45" size="3 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 22.5">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 22.5">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 0.0">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 0.0">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<location name="Lamphead Cover" pos="-0.327 0.05 0.5" rot="0.0 0.0 -22.5">
+								<location name="Lamphead Cover" pos="-0.327 0.05 0.3" rot="0.0 0.0 -22.5">
 									<voxbox pos="-0.05 0.05 0.0" rot="30 0 0" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 -0.05 0.0" rot="30 0 180" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="0.05 0.05 0.0" rot="30 0 -90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 									<voxbox pos="-0.05 -0.05 0.0" rot="30 0 90" size="1 3 1" material="metal" color="0.27 0.27 0.27" pbr="0.2 0.2 0.5 0"/>
 								</location>
-								<group name="Lightbulb" pos="-0.377 0.3 0.7" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
 											<light name="light" tags="nocull electric c1" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
