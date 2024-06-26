@@ -1,10 +1,10 @@
 function init()
-    panel = FindBody('panel')
+    panel = FindShape('panel')
     lights = FindLights('electric', true)
 end
 
 function tick()
-    if IsBodyBroken(panel) then
+    if IsShapeBroken(panel) then
         for i = 1, #lights do
             SetLightEnabled(lights[i], false)
         end
