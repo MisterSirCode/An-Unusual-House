@@ -43,7 +43,6 @@ function tick()
     end
     -- Interaction / Switch Flipping
     if shape ~= 0 and InputPressed('interact') and shape == cover then
-        local stf = GetShapeLocalTransform(switch)
         if status then
             SetTag(switchon, 'invisible')
             RemoveTag(switchoff, 'invisible')
