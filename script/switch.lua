@@ -1,28 +1,34 @@
 function init()
     cover = FindShape('interact')
-    switch = FindShape('switch')
-    branch = GetTagValue(switch, 'target')
+    switchon = FindShape('switchon')
+    switchoff = FindShape('switchoff')
+    branch = GetTagValue(cover, 'target')
     lightTag = 's'..branch
     lights = FindLights(lightTag, true)
+    DebugWatch(cover, lightTag)
     status = false
     -- Initialize lights and switches
-    if HasTag(switch, 'on') then
+    if HasTag(cover, 'on') then
         status = true
     else
         for i=1, #lights do
             local light = lights[i]
             SetLightEnabled(light, false)
         end
+        SetTag(switchon, 'invisible')
+        RemoveTag(switchoff, 'invisible')
     end
     prevtickbroken = false
 end
 
 function tick()
     local shape = GetPlayerInteractShape()
-    local dynamic = IsBodyDynamic(GetShapeBody(cover))
-    local broken = IsShapeBroken(cover) or IsShapeBroken(switch)
+    -- prevtickbroken protects against excessive for loops and checks after switch is broken
+    if not prevtickbroken then
+        dynamic = IsBodyDynamic(GetShapeBody(cover))
+        broken = IsShapeBroken(cover) or IsShapeBroken(switchon) or IsShapeBroken(switchoff)
+    end
     -- If switch broken or disconnected, cut off switchable devices
-    -- not prevtickbroken protects against excessive for loops after switch is broken
     if not prevtickbroken and (broken or dynamic) then
         for i=1, #lights do
             local light = lights[i]
@@ -31,22 +37,24 @@ function tick()
     end
     -- If switch actually damaged, disable interaction
     if broken then
-        if HasTag(switch, 'interact') then
-            RemoveTag(switch, 'interact')
+        if HasTag(cover, 'interact') then
+            RemoveTag(cover, 'interact')
         end
     end
     -- Interaction / Switch Flipping
     if shape ~= 0 and InputPressed('interact') and shape == cover then
         local stf = GetShapeLocalTransform(switch)
         if status then
-            SetShapeLocalTransform(switch, Transform(VecAdd(stf.pos, Vec(0.1, 0, 0)), QuatEuler(40, 180, 0)))
+            SetTag(switchon, 'invisible')
+            RemoveTag(switchoff, 'invisible')
             status = not status
             for i=1, #lights do
                 local light = lights[i]
                 SetLightEnabled(light, false)
             end
         elseif not status then
-            SetShapeLocalTransform(switch, Transform(VecSub(stf.pos, Vec(0.1, 0, 0)), QuatEuler(40, 180, 180)))
+            SetTag(switchoff, 'invisible')
+            RemoveTag(switchon, 'invisible')
             status = not status
             for i=1, #lights do
                 local light = lights[i]
