@@ -5,7 +5,6 @@ function init()
     branch = GetTagValue(cover, 'target')
     lightTag = 's'..branch
     lights = FindLights(lightTag, true)
-    DebugWatch(cover, lightTag)
     status = false
     -- Initialize lights and switches
     if HasTag(cover, 'on') then
