@@ -2246,11 +2246,14 @@
 				<voxbox name="main" pos="0.35 4.5 10.0" rot="0.0 90.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="10.45 4.5 20.1" rot="0.0 90.0 0.0" texture="11 0.4" size="81 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="81 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="10.45 4.5 20.1" rot="0.0 90.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="96 1 1" color="1 1 1"/>
 				</voxbox>
 				<voxbox name="main" pos="17.7 4.5 10.45" rot="0.0 0.0 0.0" texture="11 0.4" size="3 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="3 1 1" color="1 1 1"/>
+				</voxbox>
+				<voxbox name="main" pos="10.5 4.5 10.45" rot="0.0 0.0 0.0" texture="11 0.4" size="51 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="51 1 1" color="1 1 1"/>
 				</voxbox>
 				<voxbox name="main" pos="19.7 4.5 10.45" rot="0.0 0.0 0.0" texture="11 0.4" size="4 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="4 1 1" color="1 1 1"/>
@@ -2752,7 +2755,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c2" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c2 sc2" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -3393,6 +3396,16 @@
 							</voxbox>
 						</voxbox>
 					</group>
+				</group>
+			</group>
+			<group name="Conduit and Vents"/>
+			<group name="Outlets and Devices">
+				<group name="Lightswitch - Kitchen" pos="6.0 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch - Kitchen" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=Lights" pos="0.1 1.3 -0.01" size="2 3 1">
+							<voxbox name="Switch" tags="switch on target=c2" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+						</voxbox>
+					</script>
 				</group>
 			</group>
 		</group>

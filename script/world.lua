@@ -1,6 +1,5 @@
 function init()
     activeList = FindBodies("activebodies", true)
-    DebugPrint(activeList)
 end
 
 function tick()
