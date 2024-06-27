@@ -7,11 +7,25 @@ function init()
     status = false
     if HasTag(switch, 'on') then
         status = true
+    else
+        for i=1, #lights do
+            local light = lights[i]
+            SetLightEnabled(light, false)
+        end
     end
+    prevtickbroken = false
 end
 
 function tick()
     local shape = GetPlayerInteractShape()
+    local shapeBody = GetShapeBody(cover)
+    local broken = IsShapeBroken(cover) or IsShapeBroken(switch) or IsBodyDynamic(shapeBody)
+    if not prevtickbroken and broken then
+        for i=1, #lights do
+            local light = lights[i]
+            SetLightEnabled(light, false)
+        end
+    end
     if shape ~= 0 and InputPressed("interact") and shape == cover then
         local stf = GetShapeLocalTransform(switch)
         if status then
@@ -26,10 +40,13 @@ function tick()
             status = not status
             for i=1, #lights do
                 local light = lights[i]
-                if not HasTag(light, 'broken') then
+                if not HasTag(light, 'broken') and not broken then
                     SetLightEnabled(light, true)
                 end
             end
         end
 	end
+    if broken then
+        prevtickbroken = true
+    end
 end

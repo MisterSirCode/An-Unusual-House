@@ -2516,6 +2516,58 @@
 							</group>
 						</voxbox>
 					</group>
+					<group name="Frontroom Mood Light" pos="11.15 3.9 1.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="lit bit" pos="0.0 -0.15 0.3" rot="-90.0 0.0 0.0" size="1 1 1" pbr="0 0 0 8">
+									<light name="light" tags="nocull electric c3" pos="0.05 0.05 0.15" rot="0.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4"/>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Frontroom Main Light" pos="8.6 3.9 1.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
 					<group name="Frontroom Mood Light" pos="11.15 3.9 5.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2541,7 +2593,7 @@
 							</group>
 						</voxbox>
 					</group>
-					<group name="Frontroom Mood Light" pos="11.15 3.9 1.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Frontroom Main Light" pos="8.6 3.9 5.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2559,9 +2611,11 @@
 							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
-							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=1.0 0.85 0.33" prop2="pbr=0.5 0.5 0 0">
-								<voxbox name="lit bit" pos="0.0 -0.15 0.3" rot="-90.0 0.0 0.0" size="1 1 1" pbr="0 0 0 8">
-									<light name="light" tags="nocull electric c3" pos="0.05 0.05 0.15" rot="0.0 0.0 0.0" type="cone" scale="1.5" angle="60" penumbra="45" size="0.2" reach="4"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+									</voxbox>
 								</voxbox>
 							</group>
 						</voxbox>
@@ -3401,9 +3455,16 @@
 			<group name="Conduit and Vents"/>
 			<group name="Outlets and Devices">
 				<group name="Lightswitch - Kitchen" pos="6.0 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
-					<script name="Switch - Kitchen" file="MOD/script/switch.lua">
-						<voxbox name="Plate Cover" tags="interact=Lights" pos="0.1 1.3 -0.01" size="2 3 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=Lights" pos="0.1 1.3 -0.02" size="2 3 1">
 							<voxbox name="Switch" tags="switch on target=c2" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+						</voxbox>
+					</script>
+				</group>
+				<group name="Lightswitch - Frontroom" pos="8.5 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=Lights" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Switch" tags="switch target=c3" pos="0.15 0.15 0.1" rot="40.0 180.0 00.0" size="1 1 2"/>
 						</voxbox>
 					</script>
 				</group>
