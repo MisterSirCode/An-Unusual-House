@@ -5,6 +5,7 @@ function init()
     lightTag = 's'..branch
     lights = FindLights(lightTag, true)
     status = false
+    -- Initialize lights and switches
     if HasTag(switch, 'on') then
         status = true
     else
@@ -18,15 +19,24 @@ end
 
 function tick()
     local shape = GetPlayerInteractShape()
-    local shapeBody = GetShapeBody(cover)
-    local broken = IsShapeBroken(cover) or IsShapeBroken(switch) or IsBodyDynamic(shapeBody)
-    if not prevtickbroken and broken then
+    local dynamic = IsBodyDynamic(GetShapeBody(cover))
+    local broken = IsShapeBroken(cover) or IsShapeBroken(switch)
+    -- If switch broken or disconnected, cut off switchable devices
+    -- not prevtickbroken protects against excessive for loops after switch is broken
+    if not prevtickbroken and (broken or dynamic) then
         for i=1, #lights do
             local light = lights[i]
             SetLightEnabled(light, false)
         end
     end
-    if shape ~= 0 and InputPressed("interact") and shape == cover then
+    -- If switch actually damaged, disable interaction
+    if broken then
+        if HasTag(switch, 'interact') then
+            RemoveTag(switch, 'interact')
+        end
+    end
+    -- Interaction / Switch Flipping
+    if shape ~= 0 and InputPressed('interact') and shape == cover then
         local stf = GetShapeLocalTransform(switch)
         if status then
             SetShapeLocalTransform(switch, Transform(VecAdd(stf.pos, Vec(0.1, 0, 0)), QuatEuler(40, 180, 0)))
@@ -40,13 +50,15 @@ function tick()
             status = not status
             for i=1, #lights do
                 local light = lights[i]
-                if not HasTag(light, 'broken') and not broken then
+                -- Enable light as long as nothing is broken
+                if not HasTag(light, 'broken') and not (broken or dynamic) then
                     SetLightEnabled(light, true)
                 end
             end
         end
 	end
-    if broken then
+    -- Protection against excessive for loops after switch is broken
+    if broken or dynamic then
         prevtickbroken = true
     end
 end
