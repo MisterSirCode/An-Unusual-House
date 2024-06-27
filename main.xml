@@ -586,7 +586,12 @@
 						</group>
 					</voxbox>
 					<voxbox name="floor" pos="10.5 0.3 10.4" texture="5 0.2" size="96 2 97" material="masonry" color="0.77 0.77 0.77" pbr="0 0.2 0 0"/>
-					<voxbox name="floor" pos="0.4 4.3 0.4" texture="11 0.4" size="197 1 96"/>
+					<voxbox name="floor" pos="0.4 4.3 0.4" texture="11 0.4" size="51 1 96"/>
+					<voxbox name="floor" pos="6.0 4.3 0.4" texture="11 0.4" size="68 1 56"/>
+					<voxbox name="floor" pos="5.5 4.3 6.5" texture="11 0.4" size="50 1 35"/>
+					<voxbox name="floor" pos="10.5 4.3 6.5" texture="11 0.4" size="49 1 20"/>
+					<voxbox name="floor" pos="15.4 4.3 6.5" texture="11 0.4" size="47 1 35"/>
+					<voxbox name="floor" pos="13.3 4.3 0.4" texture="11 0.4" size="68 1 56"/>
 					<voxbox name="floor" pos="17.7 4.3 10.5" texture="11 0.4" size="24 1 96"/>
 					<voxbox name="floor" pos="10.5 4.3 12.0" texture="11 0.4" size="72 1 81"/>
 					<voxbox name="floor" pos="10.5 4.3 10.5" texture="11 0.4" size="51 1 15"/>
@@ -617,18 +622,18 @@
 						<voxbox name="wall" pos="6.0 0.3 0.3" size="68 36 1"/>
 						<voxbox name="wall" pos="13.3 0.3 0.3" size="69 36 1"/>
 						<voxbox name="wall" pos="13.3 0.3 0.3" rot="0 -90 0" size="58 36 1"/>
-						<voxbox name="wall" pos="13.3 4.4 0.3" rot="0 -90 0" size="58 36 1"/>
-						<voxbox name="wall" pos="6.0 4.4 0.3" rot="0 -90 0" size="58 36 1"/>
+						<voxbox name="wall" pos="13.3 4.3 0.3" rot="0 -90 0" size="58 36 1"/>
+						<voxbox name="wall" pos="6.0 4.3 0.3" rot="0 -90 0" size="58 36 1"/>
 						<voxbox name="wall" pos="12.9 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
 						<voxbox name="wall" pos="5.6 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
 						<voxbox name="wall" pos="6.0 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
-						<voxbox name="wall" pos="5.6 4.4 0.3" rot="0 -90 0" size="62 36 1"/>
+						<voxbox name="wall" pos="5.6 4.3 0.3" rot="0 -90 0" size="62 36 1"/>
 						<voxbox name="wall" pos="13.3 0.3 6.0" rot="0 00 0" size="69 36 1"/>
-						<voxbox name="wall" pos="13.3 4.4 6.0" rot="0 00 0" size="69 36 1"/>
-						<voxbox name="wall" pos="5.9 4.4 6.0" rot="0 00 0" size="69 36 1"/>
+						<voxbox name="wall" pos="13.3 4.3 6.0" rot="0 00 0" size="69 36 1"/>
+						<voxbox name="wall" pos="5.9 4.3 6.0" rot="0 00 0" size="69 36 1"/>
 						<voxbox name="wall" pos="12.9 0.3 6.4" rot="0 00 0" size="73 36 1"/>
 						<voxbox name="wall" pos="5.6 0.3 6.4" rot="0 00 0" size="3 36 1"/>
-						<voxbox name="wall" pos="5.6 4.4 6.4" rot="0 00 0" size="145 36 1"/>
+						<voxbox name="wall" pos="5.6 4.3 6.4" rot="0 00 0" size="145 36 1"/>
 						<voxbox name="wall" pos="20.1 0.3 0.4" size="1 36 56"/>
 						<voxbox name="wall" pos="20.1 0.3 6.5" size="1 36 36"/>
 						<voxbox name="wall" pos="20.1 0.3 10.5" size="1 36 97"/>
@@ -636,8 +641,12 @@
 						<voxbox name="wall" pos="10.4 0.3 10.4" size="1 36 97"/>
 						<voxbox name="wall" pos="0.4 0.3 10.0" size="197 36 1"/>
 						<voxbox name="wall" pos="0.3 0.3 0.4" size="1 36 97"/>
-						<voxbox name="wall" pos="0.3 4.3 0.3" size="199 36 1"/>
-						<voxbox name="wall" pos="20.1 4.3 0.4" size="1 36 198"/>
+						<voxbox name="wall" pos="0.3 4.3 0.3" size="52 36 1"/>
+						<voxbox name="wall" pos="6.0 4.3 0.3" size="69 36 1"/>
+						<voxbox name="wall" pos="13.3 4.3 0.3" size="69 36 1"/>
+						<voxbox name="wall" pos="20.1 4.3 0.4" size="1 36 56"/>
+						<voxbox name="wall" pos="20.1 4.3 6.4" size="1 36 37"/>
+						<voxbox name="wall" pos="20.1 4.3 10.4" size="1 36 98"/>
 						<voxbox name="wall" pos="12.8 4.3 0.4" size="1 36 57"/>
 						<voxbox name="wall" pos="10.4 4.3 20.1" size="97 36 1"/>
 						<voxbox name="wall" pos="10.4 4.3 10.5" size="1 36 96"/>
@@ -647,10 +656,16 @@
 						<voxbox name="wall" pos="10.4 4.3 10.4" rot="0.0 0.0 0.0" size="97 36 1"/>
 					</group>
 					<group name="Roofing" layer="-plastroofs">
-						<voxbox name="roof" pos="0.3 3.9 0.3" size="199 1 98" color="0.99 0.94 0.9"/>
-						<voxbox name="roof" pos="10.4 3.9 10.1" size="98 1 101" color="0.99 0.94 0.9"/>
-						<voxbox name="roof" pos="0.3 7.9 0.3" rot="0.0 0.0 0.0" size="199 1 98" color="0.99 0.94 0.9"/>
-						<voxbox name="roof" pos="10.4 7.9 10.1" rot="0.0 0.0 0.0" size="98 1 101" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="10.4 3.9 10.4" size="98 1 98" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="0.3 7.9 0.3" rot="0.0 0.0 0.0" size="53 1 98" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="5.6 7.9 6.4" rot="0.0 0.0 0.0" size="146 1 37" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="5.6 3.9 6.4" rot="0.0 0.0 0.0" size="146 1 37" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="5.9 7.9 0.3" rot="0.0 0.0 0.0" size="70 1 58" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="13.2 7.9 0.3" rot="0.0 0.0 0.0" size="70 1 58" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="10.4 7.9 10.4" rot="0.0 0.0 0.0" size="98 1 98" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="0.3 3.9 0.3" rot="0.0 0.0 0.0" size="53 1 98" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="5.9 3.9 0.3" rot="0.0 0.0 0.0" size="70 1 61" color="0.99 0.94 0.9"/>
+						<voxbox name="roof" pos="13.2 3.9 0.3" rot="0.0 0.0 0.0" size="70 1 58" color="0.99 0.94 0.9"/>
 					</group>
 				</group>
 				<group name="Side Panels" pos="0.0 0.0 0.0" layer="-outer" prop0="color=1 0.9 0.8" prop1="texture=12 0.3" prop2="material=wood" prop3="pbr=0 0.1 0 0">
@@ -846,8 +861,8 @@
 					<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
 				</group>
 			</group>
-			<group name="Wood Stuff" pos="10.3 -0.5 10.2" layer="-wood" prop0="material=wood" prop1="strength=30" prop2="color=1.0 0.8 0.57">
-				<group name="Roof Cut" pos="-10.3 8.9 -10.2" prop0="tags=nocull" prop2="tag">
+			<group name="Wood Stuff" pos="10.3 -0.5 10.2" prop0="material=wood" prop1="strength=30" prop2="color=1.0 0.8 0.57">
+				<group name="Roof Cut" pos="-10.3 8.9 -10.2" layer="-wood" prop0="tags=nocull" prop2="tag">
 					<group name="supports">
 						<group name="rafter">
 							<voxbox name="rivet" pos="0.0 0.0 5.6" rot="10" size="3 25 1"/>
@@ -991,338 +1006,340 @@
 						</voxagon>
 					</group>
 				</group>
-				<compound name="First Floor" pos="-10.3 0.8 -10.2">
-					<group name="bottoms">
-						<voxbox name="plank_396" pos="0.3 0.0 0.0" size="202 1 3"/>
-						<voxbox name="plank_396" pos="13.2 0.0 6.1" size="70 1 3"/>
-						<voxbox name="plank_396" pos="13.2 3.6 6.1" size="70 2 3"/>
-						<voxbox name="plank_396" pos="13.2 3.9 6.1" size="70 1 3"/>
-						<voxbox name="plank_396" pos="5.9 3.7 6.1" size="70 3 3"/>
-						<voxbox name="plank_396" pos="5.6 7.6 6.1" size="146 2 3"/>
-						<voxbox name="plank_396" pos="5.6 7.9 6.1" size="146 1 3"/>
-						<voxbox name="plank_396" pos="10.4 0.0 10.1" size="98 1 3"/>
-						<voxbox name="plank_396" pos="0.0 0.0 10.1" size="101 1 3"/>
-						<voxbox name="plank_190" pos="0.0 0.0 0.0" size="3 1 101"/>
-						<voxbox name="plank_190" pos="10.1 0.0 10.1" size="3 1 101"/>
-						<voxbox name="plank_396" pos="10.1 0.0 20.2" size="101 1 3"/>
-						<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 202"/>
-						<voxbox name="plank_190" pos="12.9 0.0 0.3" size="3 1 58"/>
-						<voxbox name="plank_190" pos="5.6 0.0 0.3" size="3 1 61"/>
-						<voxbox name="plank_190" pos="12.9 3.6 0.3" size="3 2 58"/>
-						<voxbox name="plank_190" pos="5.6 3.6 0.3" size="3 2 58"/>
-						<voxbox name="plank_190" pos="12.9 3.9 0.3" size="3 1 58"/>
-						<voxbox name="plank_190" pos="5.6 3.7 0.3" size="3 3 58"/>
-						<voxbox name="plank_190" pos="12.9 7.6 0.3" size="3 2 58"/>
-						<voxbox name="plank_190" pos="12.9 7.9 0.3" size="3 1 58"/>
-						<voxbox name="plank_190" pos="5.6 7.6 0.3" size="3 2 58"/>
-						<voxbox name="plank_190" pos="5.6 7.9 0.3" size="3 1 58"/>
-					</group>
-					<group name="tops">
-						<voxbox name="plank_396" pos="0.3 3.6 0.0" size="199 2 3"/>
-						<voxbox name="plank_396" pos="0.3 3.6 10.1" size="98 2 3"/>
-						<voxbox name="plank_190" pos="0.0 3.6 0.3" size="3 2 98"/>
-						<voxbox name="plank_190" pos="10.1 3.6 10.4" size="3 2 98"/>
-						<voxbox name="plank_396" pos="10.4 3.6 20.2" size="98 2 3"/>
-						<voxbox name="plank_190" pos="20.2 3.6 0.3" size="3 2 199"/>
-					</group>
-					<group name="corners">
-						<voxbox name="plank_35" pos="0.0 0.1 0.0" size="3 81 3"/>
-						<voxbox name="plank_35" pos="0.0 0.1 10.1" size="3 81 3"/>
-						<voxbox name="plank_35" pos="10.1 0.1 10.1" size="3 81 3"/>
-						<voxbox name="plank_35" pos="10.1 0.1 20.2" size="3 81 3"/>
-						<voxbox name="plank_35" pos="20.2 0.1 20.2" size="3 81 3"/>
-						<voxbox name="plank_35" pos="20.2 0.1 10.1" size="3 81 3"/>
-						<voxbox name="plank_35" pos="20.2 0.1 0.0" size="3 81 3"/>
-						<voxbox name="plank_35" pos="10.1 0.1 0.0" size="3 81 3"/>
-						<voxbox name="plank_35" pos="5.6 0.1 0.0" size="3 81 3"/>
-						<voxbox name="plank_35" pos="12.9 0.1 0.0" size="3 81 3"/>
-						<voxbox name="plank_35" pos="12.9 0.1 6.1" size="3 75 3"/>
-						<voxbox name="plank_35" pos="5.6 0.1 6.1" size="3 36 3"/>
-						<voxbox name="plank_35" pos="5.6 3.7 6.1" size="3 39 3"/>
-						<voxbox name="plank_35" pos="20.2 0.1 6.1" size="3 81 3"/>
-					</group>
-					<group name="supports">
-						<voxbox name="plank_35" pos="0.0 0.1 1.1" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 2.0" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 2.9" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 3.8" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 4.7" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 5.6" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 6.5" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 7.4" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 8.3" size="3 80 1"/>
-						<voxbox name="plank_35" pos="0.0 0.1 9.2" size="3 80 1"/>
-						<voxbox name="plank_35" pos="1.1 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="2.0 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="2.9 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="3.8 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="4.7 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="5.6 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="6.5 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="7.4 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="8.3 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="9.2 0.1 10.1" size="1 80 3"/>
-						<voxbox name="plank_35" pos="10.1 0.1 11.2" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 12.1" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 13.0" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 13.9" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 14.8" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 15.7" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 16.6" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 17.5" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 18.4" size="3 80 1"/>
-						<voxbox name="plank_35" pos="10.1 0.1 19.3" size="3 80 1"/>
-						<voxbox name="plank_35" pos="11.2 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="12.1 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="13.0 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="13.9 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="14.8 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="15.7 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="16.6 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="17.5 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="18.40001 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="19.30001 0.1 20.2" size="1 80 3"/>
-						<voxbox name="plank_35" pos="20.2 0.1 19.3" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 12.1" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 18.4" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 17.5" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 16.6" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 15.7" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 14.8" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 13.9" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 13.0" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 11.2" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 9.2" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 8.3" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 7.4" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 6.5" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 5.6" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 4.7" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 3.8" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 2.9" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 2.0" size="3 80 1"/>
-						<voxbox name="plank_35" pos="20.2 0.1 1.1" size="3 80 1"/>
-						<voxbox name="plank_35" pos="19.3 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="18.4 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="17.5 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="16.6 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="15.7 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="14.8 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="13.9 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="12.1 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="11.2 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="9.2 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="8.3 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="7.4 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="6.5 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="5.6 0.1 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="4.7 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="3.8 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="2.9 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="2.0 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="1.1 0.1 0.0" size="1 80 3"/>
-						<voxbox name="plank_35" pos="19.3 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="13.9 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="14.8 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="15.7 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="16.6 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="17.5 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="18.4 0.1 6.1" size="1 75 3"/>
-						<voxbox name="plank_35" pos="12.9 0.1 1.1" size="3 75 1"/>
-						<voxbox name="plank_35" pos="12.9 0.1 2.0" size="3 75 1"/>
-						<voxbox name="plank_35" pos="12.9 0.1 2.9" size="3 75 1"/>
-						<voxbox name="plank_35" pos="12.9 0.1 3.8" size="3 75 1"/>
-						<voxbox name="plank_35" pos="12.9 0.1 4.7" size="3 75 1"/>
-						<voxbox name="plank_35" pos="12.9 0.1 5.6" size="3 75 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 1.1" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 2.0" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 2.9" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 3.8" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 4.7" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 4.0 5.6" size="3 36 1"/>
-						<voxbox name="plank_35" pos="6.7 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="7.6 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="8.5 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="9.4 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="10.3 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="11.2 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="12.1 4.0 6.1" size="1 36 3"/>
-						<voxbox name="plank_35" pos="5.6 0.1 5.6" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 0.1 4.7" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 0.1 3.8" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 0.1 2.9" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 0.1 2.0" size="3 36 1"/>
-						<voxbox name="plank_35" pos="5.6 0.1 1.1" size="3 36 1"/>
-					</group>
-					<group name="Midterm Floor">
-						<group name="blocks">
-							<voxbox name="plank_35" pos="0.0 -0.3 0.0" size="3 3 3"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 20.2" size="3 3 3"/>
-							<voxbox name="plank_35" pos="20.2 -0.3 20.2" size="3 3 3"/>
-							<voxbox name="plank_35" pos="20.2 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="20.2 -0.3 0.0" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 0.0" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+				<group name="Wood Frames" pos="-0.2 0.5 0.0" layer="-wood">
+					<compound name="Roof" pos="-10.1 8.3 -10.2">
+						<group name="bottoms">
+							<voxbox name="plank_396" pos="0.3 0.0 0.0" size="199 1 3"/>
+							<voxbox name="plank_396" pos="0.3 0.0 10.1" size="98 1 3"/>
+							<voxbox name="plank_396" pos="10.4 0.0 10.1" size="98 1 3"/>
+							<voxbox name="plank_190" pos="0.0 0.0 0.3" size="3 1 98"/>
+							<voxbox name="plank_190" pos="10.1 0.0 10.4" size="3 1 98"/>
+							<voxbox name="plank_396" pos="10.4 0.0 20.2" size="98 1 3"/>
+							<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 199"/>
 						</group>
-						<group name="floorboards">
-							<voxbox name="plank_35" pos="1.1 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="2.9 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="4.7 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="5.6 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="7.4 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="9.2 -0.3 0.0" size="1 3 104"/>
-							<voxbox name="plank_35" pos="11.2 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="13.0 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="14.8 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="15.7 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="17.5 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="19.3 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 1.1" size="205 3 1"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 2.9" size="205 3 1"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 4.7" size="205 3 1"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 5.6" size="205 3 1"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 7.4" size="205 3 1"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 9.2" size="205 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 11.2" size="104 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 13.0" size="104 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 14.8" size="104 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 15.7" size="104 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 17.5" size="104 3 1"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 19.3" size="104 3 1"/>
+						<group name="Midterm Floor">
+							<group name="blocks">
+								<voxbox name="plank_35" pos="0.0 -0.3 0.0" size="3 3 3"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 20.2" size="3 3 3"/>
+								<voxbox name="plank_35" pos="20.2 -0.3 20.2" size="3 3 3"/>
+								<voxbox name="plank_35" pos="20.2 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+							</group>
+							<group name="floorboards">
+								<voxbox name="plank_35" pos="1.1 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="2.9 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="4.7 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="5.6 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="7.4 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="9.2 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="11.2 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="13.0 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="14.8 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="15.7 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="17.5 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="19.3 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 1.1" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 2.9" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 4.7" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 5.6" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 7.4" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 9.2" size="199 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 11.2" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 13.0" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 14.8" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 15.7" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 17.5" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 19.3" size="98 3 1"/>
+							</group>
 						</group>
-					</group>
-					<group name="Garage Wall">
-						<voxbox name="plank_35" pos="11.2 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="12.1 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="13.0 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="13.9 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="14.8 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="15.7 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="16.6 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="17.5 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="18.40001 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-						<voxbox name="plank_35" pos="19.30001 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
-					</group>
-					<group name="Upper Room Wall" pos="0.0 3.9 0.0">
-						<voxbox name="plank_35" pos="11.2 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="12.1 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="13.0 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="13.9 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="14.8 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="15.7 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="16.6 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="17.5 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="18.40001 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-						<voxbox name="plank_35" pos="19.30001 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
-					</group>
-				</compound>
-				<compound name="Second Floor" pos="-10.3 4.8 -10.2">
-					<group name="bottoms">
-						<voxbox name="plank_396" pos="0.3 0.0 0.0" size="199 1 3"/>
-						<voxbox name="plank_396" pos="0.3 0.0 10.1" size="98 1 3"/>
-						<voxbox name="plank_190" pos="0.0 0.0 0.3" size="3 1 98"/>
-						<voxbox name="plank_190" pos="10.1 0.0 10.4" size="3 1 98"/>
-						<voxbox name="plank_396" pos="10.4 0.0 20.2" size="98 1 3"/>
-						<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 199"/>
-					</group>
-					<group name="tops">
-						<voxbox name="plank_396" pos="0.3 3.6 0.0" size="199 2 3"/>
-						<voxbox name="plank_396" pos="0.3 3.6 10.1" size="98 2 3"/>
-						<voxbox name="plank_396" pos="10.4 3.6 10.1" size="98 2 3"/>
-						<voxbox name="plank_190" pos="0.0 3.6 0.3" size="3 2 98"/>
-						<voxbox name="plank_190" pos="10.1 3.6 10.4" size="3 2 98"/>
-						<voxbox name="plank_396" pos="10.4 3.6 20.2" size="98 2 3"/>
-						<voxbox name="plank_190" pos="20.2 3.6 0.3" size="3 2 199"/>
-					</group>
-					<group name="corners"/>
-					<group name="supports">
-						<voxbox name="plank_35" pos="13.0 0.1 0.0" size="1 35 3"/>
-					</group>
-					<group name="Midterm Floor">
-						<group name="blocks">
-							<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+					</compound>
+					<compound name="First Floor" pos="-10.1 0.3 -10.2">
+						<group name="bottoms">
+							<voxbox name="plank_396" pos="0.3 0.0 0.0" size="202 1 3"/>
+							<voxbox name="plank_396" pos="13.2 0.0 6.1" size="70 1 3"/>
+							<voxbox name="plank_396" pos="13.2 3.6 6.1" size="70 2 3"/>
+							<voxbox name="plank_396" pos="13.2 3.9 6.1" size="70 1 3"/>
+							<voxbox name="plank_396" pos="5.9 3.7 6.1" size="70 3 3"/>
+							<voxbox name="plank_396" pos="5.6 7.6 6.1" size="146 2 3"/>
+							<voxbox name="plank_396" pos="5.6 7.9 6.1" size="146 1 3"/>
+							<voxbox name="plank_396" pos="10.4 0.0 10.1" size="98 1 3"/>
+							<voxbox name="plank_396" pos="0.0 0.0 10.1" size="101 1 3"/>
+							<voxbox name="plank_190" pos="0.0 0.0 0.0" size="3 1 101"/>
+							<voxbox name="plank_190" pos="10.1 0.0 10.1" size="3 1 101"/>
+							<voxbox name="plank_396" pos="10.1 0.0 20.2" size="101 1 3"/>
+							<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 202"/>
+							<voxbox name="plank_190" pos="12.9 0.0 0.3" size="3 1 58"/>
+							<voxbox name="plank_190" pos="5.6 0.0 0.3" size="3 1 61"/>
+							<voxbox name="plank_190" pos="12.9 3.6 0.3" size="3 2 58"/>
+							<voxbox name="plank_190" pos="5.6 3.6 0.3" size="3 2 58"/>
+							<voxbox name="plank_190" pos="12.9 3.9 0.3" size="3 1 58"/>
+							<voxbox name="plank_190" pos="5.6 3.7 0.3" size="3 3 58"/>
+							<voxbox name="plank_190" pos="12.9 7.6 0.3" size="3 2 58"/>
+							<voxbox name="plank_190" pos="12.9 7.9 0.3" size="3 1 58"/>
+							<voxbox name="plank_190" pos="5.6 7.6 0.3" size="3 2 58"/>
+							<voxbox name="plank_190" pos="5.6 7.9 0.3" size="3 1 58"/>
 						</group>
-						<group name="floorboards">
-							<voxbox name="plank_35" pos="1.1 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="2.9 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="4.7 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="5.6 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="7.4 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="9.2 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="11.2 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="13.0 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="14.8 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="15.7 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="17.5 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="19.3 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 1.1" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 2.9" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 4.7" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 5.6" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 7.4" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 9.2" size="199 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 11.2" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 13.0" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 14.8" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 15.7" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 17.5" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 19.3" size="98 3 1"/>
+						<group name="tops">
+							<voxbox name="plank_396" pos="0.3 3.6 0.0" size="199 2 3"/>
+							<voxbox name="plank_396" pos="0.3 3.6 10.1" size="98 2 3"/>
+							<voxbox name="plank_190" pos="0.0 3.6 0.3" size="3 2 98"/>
+							<voxbox name="plank_190" pos="10.1 3.6 10.4" size="3 2 98"/>
+							<voxbox name="plank_396" pos="10.4 3.6 20.2" size="98 2 3"/>
+							<voxbox name="plank_190" pos="20.2 3.6 0.3" size="3 2 199"/>
 						</group>
-					</group>
-				</compound>
-				<compound name="Roof" pos="-10.3 8.8 -10.2">
-					<group name="bottoms">
-						<voxbox name="plank_396" pos="0.3 0.0 0.0" size="199 1 3"/>
-						<voxbox name="plank_396" pos="0.3 0.0 10.1" size="98 1 3"/>
-						<voxbox name="plank_396" pos="10.4 0.0 10.1" size="98 1 3"/>
-						<voxbox name="plank_190" pos="0.0 0.0 0.3" size="3 1 98"/>
-						<voxbox name="plank_190" pos="10.1 0.0 10.4" size="3 1 98"/>
-						<voxbox name="plank_396" pos="10.4 0.0 20.2" size="98 1 3"/>
-						<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 199"/>
-					</group>
-					<group name="Midterm Floor">
-						<group name="blocks">
-							<voxbox name="plank_35" pos="0.0 -0.3 0.0" size="3 3 3"/>
-							<voxbox name="plank_35" pos="0.0 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.1 -0.3 20.2" size="3 3 3"/>
-							<voxbox name="plank_35" pos="20.2 -0.3 20.2" size="3 3 3"/>
-							<voxbox name="plank_35" pos="20.2 -0.3 10.1" size="3 3 3"/>
-							<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+						<group name="corners">
+							<voxbox name="plank_35" pos="0.0 0.1 0.0" size="3 81 3"/>
+							<voxbox name="plank_35" pos="0.0 0.1 10.1" size="3 81 3"/>
+							<voxbox name="plank_35" pos="10.1 0.1 10.1" size="3 81 3"/>
+							<voxbox name="plank_35" pos="10.1 0.1 20.2" size="3 81 3"/>
+							<voxbox name="plank_35" pos="20.2 0.1 20.2" size="3 81 3"/>
+							<voxbox name="plank_35" pos="20.2 0.1 10.1" size="3 81 3"/>
+							<voxbox name="plank_35" pos="20.2 0.1 0.0" size="3 81 3"/>
+							<voxbox name="plank_35" pos="10.1 0.1 0.0" size="3 81 3"/>
+							<voxbox name="plank_35" pos="5.6 0.1 0.0" size="3 81 3"/>
+							<voxbox name="plank_35" pos="12.9 0.1 0.0" size="3 81 3"/>
+							<voxbox name="plank_35" pos="12.9 0.1 6.1" size="3 75 3"/>
+							<voxbox name="plank_35" pos="5.6 0.1 6.1" size="3 36 3"/>
+							<voxbox name="plank_35" pos="5.6 3.7 6.1" size="3 39 3"/>
+							<voxbox name="plank_35" pos="20.2 0.1 6.1" size="3 81 3"/>
 						</group>
-						<group name="floorboards">
-							<voxbox name="plank_35" pos="1.1 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="2.9 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="4.7 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="5.6 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="7.4 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="9.2 -0.3 0.3" size="1 3 98"/>
-							<voxbox name="plank_35" pos="11.2 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="13.0 -0.3 0.0" size="1 3 205"/>
-							<voxbox name="plank_35" pos="14.8 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="15.7 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="17.5 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="19.3 -0.3 0.3" size="1 3 199"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 1.1" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 2.9" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 4.7" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 5.6" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 7.4" size="199 3 1"/>
-							<voxbox name="plank_35" pos="0.3 -0.3 9.2" size="199 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 11.2" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 13.0" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 14.8" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 15.7" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 17.5" size="98 3 1"/>
-							<voxbox name="plank_35" pos="10.4 -0.3 19.3" size="98 3 1"/>
+						<group name="supports">
+							<voxbox name="plank_35" pos="0.0 0.1 1.1" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 2.0" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 2.9" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 3.8" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 4.7" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 5.6" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 6.5" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 7.4" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 8.3" size="3 80 1"/>
+							<voxbox name="plank_35" pos="0.0 0.1 9.2" size="3 80 1"/>
+							<voxbox name="plank_35" pos="1.1 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="2.0 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="2.9 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="3.8 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="4.7 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="5.6 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="6.5 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="7.4 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="8.3 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="9.2 0.1 10.1" size="1 80 3"/>
+							<voxbox name="plank_35" pos="10.1 0.1 11.2" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 12.1" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 13.0" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 13.9" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 14.8" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 15.7" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 16.6" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 17.5" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 18.4" size="3 80 1"/>
+							<voxbox name="plank_35" pos="10.1 0.1 19.3" size="3 80 1"/>
+							<voxbox name="plank_35" pos="11.2 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="12.1 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="13.0 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="13.9 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="14.8 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="15.7 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="16.6 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="17.5 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="18.40001 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="19.30001 0.1 20.2" size="1 80 3"/>
+							<voxbox name="plank_35" pos="20.2 0.1 19.3" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 12.1" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 18.4" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 17.5" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 16.6" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 15.7" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 14.8" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 13.9" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 13.0" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 11.2" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 9.2" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 8.3" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 7.4" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 6.5" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 5.6" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 4.7" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 3.8" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 2.9" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 2.0" size="3 80 1"/>
+							<voxbox name="plank_35" pos="20.2 0.1 1.1" size="3 80 1"/>
+							<voxbox name="plank_35" pos="19.3 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="18.4 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="17.5 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="16.6 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="15.7 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="14.8 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="13.9 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="12.1 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="11.2 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="9.2 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="8.3 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="7.4 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="6.5 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="5.6 0.1 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="4.7 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="3.8 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="2.9 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="2.0 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="1.1 0.1 0.0" size="1 80 3"/>
+							<voxbox name="plank_35" pos="19.3 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="13.9 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="14.8 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="15.7 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="16.6 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="17.5 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="18.4 0.1 6.1" size="1 75 3"/>
+							<voxbox name="plank_35" pos="12.9 0.1 1.1" size="3 75 1"/>
+							<voxbox name="plank_35" pos="12.9 0.1 2.0" size="3 75 1"/>
+							<voxbox name="plank_35" pos="12.9 0.1 2.9" size="3 75 1"/>
+							<voxbox name="plank_35" pos="12.9 0.1 3.8" size="3 75 1"/>
+							<voxbox name="plank_35" pos="12.9 0.1 4.7" size="3 75 1"/>
+							<voxbox name="plank_35" pos="12.9 0.1 5.6" size="3 75 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 1.1" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 2.0" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 2.9" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 3.8" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 4.7" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 4.0 5.6" size="3 36 1"/>
+							<voxbox name="plank_35" pos="6.7 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="7.6 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="8.5 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="9.4 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="10.3 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="11.2 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="12.1 4.0 6.1" size="1 36 3"/>
+							<voxbox name="plank_35" pos="5.6 0.1 5.6" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 0.1 4.7" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 0.1 3.8" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 0.1 2.9" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 0.1 2.0" size="3 36 1"/>
+							<voxbox name="plank_35" pos="5.6 0.1 1.1" size="3 36 1"/>
 						</group>
-					</group>
-				</compound>
+						<group name="Midterm Floor">
+							<group name="blocks">
+								<voxbox name="plank_35" pos="0.0 -0.3 0.0" size="3 3 3"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 20.2" size="3 3 3"/>
+								<voxbox name="plank_35" pos="20.2 -0.3 20.2" size="3 3 3"/>
+								<voxbox name="plank_35" pos="20.2 -0.3 10.1" size="3 3 3"/>
+								<voxbox name="plank_35" pos="20.2 -0.3 0.0" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 0.0" size="3 3 3"/>
+								<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+							</group>
+							<group name="floorboards">
+								<voxbox name="plank_35" pos="1.1 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="2.9 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="4.7 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="5.6 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="7.4 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="9.2 -0.3 0.0" size="1 3 104"/>
+								<voxbox name="plank_35" pos="11.2 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="13.0 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="14.8 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="15.7 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="17.5 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="19.3 -0.3 0.0" size="1 3 205"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 1.1" size="205 3 1"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 2.9" size="205 3 1"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 4.7" size="205 3 1"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 5.6" size="205 3 1"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 7.4" size="205 3 1"/>
+								<voxbox name="plank_35" pos="0.0 -0.3 9.2" size="205 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 11.2" size="104 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 13.0" size="104 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 14.8" size="104 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 15.7" size="104 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 17.5" size="104 3 1"/>
+								<voxbox name="plank_35" pos="10.1 -0.3 19.3" size="104 3 1"/>
+							</group>
+						</group>
+						<group name="Garage Wall">
+							<voxbox name="plank_35" pos="11.2 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="12.1 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="13.0 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="13.9 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="14.8 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="15.7 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="16.6 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="17.5 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="18.40001 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+							<voxbox name="plank_35" pos="19.30001 0.1 10.1" rot="0.0 0.0 0.0" size="1 35 3"/>
+						</group>
+						<group name="Upper Room Wall" pos="0.0 3.9 0.0">
+							<voxbox name="plank_35" pos="11.2 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="12.1 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="13.0 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="13.9 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="14.8 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="15.7 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="16.6 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="17.5 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="18.40001 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+							<voxbox name="plank_35" pos="19.30001 0.1 10.1" rot="0.0 0.0 0.0" size="1 36 3"/>
+						</group>
+					</compound>
+					<compound name="Second Floor" pos="-10.1 4.3 -10.2">
+						<group name="bottoms">
+							<voxbox name="plank_396" pos="0.3 0.0 0.0" size="199 1 3"/>
+							<voxbox name="plank_396" pos="0.3 0.0 10.1" size="98 1 3"/>
+							<voxbox name="plank_190" pos="0.0 0.0 0.3" size="3 1 98"/>
+							<voxbox name="plank_190" pos="10.1 0.0 10.4" size="3 1 98"/>
+							<voxbox name="plank_396" pos="10.4 0.0 20.2" size="98 1 3"/>
+							<voxbox name="plank_190" pos="20.2 0.0 0.3" size="3 1 199"/>
+						</group>
+						<group name="tops">
+							<voxbox name="plank_396" pos="0.3 3.6 0.0" size="199 2 3"/>
+							<voxbox name="plank_396" pos="0.3 3.6 10.1" size="98 2 3"/>
+							<voxbox name="plank_396" pos="10.4 3.6 10.1" size="98 2 3"/>
+							<voxbox name="plank_190" pos="0.0 3.6 0.3" size="3 2 98"/>
+							<voxbox name="plank_190" pos="10.1 3.6 10.4" size="3 2 98"/>
+							<voxbox name="plank_396" pos="10.4 3.6 20.2" size="98 2 3"/>
+							<voxbox name="plank_190" pos="20.2 3.6 0.3" size="3 2 199"/>
+						</group>
+						<group name="corners"/>
+						<group name="supports">
+							<voxbox name="plank_35" pos="13.0 0.1 0.0" size="1 35 3"/>
+						</group>
+						<group name="Midterm Floor">
+							<group name="blocks">
+								<voxbox name="plank_35" pos="10.2 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 10.2" size="98 3 1"/>
+							</group>
+							<group name="floorboards">
+								<voxbox name="plank_35" pos="1.1 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="2.9 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="4.7 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="5.6 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="7.4 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="9.2 -0.3 0.3" size="1 3 98"/>
+								<voxbox name="plank_35" pos="11.2 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="13.0 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="14.8 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="15.7 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="17.5 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="19.3 -0.3 0.3" size="1 3 199"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 1.1" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 2.9" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 4.7" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 5.6" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 7.4" size="199 3 1"/>
+								<voxbox name="plank_35" pos="0.3 -0.3 9.2" size="199 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 11.2" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 13.0" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 14.8" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 15.7" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 17.5" size="98 3 1"/>
+								<voxbox name="plank_35" pos="10.4 -0.3 19.3" size="98 3 1"/>
+							</group>
+						</group>
+					</compound>
+				</group>
 				<group name="Staircase" pos="-10.3 0.5 -10.2" rot="0.0 0.0 0.0" layer="-stairs">
 					<voxbox name="Hole Cutter" pos="15.2 3.8 10.1" rot="0.0 180.0 0.0" size="48 5 17" brush="hole"/>
 					<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
@@ -1463,17 +1480,19 @@
 						<voxbox name="Side Supports" pos="14.8 4.3 8.5" rot="0" texture="5 0.4" size="6 1 16"/>
 					</group>
 					<group name="Drywall" layer="-plastwalls" prop0="color=0.64 0.56 0.48" prop1="material=wood" prop2="texture=12 0.2" prop3="pbr=0 0 0 0">
-						<voxbox name="Underside" pos="11.8 0.4 10.2" rot="45.0 90.0 0.0" size="19 54 1">
+						<voxbox name="Underside" pos="11.8 0.4 10.2" rot="45.0 90.0 0.0" size="19 51 1">
 							<voxagon pos="0.0 1.1 -0.9" rot="0 0 90">
 								<vertex pos="-2.2 -0.1"/>
-								<vertex pos="0.4 -2.8"/>
-								<vertex pos="4.1 1.0"/>
+								<vertex pos="0.1 -2.5"/>
+								<vertex pos="0.4 -2.7"/>
+								<vertex pos="4.0 1.0"/>
 								<vertex pos="-1.0 1.0"/>
 							</voxagon>
 							<voxagon pos="2.0 1.1 -0.9" rot="0 0 90">
 								<vertex pos="-2.2 -0.1"/>
-								<vertex pos="0.4 -2.8"/>
-								<vertex pos="4.1 1.0"/>
+								<vertex pos="0.1 -2.5"/>
+								<vertex pos="0.4 -2.7"/>
+								<vertex pos="4.0 1.0"/>
 								<vertex pos="-1.0 1.0"/>
 							</voxagon>
 						</voxbox>
@@ -1743,7 +1762,7 @@
 					</group>
 					<voxbox name="Header" pos="6.2 3.2 10.1" rot="0.0 0.0 0.0" size="26 3 3" color="1.0 0.8 0.57"/>
 				</group>
-				<group name="Bedroom #2 Door" pos="15.2 4.1 16.5" rot="0.0 180.0 0.0">
+				<group name="Bedroom #2 Door" pos="0.5 4.1 -4.0" rot="0.0 0.0 0.0">
 					<voxbox name="cutter" pos="6.8 0.4 10.4" rot="0.0 0.0 0.0" size="15 27 3" brush="hole"/>
 					<voxbox name="front door" pos="6.8 0.3 10.0" size="15 28 5" color="1.0 1.0 1.0"/>
 					<voxbox name="cutter" pos="6.9 0.4 10.0" rot="0.0 0.0 0.0" size="13 26 6" brush="hole"/>
@@ -1757,7 +1776,7 @@
 						<voxbox name="frame" pos="1.5 0.0 0.15" rot="180 -20 180" size="2 29 1" color="1.0 1.0 1.0"/>
 						<voxbox name="frame" pos="-0.2 2.9 0.15" rot="200 0 0 " size="17 2 1" color="1.0 1.0 1.0"/>
 					</group>
-					<group name="Actual Door" pos="8.2 0.48 10.2" rot="0 180 0" layer="-doors" prop0="texture=17 0.4" prop1="color=0.62 0.38 0.15">
+					<group name="Actual Door" pos="8.2 0.48 10.2" rot="0 180 0" prop0="texture=17 0.4" prop1="color=0.62 0.38 0.15">
 						<voxbox name="Door" tags="nocull awake dynamic" pos="0.0 -0.1 0.0" strength="30" prop="true" size="13 26 1">
 							<voxbox name="door plate" pos="0.1 1.4 0.01" size="11 11 1" color="0.52 0.31 0.12"/>
 							<voxbox name="door plate" pos="0.1 0.1 0.01" size="11 11 1" color="0.52 0.31 0.12"/>
@@ -1785,8 +1804,8 @@
 							</voxbox>
 							<voxbox name="door plate" pos="0.1 1.4 -0.01" size="11 10 1" color="0.52 0.31 0.12"/>
 							<voxbox name="door plate" pos="0.1 0.1 -0.01" size="11 10 1" color="0.52 0.31 0.12"/>
-							<joint name="hinge" pos="0.0 0.6 0.0" rot="-90" type="hinge" rotspring="0" collide="false" limits="0 90"/>
-							<joint name="hinge" pos="0.0 2.0 0.0" rot="-90" type="hinge" rotspring="0" collide="false" limits="0 90"/>
+							<joint name="hinge" pos="0.0 0.6 0.1" rot="-90" type="hinge" rotspring="0" collide="false" limits="-90 0"/>
+							<joint name="hinge" pos="0.0 2.0 0.1" rot="-90" type="hinge" rotspring="0" collide="false" limits="-90 0"/>
 						</voxbox>
 					</group>
 					<voxbox name="Header" pos="6.7 3.2 10.1" rot="0.0 0.0 0.0" size="17 3 3" color="1.0 0.8 0.57"/>
@@ -2183,11 +2202,11 @@
 				<voxbox name="main" pos="18.9 4.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="5.5 4.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="13 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="13 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="5.5 4.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="17 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="17 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="8.4 4.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="88 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="88 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="8.9 4.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="83 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="83 1 1" color="1 1 1"/>
 				</voxbox>
 				<voxbox name="main" pos="12.8 0.5 6.45" rot="0.0 0.0 0.0" texture="11 0.4" size="44 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="44 1 1" color="1 1 1"/>
@@ -2219,11 +2238,11 @@
 				<voxbox name="main" pos="17.2 4.5 6.05" rot="0.0 180.0 0.0" texture="11 0.4" size="39 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="39 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="12.8 4.5 6.05" rot="0.0 180.0 0.0" texture="11 0.4" size="44 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="44 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="12.8 4.5 6.05" rot="0.0 180.0 0.0" texture="11 0.4" size="39 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="39 1 1" color="1 1 1"/>
 				</voxbox>
-				<voxbox name="main" pos="6.8 4.5 6.05" rot="0.0 180.0 0.0" texture="11 0.4" size="8 1 1" color="1 1 1">
-					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="8 1 1" color="1 1 1"/>
+				<voxbox name="main" pos="7.2 4.5 6.05" rot="0.0 180.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1">
+					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1"/>
 				</voxbox>
 				<voxbox name="main" pos="20.1 0.5 10.05" rot="0.0 -180.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1">
 					<voxbox name="bend" pos="0.0 0.1 0.1" rot="-125 0.0 0.0" texture="11 0.4" size="12 1 1" color="1 1 1"/>
@@ -2462,7 +2481,7 @@
 					</script>
 				</group>
 				<group name="Light Fixtures">
-					<group name="Simple Roof Light" pos="15.35 7.9 15.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Workshop Dip Light" pos="13.15 7.9 12.7" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2483,13 +2502,67 @@
 							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
 						</voxbox>
 					</group>
-					<group name="Simple Roof Light" pos="13.1 3.9 11.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="Workshop Corner Light" pos="13.15 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Workshop Corner Light" pos="17.45 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Garage Maintenence Light" pos="13.1 3.9 11.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2620,6 +2693,114 @@
 							</group>
 						</voxbox>
 					</group>
+					<group name="First Floor Hallway Light" pos="8.6 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="First Floor Hallway Light" pos="18.1 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Second Floor Hallway Light" pos="8.6 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Second Floor Hallway Light" pos="18.1 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<voxbox name="Plastic Casing" size="1 1 2">
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+							<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+									</voxbox>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
 					<group name="Garage Strip Light" pos="18.75 3.9 14.3" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="base" pos="0.4 0.0 2.4" rot="0 180 0" size="4 1 30">
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
@@ -2710,7 +2891,7 @@
 								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
-											<light name="light" tags="nocull electric c1" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
 										</voxbox>
 									</voxbox>
 									<voxbox pos="0.0 -0.1 0.2" size="1 2 1" material="metal" color="0.6 0.6 0.6"/>
@@ -2780,7 +2961,7 @@
 								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
-											<light name="light" tags="nocull electric c1" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
 										</voxbox>
 									</voxbox>
 									<voxbox pos="0.0 -0.1 0.2" size="1 2 1" material="metal" color="0.6 0.6 0.6"/>
@@ -3450,6 +3631,34 @@
 							</voxbox>
 						</voxbox>
 					</group>
+					<group name="Frontroom Window" pos="17.4 3.4 0.4" prop0="material=foliage" prop1="color=0.74 0.74 0.74" prop2="texture=23 0.8">
+						<voxbox name="Bar" pos="0.1 0.0 -0.1" size="15 1 2" material="wood" color="0.84 0.58 0.36">
+							<voxbox name="Curtain" pos="0.025 0.0 0.15" rot="0 0 -90" prop="true" size="5 7 1">
+								<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+								<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+									<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+									<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+										<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+										<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+											<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+							<voxbox name="Curtain" pos="0.775 0.0 0.15" rot="0 0 -90" prop="true" size="5 7 1">
+								<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+								<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+									<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+									<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+										<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+										<voxbox name="Curtain" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="5 7 1">
+											<joint pos="0.0 0.35 0.0" rot="90 0 0" type="hinge"/>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</voxbox>
+					</group>
 				</group>
 			</group>
 			<group name="Conduit and Vents"/>
@@ -3464,15 +3673,47 @@
 				</group>
 				<group name="Lightswitch - Kitchen" pos="6.0 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
 					<script name="Switch" file="MOD/script/switch.lua">
-						<voxbox name="Plate Cover" tags="interact=Lights on target=c2" pos="0.1 1.3 -0.02" size="2 3 1">
+						<voxbox name="Plate Cover" tags="interact=KitchenLights on target=c2" pos="0.1 1.3 -0.02" size="2 3 1">
 							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
 							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
 						</voxbox>
 					</script>
 				</group>
-				<group name="Lightswitch - Frontroom" pos="8.5 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+				<group name="Lightswitch - Exterior" pos="8.5 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
 					<script name="Switch" file="MOD/script/switch.lua">
-						<voxbox name="Plate Cover" tags="interact=Lights off target=c3" pos="0.1 1.3 -0.02" size="2 3 1">
+						<voxbox name="Plate Cover" tags="interact=ExteriorLights on target=c4" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
+						</voxbox>
+					</script>
+				</group>
+				<group name="Lightswitch - Frontroom" pos="8.8 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=FrontroomLights off target=c3" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
+						</voxbox>
+					</script>
+				</group>
+				<group name="Lightswitch - First Floor Hallway" pos="9.1 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=HallwayLights off target=c5" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
+						</voxbox>
+					</script>
+				</group>
+				<group name="Lightswitch - Second Floor Hallway" pos="15.2 4.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=HallwayLights on target=c6" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
+						</voxbox>
+					</script>
+				</group>
+				<group name="Lightswitch - Second Floor Workshop" pos="20.1 4.4 11.3" rot="0 90 0" prop0="material=wood" prop1="color=1 1 1 1">
+					<script name="Switch" file="MOD/script/switch.lua">
+						<voxbox name="Plate Cover" tags="interact=Lights on target=c7" pos="0.1 1.3 -0.02" size="2 3 1">
 							<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
 							<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
 						</voxbox>
