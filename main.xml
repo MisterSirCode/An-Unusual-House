@@ -258,7 +258,7 @@
 					<voxbox name="floor" pos="5.7 0.3 6.5" texture="11 0.4" size="3 1 35"/>
 					<voxbox name="floor" pos="5.65 0.31 6.5" texture="11 0.4" size="2 1 35" color="0.5 0.3 0.18"/>
 					<voxbox name="floor" pos="12.8 0.3 6.5" texture="11 0.4" size="73 1 35"/>
-					<voxbox name="bathroom" pos="13.3 0.3 0.4" texture="11 0.4" size="68 1 56" material="masonry" color="0.46 0.46 0.46" pbr="0.3 0.6 0.1 0">
+					<voxbox name="bathroom" pos="13.3 0.3 0.4" texture="11 0.4" size="68 1 56" material="masonry" color="0.35 0.35 0.35" pbr="0 0 0.1 0">
 						<group name="tiles" prop0="color=0.61 0.61 0.61" prop1="material=masonry" prop2="pbr=0.2 0.4 0.1 0" prop3="texture=11 0.6">
 							<voxagon name="tile" pos="2.5 0.01 -0.05" rot="0 45 0">
 								<vertex pos="-0.4 -0.4"/>
@@ -1952,7 +1952,6 @@
 				</group>
 				<group name="Fixed Renovations" pos="10.5 0.5 10.5">
 					<group name="Wall Desk" pos="9.6 0.0 3.2" layer="-furniture">
-						<voxbox name="Bar" pos="-0.6 1.1 0.2" rot="45.0 -90.0 0.0" texture="4 0.8" size="55 2 1" material="metal" color="0.38 0.38 0.38"/>
 						<voxbox name="Desk" pos="0.0 1.1 -0.1" rot="0.0 -90.0 0.0" texture="23 0.9" size="61 2 10" color="1.0 0.83 0.64"/>
 						<voxbox name="Cork" pos="0.0 1.3 0.1" rot="0.0 -90.0 0.0" texture="23 0.6" size="57 15 1" offset="0 0 1" color="1.0 0.66 0.29">
 							<voxbox pos="0.1 0.1 0.0" size="1 1 2" brush="hole"/>
@@ -2094,7 +2093,7 @@
 							<voxbox pos="3.9 1.1 -0.0" size="1 1 2" brush="hole"/>
 							<voxbox pos="3.9 0.7 -0.0" size="1 1 2" brush="hole"/>
 							<voxbox pos="3.9 0.9 -0.0" size="1 1 2" brush="hole"/>
-							<voxbox pos="3.9 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 1.3 0.0" size="1 1 2" brush="hole"/>
 							<voxbox pos="4.1 0.1 -0.0" size="1 1 2" brush="hole"/>
 							<voxbox pos="4.1 0.3 -0.0" size="1 1 2" brush="hole"/>
 							<voxbox pos="4.1 0.5 -0.0" size="1 1 2" brush="hole"/>
@@ -2153,14 +2152,17 @@
 							<voxbox pos="5.5 1.3 -0.0" size="1 1 2" brush="hole"/>
 						</voxbox>
 						<voxbox name="Cork Back" pos="0.05 1.3 0.1" rot="0.0 -90.0 0.0" texture="23 0.9" size="57 15 1" color="0.53 0.35 0.17"/>
-						<voxbox name="Bar" pos="0.0 1.3 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 2.8 0.1" rot="0.0 -90.0 0.0" texture="4 0.8" size="57 1 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 1.3 5.8" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 0.0 5.7" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 0.5 5.7" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 0.5 0.0" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1" material="metal" color="0.38 0.38 0.38"/>
-						<voxbox name="Bar" pos="0.0 1.0 0.2" rot="0.0 -90.0 0.0" texture="4 0.8" size="55 2 1" material="metal" color="0.38 0.38 0.38"/>
+						<group name="Metal Bits" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0">
+							<voxbox name="Bar" pos="0.0 1.0 0.2" rot="0.0 -90.0 0.0" texture="4 0.8" size="55 2 1"/>
+							<voxbox name="Bar" pos="0.0 1.3 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1"/>
+							<voxbox name="Bar" pos="0.0 2.8 0.1" rot="0.0 -90.0 0.0" texture="4 0.8" size="57 1 1"/>
+							<voxbox name="Bar" pos="0.0 1.3 5.8" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1"/>
+							<voxbox name="Bar" pos="0.0 0.0 5.7" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1"/>
+							<voxbox name="Bar" pos="0.0 0.5 5.7" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1"/>
+							<voxbox name="Bar" pos="0.0 0.5 0.0" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1"/>
+							<voxbox name="Bar" pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1"/>
+							<voxbox name="Bar" pos="-0.6 1.1 0.2" rot="45.0 -90.0 0.0" texture="4 0.8" size="55 2 1"/>
+						</group>
 					</group>
 				</group>
 			</group>
@@ -2895,10 +2897,10 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.03 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
 									</voxbox>
 									<voxbox name="lit bit" pos="0.17 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2909,10 +2911,10 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.03 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
 									</voxbox>
 									<voxbox name="lit bit" pos="0.17 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -3211,7 +3213,7 @@
 					<voxbox size="20 1 56"/>
 				</group>
 			</group>
-			<group name="Heavy Loose Furniture" layer="-furniture">
+			<group name="Loose Furniture" layer="-furniture">
 				<group name="Media Case" pos="12.7 0.0 0.5" rot="0 -90 0" prop0="prop=true">
 					<voxbox name="Case" pos="0.2 0.4 0.0" density="3.0" size="50 34 10" color="0.49 0.31 0.1" pbr="0.05 0.1 0 0">
 						<voxbox pos="0.1 0.1 0.1" prop="false" size="8 8 10" brush="hole"/>
@@ -3688,6 +3690,242 @@
 						<voxbox name="Leg" pos="0.45 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
 						<voxbox name="Leg" pos="0.05 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
 					</voxbox>
+				</group>
+				<group name="Garage Desk Chairs">
+					<group name="Metal Stool" pos="18.7 0.5 14.4" rot="0.0 45.0 0.0" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
+						<voxbox name="Base" pos="-0.05 0.75 0.27" prop="true" size="2 1 2">
+							<voxbox name="Round Bit" pos="0.05 0.0 -0.245" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -16.36 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19595 0.0 0.02817" rot="0.0 -32.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28008 0.0 0.08222" rot="0.0 -49.1 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34558 0.0 0.15778" rot="0.0 -65.4 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38715 0.0 0.24874" rot="0.0 -81.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40141 0.0 0.34771" rot="0.0 -98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38722 0.0 0.4467" rot="0.0 -114.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34572 0.0 0.53768" rot="0.0 -130.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28027 0.0 0.61329" rot="0.0 -147.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19617 0.0 0.6674" rot="0.0 -163.60001 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.10024 0.0 0.69564" rot="0.0 -180.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.00024 0.0 0.69571" rot="0.0 163.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09573 0.0 0.66761" rot="0.0 147.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.1799 0.0 0.61361" rot="0.0 131.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24545 0.0 0.5381" rot="0.0 114.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28708 0.0 0.44717" rot="0.0 98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30141 0.0 0.3482" rot="0.0 81.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28729 0.0 0.24921" rot="0.0 65.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24585 0.0 0.1582" rot="0.0 49.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18045 0.0 0.08254" rot="0.0 32.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.0964 0.0 0.02837" rot="0.0 16.4 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Round Bit" pos="0.05 -0.35 -0.26" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -15.65 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19629 0.0 0.02698" rot="0.0 -31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28174 0.0 0.07893" rot="0.0 -46.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.35 0.0 0.152" rot="0.0 -62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.39602 0.0 0.24079" rot="0.0 -78.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.41639 0.0 0.33869" rot="0.0 -93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40958 0.0 0.43846" rot="0.0 -109.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.37612 0.0 0.53269" rot="0.0 -125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.31848 0.0 0.61441" rot="0.0 -140.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.24093 0.0 0.67754" rot="0.0 -156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.14922 0.0 0.71742" rot="0.0 -172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.05016 0.0 0.73108" rot="0.0 172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.04891 0.0 0.7175" rot="0.0 156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.14066 0.0 0.67771" rot="0.0 140.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.21826 0.0 0.61464" rot="0.0 125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.27597 0.0 0.53298" rot="0.0 109.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30952 0.0 0.43877" rot="0.0 93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.31641 0.0 0.33901" rot="0.0 78.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.29613 0.0 0.24109" rot="0.0 62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.25019 0.0 0.15227" rot="0.0 47.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18199 0.0 0.07913" rot="0.0 31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09659 0.0 0.0271" rot="0.0 15.7 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Leg" pos="0.15 0.05 -0.27" rot="177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.15 0.05 0.37" rot="-177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.37 0.05 0.05" rot="-177.0 -90.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="-0.27 0.05 0.05" rot="177.0 -90.0 0.0" size="1 8 1"/>
+							<group name="Cushion" prop0="color=1.0 0.16 0.16" prop1="material=wood" prop2="pbr=0 0 0 0">
+								<voxbox name="Round Cushion" pos="0.05 0.03 -0.212" rot="0.0 0.0 0.0" size="1 1 3" material="wood" pbr="0 0 0 0">
+									<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -18 0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.0309" rot="0.0 -36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.08968" rot="0.0 -54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.17058" rot="0.0 -72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.26569" rot="0.0 -90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.36569" rot="0.0 -108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.46079" rot="0.0 -126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.5417" rot="0.0 -144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.60047" rot="0.0 -162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.1 0.0 0.63138" rot="0.0 180.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.0 0.0 0.63138" rot="0.0 162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.09511 0.0 0.60047" rot="0.0 144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.54169" rot="0.0 126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.46079" rot="0.0 108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.36569" rot="0.0 90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.26569" rot="0.0 72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.17058" rot="0.0 54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.08968" rot="0.0 36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.0951 0.0 0.0309" rot="0.0 18.0 0.0" size="1 1 3"/>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Metal Stool" pos="18.6 0.5 15.9" rot="0.0 45.0 0.0" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
+						<voxbox name="Base" pos="-0.05 0.75 0.27" prop="true" size="2 1 2">
+							<voxbox name="Round Bit" pos="0.05 0.0 -0.245" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -16.36 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19595 0.0 0.02817" rot="0.0 -32.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28008 0.0 0.08222" rot="0.0 -49.1 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34558 0.0 0.15778" rot="0.0 -65.4 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38715 0.0 0.24874" rot="0.0 -81.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40141 0.0 0.34771" rot="0.0 -98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38722 0.0 0.4467" rot="0.0 -114.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34572 0.0 0.53768" rot="0.0 -130.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28027 0.0 0.61329" rot="0.0 -147.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19617 0.0 0.6674" rot="0.0 -163.60001 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.10024 0.0 0.69564" rot="0.0 -180.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.00024 0.0 0.69571" rot="0.0 163.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09573 0.0 0.66761" rot="0.0 147.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.1799 0.0 0.61361" rot="0.0 131.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24545 0.0 0.5381" rot="0.0 114.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28708 0.0 0.44717" rot="0.0 98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30141 0.0 0.3482" rot="0.0 81.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28729 0.0 0.24921" rot="0.0 65.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24585 0.0 0.1582" rot="0.0 49.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18045 0.0 0.08254" rot="0.0 32.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.0964 0.0 0.02837" rot="0.0 16.4 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Round Bit" pos="0.05 -0.35 -0.26" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -15.65 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19629 0.0 0.02698" rot="0.0 -31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28174 0.0 0.07893" rot="0.0 -46.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.35 0.0 0.152" rot="0.0 -62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.39602 0.0 0.24079" rot="0.0 -78.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.41639 0.0 0.33869" rot="0.0 -93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40958 0.0 0.43846" rot="0.0 -109.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.37612 0.0 0.53269" rot="0.0 -125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.31848 0.0 0.61441" rot="0.0 -140.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.24093 0.0 0.67754" rot="0.0 -156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.14922 0.0 0.71742" rot="0.0 -172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.05016 0.0 0.73108" rot="0.0 172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.04891 0.0 0.7175" rot="0.0 156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.14066 0.0 0.67771" rot="0.0 140.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.21826 0.0 0.61464" rot="0.0 125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.27597 0.0 0.53298" rot="0.0 109.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30952 0.0 0.43877" rot="0.0 93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.31641 0.0 0.33901" rot="0.0 78.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.29613 0.0 0.24109" rot="0.0 62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.25019 0.0 0.15227" rot="0.0 47.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18199 0.0 0.07913" rot="0.0 31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09659 0.0 0.0271" rot="0.0 15.7 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Leg" pos="0.15 0.05 -0.27" rot="177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.15 0.05 0.37" rot="-177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.37 0.05 0.05" rot="-177.0 -90.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="-0.27 0.05 0.05" rot="177.0 -90.0 0.0" size="1 8 1"/>
+							<group name="Cushion" prop0="color=1.0 0.16 0.16" prop1="material=wood" prop2="pbr=0 0 0 0">
+								<voxbox name="Round Cushion" pos="0.05 0.03 -0.212" rot="0.0 0.0 0.0" size="1 1 3" material="wood" pbr="0 0 0 0">
+									<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -18 0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.0309" rot="0.0 -36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.08968" rot="0.0 -54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.17058" rot="0.0 -72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.26569" rot="0.0 -90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.36569" rot="0.0 -108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.46079" rot="0.0 -126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.5417" rot="0.0 -144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.60047" rot="0.0 -162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.1 0.0 0.63138" rot="0.0 180.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.0 0.0 0.63138" rot="0.0 162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.09511 0.0 0.60047" rot="0.0 144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.54169" rot="0.0 126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.46079" rot="0.0 108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.36569" rot="0.0 90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.26569" rot="0.0 72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.17058" rot="0.0 54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.08968" rot="0.0 36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.0951 0.0 0.0309" rot="0.0 18.0 0.0" size="1 1 3"/>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
+					<group name="Metal Stool" pos="19.2 0.5 18.6" rot="0.0 45.0 0.0" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
+						<voxbox name="Base" pos="-0.05 0.75 0.27" prop="true" size="2 1 2">
+							<voxbox name="Round Bit" pos="0.05 0.0 -0.245" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -16.36 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19595 0.0 0.02817" rot="0.0 -32.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28008 0.0 0.08222" rot="0.0 -49.1 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34558 0.0 0.15778" rot="0.0 -65.4 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38715 0.0 0.24874" rot="0.0 -81.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40141 0.0 0.34771" rot="0.0 -98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.38722 0.0 0.4467" rot="0.0 -114.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.34572 0.0 0.53768" rot="0.0 -130.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28027 0.0 0.61329" rot="0.0 -147.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19617 0.0 0.6674" rot="0.0 -163.60001 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.10024 0.0 0.69564" rot="0.0 -180.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.00024 0.0 0.69571" rot="0.0 163.7 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09573 0.0 0.66761" rot="0.0 147.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.1799 0.0 0.61361" rot="0.0 131.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24545 0.0 0.5381" rot="0.0 114.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28708 0.0 0.44717" rot="0.0 98.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30141 0.0 0.3482" rot="0.0 81.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.28729 0.0 0.24921" rot="0.0 65.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.24585 0.0 0.1582" rot="0.0 49.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18045 0.0 0.08254" rot="0.0 32.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.0964 0.0 0.02837" rot="0.0 16.4 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Round Bit" pos="0.05 -0.35 -0.26" rot="0.0 0.0 0.0" size="1 1 1">
+								<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -15.65 0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.19629 0.0 0.02698" rot="0.0 -31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.28174 0.0 0.07893" rot="0.0 -46.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.35 0.0 0.152" rot="0.0 -62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.39602 0.0 0.24079" rot="0.0 -78.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.41639 0.0 0.33869" rot="0.0 -93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.40958 0.0 0.43846" rot="0.0 -109.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.37612 0.0 0.53269" rot="0.0 -125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.31848 0.0 0.61441" rot="0.0 -140.8 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.24093 0.0 0.67754" rot="0.0 -156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.14922 0.0 0.71742" rot="0.0 -172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="0.05016 0.0 0.73108" rot="0.0 172.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.04891 0.0 0.7175" rot="0.0 156.5 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.14066 0.0 0.67771" rot="0.0 140.89999 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.21826 0.0 0.61464" rot="0.0 125.2 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.27597 0.0 0.53298" rot="0.0 109.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.30952 0.0 0.43877" rot="0.0 93.9 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.31641 0.0 0.33901" rot="0.0 78.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.29613 0.0 0.24109" rot="0.0 62.6 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.25019 0.0 0.15227" rot="0.0 47.0 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.18199 0.0 0.07913" rot="0.0 31.3 0.0" size="1 1 1"/>
+								<voxbox name="Round Bit" pos="-0.09659 0.0 0.0271" rot="0.0 15.7 0.0" size="1 1 1"/>
+							</voxbox>
+							<voxbox name="Leg" pos="0.15 0.05 -0.27" rot="177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.15 0.05 0.37" rot="-177.0 180.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="0.37 0.05 0.05" rot="-177.0 -90.0 0.0" size="1 8 1"/>
+							<voxbox name="Leg" pos="-0.27 0.05 0.05" rot="177.0 -90.0 0.0" size="1 8 1"/>
+							<group name="Cushion" prop0="color=1.0 0.16 0.16" prop1="material=wood" prop2="pbr=0 0 0 0">
+								<voxbox name="Round Cushion" pos="0.05 0.03 -0.212" rot="0.0 0.0 0.0" size="1 1 3" material="wood" pbr="0 0 0 0">
+									<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -18 0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.0309" rot="0.0 -36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.08968" rot="0.0 -54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.17058" rot="0.0 -72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.26569" rot="0.0 -90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.36569 0.0 0.36569" rot="0.0 -108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.33479 0.0 0.46079" rot="0.0 -126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.27601 0.0 0.5417" rot="0.0 -144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.19511 0.0 0.60047" rot="0.0 -162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.1 0.0 0.63138" rot="0.0 180.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="0.0 0.0 0.63138" rot="0.0 162.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.09511 0.0 0.60047" rot="0.0 144.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.54169" rot="0.0 126.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.46079" rot="0.0 108.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.36569" rot="0.0 90.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.26569 0.0 0.26569" rot="0.0 72.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.23479 0.0 0.17058" rot="0.0 54.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.17601 0.0 0.08968" rot="0.0 36.0 0.0" size="1 1 3"/>
+									<voxbox name="Round Bit" pos="-0.0951 0.0 0.0309" rot="0.0 18.0 0.0" size="1 1 3"/>
+								</voxbox>
+							</group>
+						</voxbox>
+					</group>
 				</group>
 			</group>
 			<group name="Random Bits" layer="-extra">
