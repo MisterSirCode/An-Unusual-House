@@ -1488,15 +1488,15 @@
 						<voxbox name="Side Supports" pos="14.8 4.4 8.5" rot="0" texture="5 0.4" size="6 1 16"/>
 					</group>
 					<group name="Drywall" layer="-plastwalls" prop0="color=0.64 0.56 0.48" prop1="material=wood" prop2="texture=12 0.2" prop3="pbr=0 0 0 0">
-						<voxbox name="Underside" pos="11.8 0.4 10.2" rot="45.0 90.0 0.0" size="19 51 1">
-							<voxagon pos="0.0 1.1 -0.9" rot="0 0 90">
+						<voxbox name="Underside" pos="11.7 0.45 10.2" rot="45.0 90.0 0.0" size="19 51 2">
+							<voxagon name="Outer" pos="0.0 1.1 -0.8" rot="0 0 90" extrude="1">
 								<vertex pos="-2.2 -0.1"/>
 								<vertex pos="0.1 -2.5"/>
 								<vertex pos="0.4 -2.7"/>
 								<vertex pos="4.0 1.0"/>
 								<vertex pos="-1.0 1.0"/>
 							</voxagon>
-							<voxagon pos="2.0 1.1 -0.9" rot="0 0 90">
+							<voxagon name="Outer" pos="2.0 1.1 -0.8" rot="0 0 90" extrude="1">
 								<vertex pos="-2.2 -0.1"/>
 								<vertex pos="0.1 -2.5"/>
 								<vertex pos="0.4 -2.7"/>
@@ -1504,6 +1504,18 @@
 								<vertex pos="-1.0 1.0"/>
 							</voxagon>
 						</voxbox>
+						<voxagon name="Inner" pos="11.912 1.794 10.09" rot="90.0 0.0 0" extrude="1">
+							<vertex pos="-1.6 -2.3"/>
+							<vertex pos="3.6 -2.3"/>
+							<vertex pos="-0.2 1.4"/>
+							<vertex pos="-1.6 1.4"/>
+						</voxagon>
+						<voxagon name="Inner" pos="11.912 1.794 8.31" rot="90.0 0.0 0" extrude="1">
+							<vertex pos="-1.6 -2.3"/>
+							<vertex pos="3.6 -2.3"/>
+							<vertex pos="-0.2 1.4"/>
+							<vertex pos="-1.6 1.4"/>
+						</voxagon>
 					</group>
 				</group>
 			</group>
@@ -2512,7 +2524,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2539,7 +2551,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2566,7 +2578,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c7 sc7" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2593,7 +2605,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 -0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="5.0"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="0.1 0.27 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.5" size="0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2645,7 +2657,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2697,7 +2709,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c3 sc3" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2724,7 +2736,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2751,7 +2763,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c5 sc5" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2778,7 +2790,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2805,7 +2817,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c6 sc6" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2832,13 +2844,13 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c8 sc8" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c8 sc8" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
 						</voxbox>
 					</group>
-					<group name="First Floor Bathroom Light" pos="16.6 4.3 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+					<group name="First Floor Bathroom Light" pos="16.6 3.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 						<voxbox name="Plastic Casing" size="1 1 2">
 							<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
 							<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
@@ -2859,7 +2871,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c10 sc10" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c10 sc10" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2886,7 +2898,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c9 sc9" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.2" reach="12"/>
+										<light name="light" tags="nocull electric c9 sc9" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="0.9" size="0.15" reach="12"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2897,10 +2909,10 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.03 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.15" reach="10.0"/>
 									</voxbox>
 									<voxbox name="lit bit" pos="0.17 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2911,10 +2923,10 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="3 1 29" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.03 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="0.12 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.15" reach="10"/>
 									</voxbox>
 									<voxbox name="lit bit" pos="0.17 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 28" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.2" reach="6.0"/>
+										<light name="light" tags="nocull electric c1 sc1" pos="-0.02 0.27 1.4" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.93 0.78" scale="0.5" size="3 0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -2982,7 +2994,7 @@
 								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
-											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="10"/>
 										</voxbox>
 									</voxbox>
 									<voxbox pos="0.0 -0.1 0.2" size="1 2 1" material="metal" color="0.6 0.6 0.6"/>
@@ -3052,7 +3064,7 @@
 								<group name="Lightbulb" pos="-0.377 0.3 0.5" rot="90.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 									<voxbox name="bulb bit" pos="-0.05 0.05 0.15" rot="0" size="2 3 2" color="1.0 0.99 0.73 0.1">
 										<voxbox name="lit bit" pos="0.05 0.05 0.05" rot="0.0 0.0 0.0" size="1 2 1" color="1.0 0.93 0.78" pbr="0 0 0 32">
-											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+											<light name="light" tags="nocull electric c4 sc4" pos="0.05 0.2 0.05" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="10"/>
 										</voxbox>
 									</voxbox>
 									<voxbox pos="0.0 -0.1 0.2" size="1 2 1" material="metal" color="0.6 0.6 0.6"/>
@@ -3081,7 +3093,7 @@
 							<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
 								<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
 									<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
-										<light name="light" tags="nocull electric c2 sc2" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.2" reach="10"/>
+										<light name="light" tags="nocull electric c2 sc2" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="10"/>
 									</voxbox>
 								</voxbox>
 							</group>
@@ -3926,6 +3938,25 @@
 							</group>
 						</voxbox>
 					</group>
+				</group>
+				<group name="Garage Wire Shelf" pos="19.2 0.5 10.6" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
+					<voxbox name="Baseplate" pos="0.0 0.1 0.0" prop="true" size="8 1 28">
+						<voxbox name="Baseplate" pos="0.0 0.9 0.0" size="8 1 28"/>
+						<voxbox name="Baseplate" pos="0.0 1.8 0.0" rot="0.0 0.0 0.0" size="8 1 28"/>
+						<voxbox name="Baseplate" pos="0.0 2.7 0.0" rot="0.0 0.0 0.0" size="8 1 28"/>
+						<voxbox name="Arm" pos="-0.05 -0.1 -0.05" size="1 30 1"/>
+						<voxbox name="Arm" pos="0.85 -0.1 0.05" rot="0 180 0" size="1 30 1">
+							<voxbox name="Arm" pos="0.0 0.2 0.0" rot="0 0 -43.5" size="1 12 1"/>
+							<voxbox name="Arm" pos="0.9 1.1 0.1" rot="0 180 -43.5" size="1 12 1"/>
+							<voxbox name="Arm" pos="0.0 2.0 0.0" rot="0 0 -43.5" size="1 12 1"/>
+						</voxbox>
+						<voxbox name="Arm" pos="0.75 -0.1 2.75" size="1 30 1"/>
+						<voxbox name="Arm" pos="-0.05 -0.1 2.75" size="1 30 1">
+							<voxbox name="Arm" pos="0.0 0.2 0.0" rot="0 0 -43.5" size="1 12 1"/>
+							<voxbox name="Arm" pos="0.9 1.1 0.1" rot="0 180 -43.5" size="1 12 1"/>
+							<voxbox name="Arm" pos="0.0 2.0 0.0" rot="0 0 -43.5" size="1 12 1"/>
+						</voxbox>
+					</voxbox>
 				</group>
 			</group>
 			<group name="Random Bits" layer="-extra">
