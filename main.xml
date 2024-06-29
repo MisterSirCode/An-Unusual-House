@@ -1,6 +1,6 @@
 <scene version="1.6.0" shadowVolume="200 100 200">
 	<group name="House" pos="0.0 0.7 0.0" prop0="tags=nocull">
-		<voxbox name="Plate" tags="nocull ground unbreakable" pos="-102.4 -0.6 -102.4" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="0.0 0.0 0.0">
+		<voxbox name="Plate" tags="nocull ground unbreakable" pos="-102.4 -0.6 -102.4" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="1 1 1">
 			<group name="Pieces" pos="102.4 1.6 102.4" rot="0.0 0.0 0.0" prop0="color=0.91 0.64 0.34" prop1="material=wood" prop2="texture=5 0.4" prop3="strength=10">
 				<group name="Insulation" pos="0.0 0.0 0.0" layer="-insul" prop0="color=0.94 0.68 0.61" prop1="texture=27 0.5">
 					<voxagon pos="0.25 0.2 0.0" rot="0 0 90" strength="1" extrude="2" material="wood" color="0.94 0.68 0.61" pbr="0 0 0 0">
