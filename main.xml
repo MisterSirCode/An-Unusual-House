@@ -246,7 +246,7 @@
 					</voxagon>
 				</group>
 				<group name="Intermediary">
-					<group name="Flooring" pos="0.0" layer="-floors" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
+					<group name="Flooring" pos="0.0" layer="-bottomfloors" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
 						<voxbox name="floor" pos="6.0 0.3 0.4" texture="11 0.4" size="68 1 96"/>
 						<voxbox name="floor" pos="0.4 0.3 0.4" texture="24 0.5" size="51 1 96" material="masonry" color="1.0 0.9 0.84"/>
 						<voxbox name="floor" pos="5.5 0.3 6.5" texture="24 0.5" size="2 1 35" material="masonry" color="1.0 0.9 0.84"/>
@@ -581,6 +581,8 @@
 							</group>
 						</voxbox>
 						<voxbox name="floor" pos="10.5 0.3 10.4" texture="5 0.2" size="96 2 97" material="masonry" color="0.77 0.77 0.77" pbr="0 0.2 0 0"/>
+					</group>
+					<group name="Flooring" pos="0.0" layer="-topfloors" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
 						<voxbox name="floor" pos="0.4 4.3 0.4" texture="11 0.4" size="51 1 96"/>
 						<voxbox name="floor" pos="6.0 4.3 0.4" texture="11 0.4" size="68 1 56"/>
 						<voxbox name="floor" pos="5.5 4.3 6.5" texture="11 0.4" size="50 1 35"/>
@@ -3580,7 +3582,7 @@
 							</voxbox>
 						</group>
 					</group>
-					<group name="Couch" pos="-11.9 -0.8 3.7" rot="0 -90 0" prop0="prop=false" prop1="color=0.7 0.28 0.21" prop2="texture=13 0.6" prop3="pbr=0 0 0 0">
+					<group name="Couch" pos="-2.5 -0.8 3.7" rot="0 -180 0" prop0="prop=false" prop1="color=0.7 0.28 0.21" prop2="texture=13 0.6" prop3="pbr=0 0 0 0">
 						<group name="Host" pos="1.4 -0.6 -0.6" prop0="density=3.0">
 							<voxbox name="Frame" pos="-0.6 0.3 -2.0" texture="5 0.4" prop="true" size="12 1 40" color="0.91 0.64 0.34">
 								<voxbox name="Soft" pos="0.1 0.02 0.1" rot="0.0 0.0 0.0" size="10 1 38" color="1.0 1.0 1.0">
@@ -4055,14 +4057,14 @@
 						</script>
 					</group>
 					<group name="Button - Garage Door" pos="17.0 0.8 10.5" rot="0 180 0" prop0="material=wood" prop1="color=1 1 1 1">
-						<script name="Switch" file="MOD/script/button.lua">
+						<script name="Button" file="MOD/script/button.lua">
 							<voxbox name="Plate Cover" tags="interact=GarageDoor open target=g1" pos="0.1 1.3 -0.02" size="2 3 1">
 								<voxbox name="Button Bit" pos="0.05 0.05 -0.02" size="1 2 1" color="0.73 0.22 0.09" pbr="0 0 0 1"/>
 							</voxbox>
 						</script>
 					</group>
 					<group name="Exterior Button - Garage Door" pos="9.9 0.5 11.8" rot="0 90 0" prop0="material=wood" prop1="color=1 1 1 1">
-						<script name="Switch" file="MOD/script/button.lua">
+						<script name="Button" file="MOD/script/button.lua">
 							<voxbox name="Plate Cover" tags="interact=GarageDoor open target=g1" pos="0.1 1.3 -0.02" size="2 3 1">
 								<voxbox name="Button Bit" pos="0.05 0.05 -0.02" size="1 2 1" color="0.73 0.22 0.09" pbr="0 0 0 1"/>
 							</voxbox>
@@ -4155,6 +4157,137 @@
 		<spawnpoint name="Player Spawnpoint" pos="4.2 1.6 17.1" rot="-100"/>
 		<environment name="Environment" template="sunny" skyboxrot="35" constant="0 0 0" ambientexponent="2.0" nightlight="true"/>
 		<script name="World Script" file="MOD/script/world.lua"/>
+	</group>
+	<group name="Test Gate" pos="12.0 1.9 15.6" rot="0.0 90.0 0.0">
+		<script pos="0.0 0.0 1.8" file="MOD/script/sampleCtrl.lua" param0="open=true">
+			<script pos="0.0 0.0 -1.8" rot="0.0 0.0 0.0" file="MOD/script/sectionalGate.lua" param0="speed=2" param1="motorSound=light/buzz4.ogg:2:4" param2="gateSound=metal/slide-s-loop.ogg:1:5">
+				<group name="Gates" pos="0.0 0.3 -1.4" rot="0.0 0.0 0.0" prop0="size=73 4 1" prop1="material=wood" prop2="tags=gateDoor" prop3="limits=-40 40">
+					<group name="Collection" pos="0.0 0.0 0.0" prop0="density=0.75" prop1="rotstrength=0.01">
+						<body name="Section" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 0.0 -0.1"/>
+							<group pos="0.0 0.3 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.1 -0.1"/>
+							<group pos="0.0 0.2 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 1.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.2 -0.1"/>
+							<group pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 1.5 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.3 -0.1"/>
+							<group pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 2.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.4 -0.1"/>
+							<group pos="0.0 -0.1 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 2.5 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.5 -0.1"/>
+							<group pos="0.0 -0.2 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 2.9 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.5 -0.1"/>
+							<group pos="0.0 -0.2 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+								<joint pos="-0.7 0.1 0.0" size="0.1"/>
+								<joint pos="-2.1 0.1 0.0" size="0.1"/>
+								<joint pos="0.7 0.1 0.0" size="0.1"/>
+								<joint pos="2.1 0.1 0.0" size="0.1"/>
+							</group>
+						</body>
+						<body name="Section" pos="0.0 3.3 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<voxbox name="Gate" pos="-3.65 -0.5 -0.1"/>
+						</body>
+					</group>
+				</group>
+				<vox tags="gateCtrl" pos="0.05 3.7 2.7" rot="0.0 -180.0 0.0" file="MOD/script/sectionalGate.vox" object="motor"/>
+				<voxscript tags="gateTrack" pos="-3.6 0.3 -1.5" file="MOD/script/sectionalGateVoxscript.lua">
+					<parameters gates="8" height="32" brush="MOD/script/sectionalGate.vox" offset="1" width="73"/>
+				</voxscript>
+				<location name="TopJoint" tags="gateJoint" pos="0.0 3.5 -1.4" rot="0.0 0.0 0.0"/>
+			</script>
+			<group name="Controller" pos="-4.0 1.4 -3.25">
+				<voxbox tags="close" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" size="2 1 1" pbr="0 0 0 0.5"/>
+				<voxbox tags="stop" pos="-0.1 0.15 -0.1" rot="0.0 0.0 0.0" size="2 1 1" color="1 0.5 0" pbr="0 0 0 0.5"/>
+				<voxbox tags="open" pos="-0.1 0.3 -0.1" size="2 1 1" pbr="0 0 0 0.5"/>
+			</group>
+			<trigger name="EnterChecker" tags="enterCheck" pos="0.0 0.0 -6.3" type="box" size="5 2 6"/>
+		</script>
+	</group>
+	<group name="Alternative gate" pos="11.6 0.3 26.0" rot="0 90 0">
+		<script pos="0.0 0.0 0.6" file="MOD/script/sampleCtrl.lua">
+			<script pos="0.0 0.0 -0.6" file="MOD/script/sectionalGate.lua" param0="motorSound=light/buzz4.ogg:1:2.5" param1="gateSound=metal/slide-m-loop.ogg:0.3:5">
+				<group name="gates" pos="0.0 0.0 -1.5" prop0="brush=MOD/sectionalGate.vox" prop1="object=gates" prop2="tags=gateDoor" prop3="limits=-40 40">
+					<body pos="0.0 0.0 0.1" dynamic="true">
+						<voxbox pos="-2.0 0.0 -0.1" size="40 6 1" brush="MOD/script/sectionalGate.vox"/>
+						<group pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+							<joint pos="-0.7 0.1 0.0"/>
+							<joint pos="0.7 0.1 0.0"/>
+						</group>
+					</body>
+					<body pos="0.0 0.6 0.1" dynamic="true">
+						<voxbox pos="-2.0 0.0 -0.1" size="40 6 1" brush="MOD/script/sectionalGate.vox"/>
+						<group pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+							<joint pos="-0.7 0.1 0.0"/>
+							<joint pos="0.7 0.1 0.0"/>
+						</group>
+					</body>
+					<body pos="0.0 1.2 0.1" dynamic="true">
+						<voxbox pos="-2.0 0.0 -0.1" size="40 6 1" brush="MOD/script/sectionalGate.vox"/>
+						<group pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop0="type=hinge" prop1="rot=0 90 0">
+							<joint pos="-0.7 0.1 0.0"/>
+							<joint pos="0.7 0.1 0.0"/>
+						</group>
+					</body>
+					<body tags="gateTop" pos="0.0 1.8 0.1" dynamic="true">
+						<voxbox pos="-2.0 0.0 -0.1" size="40 6 1" brush="MOD/script/sectionalGate.vox"/>
+					</body>
+				</group>
+				<vox tags="gateCtrl" pos="0.05 2.6 2.3" rot="0.0 -180.0 0.0" file="MOD/script/sectionalGate.vox" object="motor"/>
+				<voxscript tags="gateTrack" pos="-1.95 0.0 -1.5" file="MOD/script/sectionalGateVoxscript.lua">
+					<parameters brush="MOD/script/sectionalGate.vox"/>
+				</voxscript>
+				<location tags="gateJoint" pos="0.0 2.4 -1.4" rot="0.0 0.0 0.0"/>
+			</script>
+			<group name="extrnal control" pos="-2.4 1.0 -2.0">
+				<voxbox tags="close" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" size="2 1 1" pbr="0 0 0 0.5"/>
+				<voxbox tags="stop" pos="-0.1 0.15 -0.1" rot="0.0 0.0 0.0" size="2 1 1" color="1 0.5 0" pbr="0 0 0 0.5"/>
+				<voxbox tags="open" pos="-0.1 0.3 -0.1" size="2 1 1" pbr="0 0 0 0.5"/>
+			</group>
+			<trigger tags="enterCheck" pos="0.0 0.0 -5.6" type="box" size="5 2 6"/>
+			<trigger tags="enterCheck" pos="0.0 0.0 1.4" type="box" size="4 2 7"/>
+		</script>
 	</group>
 </scene>
 
