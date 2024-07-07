@@ -3,13 +3,12 @@
 -- You may modify this script as your wish.
 
 function init()
-	openShape = FindShape("open")
-	closeShape = FindShape("close")
-	stopShape = FindShape("stop")
+	buttonShapes = FindShapes("garageButton", true)
 	checkTriggers = FindTriggers("enterCheck")
-	SetTag(openShape, "interact", "Open")
-	SetTag(closeShape, "interact", "Close")
-	SetTag(stopShape, "interact", "Stop")
+	for i=1, #buttonShapes do
+		local button = buttonShapes[i]
+		SetTag(button, "interact", "Garage Door")
+	end
 	toggle = GetBoolParam("open", false)
 	triggerToggle = toggle
 	inTimer = 0
@@ -24,9 +23,12 @@ end
 function tick(dt)
 	showInfo = false
 	if InputPressed("interact") then
-		if GetPlayerInteractShape() == closeShape then toggle = false end
-		if GetPlayerInteractShape() == openShape then toggle = true end
-		if GetPlayerInteractShape() == stopShape then toggle = nil end
+		for i=1, #buttonShapes do
+			local button = buttonShapes[i]
+			if GetPlayerInteractShape() == button then
+				toggle = not toggle
+			end
+		end
 		if toggle ~= nil then triggerToggle = toggle end
 
 		SetTag(ctrlUnit, "gateCtrl", toggle and "open" or toggle == false and "close" or 0)
@@ -52,13 +54,10 @@ function tick(dt)
 		inTimer = 0
 		overflow = false
 	end
-	SetShapeEmissiveScale(openShape, toggle and 1 or 0)
-	SetShapeEmissiveScale(closeShape, toggle == false and 1 or 0)
-	SetShapeEmissiveScale(stopShape, toggle == nil and 1 or 0)
 	local tagValue = GetTagValue(ctrlUnit, "gateCtrl")
 	if tagValue == "open" then toggle = true
-	elseif tagValue == "close" then toggle = false
-	else toggle = nil end
+	elseif tagValue == "close" then toggle = false end
+	--else toggle = nil end
 	if toggle ~= nil then triggerToggle = toggle end
 end
 

@@ -3,8 +3,8 @@ function init()
     switchon = FindShape('switchon')
     switchoff = FindShape('switchoff')
     branch = GetTagValue(cover, 'target')
-    lightTag = 's'..branch
-    lights = FindLights(lightTag, true)
+    lights = FindLights('s'..branch, true)
+    lightHosts = FindShapes('lh'..branch, true)
     status = false
     -- Initialize lights and switches
     if HasTag(cover, 'on') then
@@ -56,8 +56,10 @@ function tick()
             status = not status
             for i=1, #lights do
                 local light = lights[i]
+                local debug = HasTag(light, 'debug')
                 -- Enable light as long as nothing is broken
                 if not HasTag(light, 'broken') and not (broken or dynamic) then
+                    if debug then DebugWatch(light, HasTag(light, 'broken')) end
                     SetLightEnabled(light, true)
                 end
             end
