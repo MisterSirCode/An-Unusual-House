@@ -1,6 +1,7 @@
 function init()
     panel = FindShape('panel')
     lights = FindLights('electric', true)
+    buttons = FindShapes('elcbtn', true)
 end
 
 function tick()
