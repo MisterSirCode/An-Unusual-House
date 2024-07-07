@@ -3307,8 +3307,13 @@
 								<voxbox name="Door" pos="0.0 0.1 -0.6" density="3.0" size="1 10 11" material="metal" color="0.31 0.31 0.31">
 									<joint pos="0.0 0.0 0.2" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
 									<joint pos="0.0 0.0 0.9" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
-									<voxbox name="Cutter" pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" size="1 8 9" brush="hole"/>
-									<voxbox name="Door" pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" strength="50" size="1 8 9" material="glass" color="0.0 0.0 0.0 0.5"/>
+									<voxbox name="Cutter" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" size="1 6 7" brush="hole"/>
+									<voxbox name="Door" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" strength="50" size="1 6 7" material="glass" color="0.0 0.0 0.0 0.5"/>
+									<voxbox pos="0.08 0.85 0.1" rot="0 -30 0" size="2 1 1" material="metal" color="0.0 0.0 0.0">
+										<voxbox pos="0.2 0.0 0.0" rot="0 -60 0" size="7 1 1" material="metal" color="0.0 0.0 0.0">
+											<voxbox pos="0.7 0.0 0.0" rot="0 -60 0" size="2 1 1" material="metal" color="0.0 0.0 0.0"/>
+										</voxbox>
+									</voxbox>
 								</voxbox>
 							</body>
 						</group>
