@@ -63,6 +63,7 @@ function init()
 end
 
 function tick()
+	if HasTag(gateCtrl, "broken") then ctrlBroken = true end
 	if not haveMotorSnd then return end
 	if noMotor or ctrlBroken then return end
 	local tagValue = GetTagValue(gateCtrl, "gateCtrl")
