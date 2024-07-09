@@ -3291,31 +3291,49 @@
 							</body>
 						</group>
 						<group name="Oven" pos="0.0 0.0 5.6" layer="-appliances">
-							<voxbox name="Bulk" size="10 12 11" material="metal" color="0.31 0.31 0.31">
-								<voxbox name="Bulk" pos="0.0 1.1 0.0" rot="0 0 10" size="1 5 11" material="metal" color="0.31 0.31 0.31">
-									<voxbox name="Bulk" pos="0.01 0.15 0.05" rot="0.0 0.0 0.0" size="1 3 10" material="metal" color="0.63 0.63 0.63"/>
+							<script name="Oven Script" pos="0.7 0.0 0.6" file="MOD/script/oven.lua">
+								<voxbox name="Internal Floor" pos="-0.6 0.025 -0.5" size="7 1 9" material="metal" color="0.22 0.22 0.22">
+									<vox pos="0.0 0.55 1.0" file="MOD/assets/mine/oven_grate.vox" color="1.0 1.0 1.0"/>
 								</voxbox>
-							</voxbox>
-							<voxbox name="Cutter" pos="0.1 0.1 0.1" size="9 9 9" brush="hole"/>
-							<voxbox name="Cutter" pos="0.9 0.0 0.0" size="1 11 11" brush="hole"/>
-							<voxbox name="Cutter" pos="0.1 1.1 0.1" size="8 1 9" brush="hole"/>
-							<voxbox name="StoveTop" pos="0.0 1.15 0.0" rot="0.0 0.0 0.0" size="11 1 11" material="metal" color="0.18 0.18 0.18">
-								<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="9 1 9" brush="hole"/>
-								<voxbox name="StoveGlass" pos="0.05 0.01 0.05" rot="0.0 0.0 0.0" strength="50" size="10 1 10" material="glass" color="0.0 0.0 0.0 0.5"/>
-							</voxbox>
-							<body name="Door Body" tags="activebodies" pos="0.9 0.0 0.6" dynamic="true">
-								<voxbox name="Door" pos="0.0 0.1 -0.6" density="3.0" size="1 10 11" material="metal" color="0.31 0.31 0.31">
-									<joint pos="0.0 0.0 0.2" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
-									<joint pos="0.0 0.0 0.9" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-90"/>
-									<voxbox name="Cutter" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" size="1 6 7" brush="hole"/>
-									<voxbox name="Door" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" strength="50" size="1 6 7" material="glass" color="0.0 0.0 0.0 0.5"/>
-									<voxbox pos="0.08 0.85 0.1" rot="0 -30 0" size="2 1 1" material="metal" color="0.0 0.0 0.0">
-										<voxbox pos="0.2 0.0 0.0" rot="0 -60 0" size="7 1 1" material="metal" color="0.0 0.0 0.0">
-											<voxbox pos="0.7 0.0 0.0" rot="0 -60 0" size="2 1 1" material="metal" color="0.0 0.0 0.0"/>
+								<voxbox name="Bulk" pos="-0.7 0.0 -0.6" size="10 12 11" material="metal" color="0.31 0.31 0.31">
+									<voxbox name="Bulk" pos="0.0 1.1 0.0" rot="0 0 10" size="1 5 11" material="metal" color="0.31 0.31 0.31">
+										<voxbox name="Bulk" pos="0.01 0.15 0.05" rot="0.0 0.0 0.0" size="1 3 10" material="metal" color="0.63 0.63 0.63">
+											<voxbox pos="0.033 0.033 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox pos="0.01 0.05 0.199" size="1 2 6" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox pos="0.033 0.166 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox pos="0.033 0.166 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox pos="0.033 0.033 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox name="topButton" tags="invisible topButton" pos="0.01 0.033 0.866" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
+											<voxbox name="ovenButton" tags="invisible ovenButton" pos="0.01 0.033 0.033" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
 										</voxbox>
 									</voxbox>
 								</voxbox>
-							</body>
+								<voxbox name="Cutter" pos="-0.6 0.1 -0.5" size="9 9 9" brush="hole" material="metal"/>
+								<voxbox name="Cutter" pos="0.2 0.0 -0.6" size="1 11 11" brush="hole" material="metal"/>
+								<voxbox name="Cutter" pos="-0.6 1.1 -0.5" size="8 1 9" brush="hole" material="metal"/>
+								<voxbox name="StoveTop" pos="-0.7 1.15 -0.6" rot="0.0 0.0 0.0" size="11 1 11" material="metal" color="0.18 0.18 0.18">
+									<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="9 1 9" brush="hole" material="metal"/>
+									<voxbox name="StoveGlass" pos="0.05 0.01 0.05" rot="0.0 0.0 0.0" strength="50" size="10 1 10" material="glass" color="0.0 0.0 0.0 0.5"/>
+									<voxbox name="Heat Elements" tags="topElement" pos="0.15 -0.04 0.15" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement" pos="0.15 -0.04 0.65" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement" pos="0.6 -0.04 0.15" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement" pos="0.6 -0.04 0.65" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
+									<trigger name="Burn Trigger" tags="topBurner" pos="0.6 0.15 0.55" type="box" size="0.9 0.2 0.9"/>
+								</voxbox>
+								<body name="Door Body" tags="activebodies" pos="0.2 0.0 0.0" dynamic="true">
+									<voxbox name="Door" pos="0.0 0.1 -0.6" density="3.0" size="1 10 11" material="metal" color="0.31 0.31 0.31">
+										<joint pos="0.0 0.0 0.2" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-70 0"/>
+										<joint pos="0.0 0.0 0.9" rot="0 0 0" type="hinge" rotstrength="0.005" limits="-70 0"/>
+										<voxbox name="Cutter" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" size="1 6 7" brush="hole" material="metal"/>
+										<voxbox name="Door" pos="0.0 0.2 0.2" rot="0.0 0.0 0.0" strength="50" size="1 6 7" material="glass" color="0.0 0.0 0.0 0.5"/>
+										<voxbox pos="0.08 0.85 0.1" rot="0 -30 0" size="2 1 1" material="metal" color="0.0 0.0 0.0">
+											<voxbox pos="0.2 0.0 0.0" rot="0 -60 0" size="7 1 1" material="metal" color="0.0 0.0 0.0">
+												<voxbox pos="0.7 0.0 0.0" rot="0 -60 0" size="2 1 1" material="metal" color="0.0 0.0 0.0"/>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+								</body>
+							</script>
 						</group>
 					</group>
 					<group name="Bathtub" pos="13.3 0.4 0.4" prop0="color=1 1 1 1" prop1="material=masonry" prop2="pbr=0.1 0.1 0 0">
