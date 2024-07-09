@@ -44,11 +44,8 @@ function tick(dt)
     end
     topHeat = adjustVal(topHeat, 1 / 10 * dt, topState)
     ovenHeat = adjustVal(ovenHeat, 1 / 10 * dt, ovenState)
-    DebugWatch('Stove Top Heat', topHeat)
-    DebugWatch('Oven Heat', ovenHeat)
 
     if active(topHeat) then
-        DebugWatch('Working. Elements ', #topElements)
         for i = 0, #topElements do
             local element = topElements[i]
             SetShapeEmissiveScale(element, topHeat)
@@ -57,11 +54,9 @@ function tick(dt)
     if topHeat > 0 then
         local min, max = GetTriggerBounds(topTrigger)
         local shapes = QueryAabbShapes(min, max)
-        DebugWatch('burnables', #shapes)
         for i = 0, #shapes do
             local shape = shapes[i]
             local pos = GetShapeWorldTransform(shape).pos
-            DebugWatch('burning at', pos)
             AddHeat(shape, pos, topHeat * 2 * dt)
         end
     end
