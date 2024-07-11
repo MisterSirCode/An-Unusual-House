@@ -3292,16 +3292,17 @@
 						</group>
 						<group name="Oven" pos="0.0 0.0 5.6" layer="-appliances">
 							<script name="Oven Script" pos="0.7 0.0 0.6" file="MOD/script/oven.lua">
+								<location name="status" tags="ovenStatus"/>
 								<voxbox name="Bulk" pos="-0.7 0.0 -0.6" size="10 12 11" material="metal" color="0.31 0.31 0.31">
 									<voxbox name="Bulk" pos="0.0 1.1 0.0" rot="0 0 10" size="1 5 11" material="metal" color="0.31 0.31 0.31">
-										<voxbox name="Bulk" pos="0.01 0.15 0.05" rot="0.0 0.0 0.0" size="1 3 10" material="metal" color="0.63 0.63 0.63">
-											<voxbox pos="0.033 0.033 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
-											<voxbox pos="0.01 0.05 0.199" size="1 2 6" material="metal" color="0.15 0.15 0.15"/>
-											<voxbox pos="0.033 0.166 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
-											<voxbox pos="0.033 0.166 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
-											<voxbox pos="0.033 0.033 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
-											<voxbox name="topButton" tags="invisible topButton" pos="0.01 0.033 0.866" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
-											<voxbox name="ovenButton" tags="invisible ovenButton" pos="0.01 0.033 0.033" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
+										<voxbox name="Bulk" tags="nocull host" pos="0.01 0.15 0.05" rot="0.0 0.0 0.0" size="1 3 10" material="metal" color="0.63 0.63 0.63">
+											<voxbox tags="nocull host" pos="0.033 0.033 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox tags="nocull host" pos="0.01 0.05 0.199" size="1 2 6" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox tags="nocull host" pos="0.033 0.166 0.033" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox tags="nocull host" pos="0.033 0.166 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox tags="nocull host" pos="0.033 0.033 0.866" size="1 1 1" material="metal" color="0.15 0.15 0.15"/>
+											<voxbox name="topButton" tags="invisible topButton host" pos="0.01 0.033 0.866" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
+											<voxbox name="ovenButton" tags="invisible ovenButton host" pos="0.01 0.033 0.033" size="1 3 1" material="metal" color="0.15 0.15 0.15 0.5"/>
 										</voxbox>
 									</voxbox>
 								</voxbox>
@@ -3311,10 +3312,11 @@
 								<voxbox name="StoveTop" pos="-0.7 1.15 -0.6" rot="0.0 0.0 0.0" size="11 1 11" material="metal" color="0.18 0.18 0.18">
 									<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="9 1 9" brush="hole" material="metal"/>
 									<voxbox name="StoveGlass" pos="0.05 0.01 0.05" rot="0.0 0.0 0.0" strength="50" size="10 1 10" material="glass" color="0.0 0.0 0.0 0.5"/>
-									<voxbox name="Heat Elements" tags="topElement" pos="0.15 -0.04 0.15" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
-									<voxbox name="Heat Elements" tags="topElement" pos="0.15 -0.04 0.65" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
-									<voxbox name="Heat Elements" tags="topElement" pos="0.6 -0.04 0.15" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
-									<voxbox name="Heat Elements" tags="topElement" pos="0.6 -0.04 0.65" size="3 1 3" material="metal" color="0.63 0.15 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement host" pos="0.15 -0.04 0.15" size="3 1 3" material="metal" color="0.21 0.02 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement host" pos="0.15 -0.04 0.65" size="3 1 3" material="metal" color="0.21 0.02 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement host" pos="0.6 -0.04 0.15" size="3 1 3" material="metal" color="0.21 0.02 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Heat Elements" tags="topElement host" pos="0.6 -0.04 0.65" size="3 1 3" material="metal" color="0.21 0.02 0.0" pbr="0.1 0.1 0.5 4"/>
+									<voxbox name="Filler" pos="0.15 -0.06 0.1" rot="0.0 0.0 0.0" size="8 1 9" material="metal" color="0.0 0.0 0.0"/>
 									<trigger name="Burn Trigger" tags="topBurner" pos="0.6 0.15 0.55" type="box" size="0.9 0.2 0.9"/>
 								</voxbox>
 								<body name="Door Body" tags="activebodies" pos="0.2 0.0 0.0" dynamic="true">

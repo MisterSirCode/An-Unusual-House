@@ -1,4 +1,5 @@
 function init()
+    broken = false
     topState = false
     ovenState = false
     topHeat = 0
@@ -9,6 +10,9 @@ function init()
     topTrigger = FindTrigger('topBurner')
     SetTag(topButton, 'interact', 'Stove Top')
     SetTag(ovenButton, 'interact', 'Oven')
+    -- Destruction Detection Stuff
+    ovenBits = FindShapes('host')
+    statusLoc = FindLocation('ovenStatus')
 end
 
 function checkVal(val)
@@ -35,6 +39,25 @@ function round(num)
 end  
 
 function tick(dt)
+    -- Destruction Stuff
+    if not broken then
+        if HasTag(statusLoc, 'broken') then
+            broken = true
+        end
+        for i = 0, #ovenBits do
+            local elm = ovenBits[i]
+            if IsShapeBroken(elm) then
+                broken = true
+                SetTag(statusLoc, 'broken')  
+            end
+        end
+    else
+        topState = false
+        ovenState = false
+        RemoveTag(topButton, 'interact')
+        RemoveTag(ovenButton, 'interact')
+    end
+    -- Oven Code
     local ishape = GetPlayerInteractShape()
     local interacted = ishape ~= 0 and InputPressed('interact')
     if interacted and ishape == topButton then
