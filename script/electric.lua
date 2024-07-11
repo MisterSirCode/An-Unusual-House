@@ -3,6 +3,7 @@ function init()
     lights = FindLights('electric', true)
     buttons = FindShapes('elcbtn', true)
     motors = FindShapes('motor', true)
+    oven = FindLocation('ovenStatus', true)
 end
 
 function tick()
@@ -23,5 +24,6 @@ function tick()
             local motor = motors[i]
             SetTag(motor, 'broken')
         end
+        SetTag(oven, 'broken')
     end
 end
