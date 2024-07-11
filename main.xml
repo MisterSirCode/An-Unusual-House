@@ -3334,6 +3334,8 @@
 								</body>
 								<voxbox name="Internal Floor" pos="-0.6 0.025 -0.5" size="7 1 9" material="metal" color="0.22 0.22 0.22">
 									<vox pos="0.0 0.55 1.0" file="MOD/assets/mine/oven_grate.vox" color="1.0 1.0 1.0"/>
+									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.2 0.45" type="box" size="0.8 0.3 0.8"/>
+									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.7 0.45" type="box" size="0.8 0.3 0.8"/>
 								</voxbox>
 							</script>
 						</group>
