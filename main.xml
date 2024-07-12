@@ -3168,10 +3168,10 @@
 					</group>
 					<group name="Kitchen Stuff" tags=" " pos="0.4 0.4 0.4" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
 						<group name="Lower Cabinets">
-							<voxbox pos="0.0 0.0 -0.001" size="9 12 56">
+							<voxbox tags="ovenIgnore" pos="0.0 0.0 -0.001" size="9 12 56">
 								<voxbox pos="0.9 0.2 0.9" size="1 10 47"/>
 							</voxbox>
-							<voxbox pos="0.0 0.0 6.701" size="9 12 29">
+							<voxbox tags="ovenIgnore" pos="0.0 0.0 6.701" size="9 12 29">
 								<voxbox pos="0.9 0.2 0.0" size="1 10 29"/>
 							</voxbox>
 							<voxbox pos="0.899 0.0 0.0" size="21 12 9">
@@ -3217,7 +3217,6 @@
 							<voxbox name="Cabinet Cutter" pos="0.8 0.1 8.6" size="3 4 8" brush="hole"/>
 							<voxbox name="Cabinet Cutter" pos="0.8 0.1 7.7" size="3 4 8" brush="hole"/>
 							<voxbox name="Cabinet Cutter" pos="0.8 0.1 6.8" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.0 -0.1 5.6" size="11 7 11" brush="hole"/>
 						</group>
 						<group name="Counter" prop0="material=masonry" prop1="color=1.0 0.83 0.58" prop2="pbr=0.3 0.7 0 0">
 							<voxbox name="cutter" pos="-0.1 1.2 1.2" size="2 1 13" brush="hole"/>
@@ -3290,7 +3289,7 @@
 								</voxbox>
 							</body>
 						</group>
-						<group name="Oven" pos="0.0 0.0 5.6" layer="-appliances">
+						<group name="Oven" pos="0.0 0.0 5.6" layer="-appliances" prop0="tags=ovenIgnore nocull">
 							<script name="Oven Script" pos="0.7 0.0 0.6" file="MOD/script/oven.lua">
 								<location name="status" tags="ovenStatus"/>
 								<voxbox name="Bulk" pos="-0.7 0.0 -0.6" size="10 12 11" material="metal" color="0.31 0.31 0.31">
@@ -3334,10 +3333,39 @@
 								</body>
 								<voxbox name="Internal Floor" pos="-0.6 0.025 -0.5" size="7 1 9" material="metal" color="0.22 0.22 0.22">
 									<vox pos="0.0 0.55 1.0" file="MOD/assets/mine/oven_grate.vox" color="1.0 1.0 1.0"/>
-									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.2 0.45" type="box" size="0.8 0.3 0.8"/>
-									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.7 0.45" type="box" size="0.8 0.3 0.8"/>
+									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.25 0.45" type="box" size="0.7 0.25 0.7"/>
+									<trigger name="Burn Trigger" tags="innerBurner" pos="0.4 0.7 0.45" type="box" size="0.7 0.25 0.7"/>
+									<light name="Inner light" tags="ovenLight" pos="0.3 0.9 0.45" rot="90 0 0" type="area" color="0.91 0.33 0.0" scale="0" size="0.2 0.5" reach="4"/>
 								</voxbox>
 							</script>
+							<group name="Oven Vent" pos="-0.1 2.3 0.0" prop0="color=0.31 0.31 0.31">
+								<voxbox name="Cutter" pos="0.1 0.6 0.0" rot="0 0 0" size="8 7 11" brush="hole" material="metal"/>
+								<voxbox name="Bulk" pos="0.05 0.0 -0.05" rot="0 0 0" size="1 12 12" material="metal"/>
+								<voxbox name="Bulk" pos="0.8 0.6 0.1" rot="0 0 0" size="1 6 9" material="metal"/>
+								<voxbox name="Bulk" pos="1.1 0.0 0.1" rot="0 0 25" size="1 7 9" material="metal">
+									<voxagon pos="0.0 0.0 -0.1" rot="90 0 0">
+										<vertex pos="0.05 -0.7"/>
+										<vertex pos="0.15 -0.65"/>
+										<vertex pos="0.15 0.0"/>
+										<vertex pos="0.0 0.0"/>
+										<vertex pos="-0.3 -0.1"/>
+									</voxagon>
+									<voxagon pos="0.0 0.0 0.9" rot="90 0 0">
+										<vertex pos="0.05 -0.7"/>
+										<vertex pos="0.15 -0.65"/>
+										<vertex pos="0.15 0.0"/>
+										<vertex pos="0.0 0.0"/>
+										<vertex pos="-0.3 -0.1"/>
+									</voxagon>
+								</voxbox>
+								<voxbox name="Bulk" pos="0.1 0.0 0.0" rot="0 0 0" size="8 12 1" material="metal"/>
+								<voxbox name="Bulk" pos="0.1 0.0 1.0" rot="0 0 0" size="8 12 1" material="metal"/>
+								<voxbox name="Bulk" pos="0.1 -0.1 0.95" rot="0 0 0" size="9 1 2" material="metal"/>
+								<voxbox name="Bulk" pos="0.1 -0.1 -0.05" rot="0 0 0" size="9 1 2" material="metal"/>
+								<voxbox name="Bulk" pos="0.1 -0.1 0.15" rot="0 0 0" size="2 1 8" material="metal"/>
+								<voxbox name="Bulk" pos="1.0 -0.1 -0.05" rot="0 0 30" size="3 1 12" material="metal"/>
+								<vox pos="0.25 -0.05 1.1" file="MOD/assets/mine/oven_grate.vox" color="1.0 1.0 1.0"/>
+							</group>
 						</group>
 					</group>
 					<group name="Bathtub" pos="13.3 0.4 0.4" prop0="color=1 1 1 1" prop1="material=masonry" prop2="pbr=0.1 0.1 0 0">

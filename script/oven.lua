@@ -7,9 +7,11 @@ function init()
     topButton = FindShape('topButton')
     topElements = FindShapes('topElement')
     ovenButton = FindShape('ovenButton')
-    topTrigger = FindTrigger('topBurner')
+    ovenLight = FindLight('ovenLight')
     SetTag(topButton, 'interact', 'Stove Top')
     SetTag(ovenButton, 'interact', 'Oven')
+    topTrigger = FindTrigger('topBurner')
+    innerTriggers = FindTriggers('innerBurner')
     -- Destruction Detection Stuff
     ovenBits = FindShapes('host')
     statusLoc = FindLocation('ovenStatus')
@@ -56,6 +58,7 @@ function tick(dt)
         ovenState = false
         RemoveTag(topButton, 'interact')
         RemoveTag(ovenButton, 'interact')
+        SetLightEnabled(ovenLight, false)
     end
     -- Oven Code
     local ishape = GetPlayerInteractShape()
@@ -74,6 +77,9 @@ function tick(dt)
             SetShapeEmissiveScale(element, topHeat)
         end
     end
+    if active(ovenHeat) then
+        SetLightIntensity(ovenLight, ovenHeat)
+    end
     if topHeat > 0 then
         local min, max = GetTriggerBounds(topTrigger)
         local shapes = QueryAabbShapes(min, max)
@@ -81,6 +87,21 @@ function tick(dt)
             local shape = shapes[i]
             local pos = GetShapeWorldTransform(shape).pos
             AddHeat(shape, pos, topHeat * 2 * dt)
+        end
+    end
+    if ovenHeat > 0 then
+        for i = 0, #innerTriggers do
+            local trigger = innerTriggers[i]
+            local min, max = GetTriggerBounds(trigger)
+            local shapes = QueryAabbShapes(min, max)
+            for j = 0, #shapes do
+                local shape = shapes[j]
+                if HasTag(shape, 'ovenIgnore') then return
+                else
+                    local pos = GetShapeWorldTransform(shape).pos
+                    AddHeat(shape, pos, ovenHeat * 2 * dt)
+                end
+            end
         end
     end
 end
