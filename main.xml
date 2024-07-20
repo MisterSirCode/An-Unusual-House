@@ -3137,7 +3137,36 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Simple Roof Light" pos="3.15 3.9 5.95" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Simple Roof Light" pos="3.15 3.9 3.65" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
+								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
+									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 2"/>
+									<voxbox name="Plastic Casing" pos="-0.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 1 2"/>
+									<group name="Lightbulb" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+										<voxbox name="bulb bit" pos="-0.1 -0.05 0.1" rot="0" size="3 1 3" color="1.0 0.99 0.73 0.1">
+											<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="2 1 2" color="1.0 0.93 0.78" pbr="0 0 0 32">
+												<light name="light" tags="nocull electric c2 sc2" pos="0.1 0.37 0.1" rot="0.0 0.0 0.0" color="1.0 0.93 0.78" scale="1" size="0.15" reach="10"/>
+											</voxbox>
+										</voxbox>
+									</group>
+								</voxbox>
+							</script>
+						</group>
+						<group name="Simple Roof Light" pos="3.15 3.9 7.95" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -3387,14 +3416,38 @@
 								</body>
 							</group>
 							<group name="Mood Lighting">
-								<voxbox pos="0.2 -0.1 0.2" size="3 1 54"/>
-								<voxbox pos="0.5 -0.1 0.5" rot="0 90 0" size="3 1 25"/>
-								<script name="SLM" pos="0.4 0.0 8.2" rot="-180.0 -180.0 0.0" file="MOD/script/simpleLightManager.lua">
-									<voxbox name="base" pos="-0.2 0.0 -1.5" size="3 1 29">
+								<voxbox pos="0.3 -0.1 0.5" rot="0 90 0" size="3 1 3"/>
+								<script name="SLM" pos="0.4 0.0 6.7" rot="-180.0 -180.0 0.0" file="MOD/script/simpleLightManager.lua">
+									<voxbox name="base" pos="-0.2 0.0 0.0" size="3 1 29">
+										<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="1 1 27" brush="hole" color="1.0 0.74 0.18" pbr="0 0 0 2"/>
 										<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
-											<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="2 1 28" color="1.0 0.99 0.73 0.1">
-												<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 27" color="1.0 0.74 0.18" pbr="0 0 0 2">
-													<light name="light" tags="nocull electric c2" pos="0.05 0.17 1.35" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.78 0.33" scale="0.1" size="2.5 0.1" reach="10"/>
+											<voxbox name="bulb bit" pos="0.05 -0.07 0.05" rot="0" size="2 1 28" color="1.0 0.99 0.73 0.1">
+												<voxbox name="lit bit" pos="0.05 -0.07 0.05" rot="0.0 0.0 0.0" size="1 1 27" color="1.0 0.74 0.18" pbr="0 0 0 2">
+													<light name="light" tags="nocull electric v1 sv1" pos="0.05 0.17 1.35" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.78 0.33" scale="0.1" size="2.5 0.1" reach="10"/>
+												</voxbox>
+											</voxbox>
+										</group>
+									</voxbox>
+								</script>
+								<script name="SLM" pos="0.4 0.0 0.5" rot="-180.0 -180.0 0.0" file="MOD/script/simpleLightManager.lua">
+									<voxbox name="base" pos="-0.2 0.0 0.0" size="3 1 51">
+										<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="1 1 49" brush="hole" color="1.0 0.74 0.18" pbr="0 0 0 2"/>
+										<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+											<voxbox name="bulb bit" pos="0.05 -0.07 0.05" rot="0" size="2 1 50" color="1.0 0.99 0.73 0.1">
+												<voxbox name="lit bit" pos="0.05 -0.07 0.05" rot="0.0 0.0 0.0" size="1 1 49" color="1.0 0.74 0.18" pbr="0 0 0 2">
+													<light name="light" tags="nocull electric v1 sv1" pos="0.05 0.17 2.45" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.78 0.33" scale="0.1" size="4.7 0.1" reach="10"/>
+												</voxbox>
+											</voxbox>
+										</group>
+									</voxbox>
+								</script>
+								<script name="SLM" pos="0.6 0.0 0.4" rot="-180.0 -90.0 0.0" file="MOD/script/simpleLightManager.lua">
+									<voxbox name="base" pos="-0.2 0.0 0.0" size="3 1 24">
+										<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="1 1 22" brush="hole" color="1.0 0.74 0.18" pbr="0 0 0 2"/>
+										<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+											<voxbox name="bulb bit" pos="0.05 -0.07 0.05" rot="0" size="2 1 23" color="1.0 0.99 0.73 0.1">
+												<voxbox name="lit bit" pos="0.05 -0.07 0.05" rot="0.0 0.0 0.0" size="1 1 22" color="1.0 0.74 0.18" pbr="0 0 0 2">
+													<light name="light" tags="nocull electric v1 sv1" pos="0.05 0.17 1.1" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.78 0.33" scale="0.1" size="2.0 0.1" reach="10"/>
 												</voxbox>
 											</voxbox>
 										</group>
@@ -4455,6 +4508,14 @@
 							<voxbox name="Plate Cover" tags="interact=KitchenLights on target=c2" pos="0.1 1.3 -0.02" size="2 3 1">
 								<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
 								<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
+							</voxbox>
+						</script>
+					</group>
+					<group name="Lightswitch - Kitchen - Mood" pos="5.7 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
+						<script name="Switch" file="MOD/script/switch.lua">
+							<voxbox name="Plate Cover" tags="interact=CounterLights off target=v1" pos="0.1 1.3 -0.02" size="2 3 1">
+								<voxbox name="Switch on" tags="switchon invisible" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
+								<voxbox name="Switch off" tags="switchoff" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
 							</voxbox>
 						</script>
 					</group>
