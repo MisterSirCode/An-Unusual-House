@@ -632,6 +632,7 @@
 							<voxbox name="wall" pos="6.0 4.3 0.3" rot="0 -90 0" size="58 36 1"/>
 							<voxbox name="wall" pos="12.9 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
 							<voxbox name="wall" pos="5.6 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
+							<voxbox name="wall" pos="5.6 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
 							<voxbox name="wall" pos="6.0 0.3 0.3" rot="0 -90 0" size="62 36 1"/>
 							<voxbox name="wall" pos="5.6 4.3 0.3" rot="0 -90 0" size="62 36 1"/>
 							<voxbox name="wall" pos="13.3 0.3 6.0" rot="0 00 0" size="69 36 1"/>
@@ -3183,16 +3184,98 @@
 							<voxbox name="Cutter" pos="0.9 0.3 0.8" size="20 8 1" brush="hole"/>
 							<voxbox name="Cutter" pos="0.8 0.3 0.8" size="1 8 48" brush="hole"/>
 							<voxbox name="Cutter" pos="0.8 0.3 6.7" size="1 8 28" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="1.1 0.3 0.9" size="8 8 2" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="2.0 0.3 0.9" size="8 8 2" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 1.1" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 2.0" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 2.9" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 3.8" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 4.7" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 8.6" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 7.7" size="2 8 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.9 0.3 6.8" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="1.1 0.3 0.8" size="8 8 2" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="2.0 0.3 0.8" size="8 8 2" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 1.1" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 2.0" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 2.9" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 3.8" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 4.7" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 8.6" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 7.7" size="2 8 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.8 0.3 6.8" size="2 8 8" brush="hole"/>
+							<group name="Doors" pos="1.0 0.0 1.0" prop0="rotstrength=0.001" prop1="density=4" prop2="color=0.69 0.41 0.23" prop3="limits=-90">
+								<body name="Cabinet Door" tags="activebodies" pos="0.5 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="1.4 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.7 -0.0" rot="90.0 0.0 0.0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.1 -0.0" rot="90.0 0.0 0.0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 0.5" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 1.4" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 2.3" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 3.2" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 4.1" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 6.2" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 7.1" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 8.0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 8 8">
+										<joint pos="0.0 0.1 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+										<joint pos="0.0 0.7 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 7 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 6 6" brush="hole"/>
+								</body>
+							</group>
 						</group>
 						<group name="Upper Cabinets" pos="0.0 2.9 0.0">
 							<voxbox name="Cutter" pos="0.8 0.6 0.0" size="43 1 10" brush="hole"/>
@@ -3205,18 +3288,119 @@
 							</voxbox>
 							<voxbox name="Cutter" pos="0.8 0.1 0.1" size="42 5 7" brush="hole"/>
 							<voxbox name="Cutter" pos="0.1 0.1 0.1" size="7 5 94" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="1.1 0.1 0.8" size="8 4 3" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="2.0 0.1 0.8" size="8 4 3" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="2.9 0.1 0.8" size="8 4 3" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="3.8 0.1 0.8" size="8 4 3" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 1.1" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 2.0" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 2.9" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 3.8" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 4.7" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 8.6" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 7.7" size="3 4 8" brush="hole"/>
-							<voxbox name="Cabinet Cutter" pos="0.8 0.1 6.8" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="1.1 0.1 0.7" size="8 4 3" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="2.0 0.1 0.7" size="8 4 3" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="2.9 0.1 0.7" size="8 4 3" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="3.8 0.1 0.7" size="8 4 3" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 1.1" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 2.0" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 2.9" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 3.8" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 4.7" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 8.6" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 7.7" size="3 4 8" brush="hole"/>
+							<voxbox name="Cabinet Cutter" pos="0.7 0.1 6.8" size="3 4 8" brush="hole"/>
+							<group name="Doors" pos="1.0 -0.2 1.0" prop0="rotstrength=0.001" prop1="density=4" prop2="color=0.69 0.41 0.23" prop3="limits=-90">
+								<body name="Cabinet Door" tags="activebodies" pos="0.5 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="1.4 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="2.3 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="3.2 0.3 0.0" rot="0 -90 0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 0.5" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 1.4" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 2.3" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 3.2" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 4.1" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 6.2" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 7.1" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+								<body name="Cabinet Door" tags="activebodies" pos="0.0 0.3 8.0" dynamic="true">
+									<voxbox pos="-0.05 0.0 -0.4" size="1 4 8">
+										<joint pos="0.0 0.2 0.0" rot="90 0 0" type="hinge" size="0.1"/>
+									</voxbox>
+									<voxbox pos="-0.1 0.05 -0.35" size="1 3 7"/>
+									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
+								</body>
+							</group>
+							<group name="Mood Lighting">
+								<voxbox pos="0.2 -0.1 0.2" size="3 1 54"/>
+								<voxbox pos="0.5 -0.1 0.5" rot="0 90 0" size="3 1 25"/>
+								<script name="SLM" pos="0.4 0.0 8.2" rot="-180.0 -180.0 0.0" file="MOD/script/simpleLightManager.lua">
+									<voxbox name="base" pos="-0.2 0.0 -1.5" size="3 1 29">
+										<group name="Lightbulb" pos="0.0 0.1 0.0" layer="-lightbulbs" prop0="material=glass" prop1="color=0.5 0.5 0.5 0.8" prop2="pbr=0.5 0.5 0 0">
+											<voxbox name="bulb bit" pos="0.05 -0.05 0.05" rot="0" size="2 1 28" color="1.0 0.99 0.73 0.1">
+												<voxbox name="lit bit" pos="0.05 -0.02 0.05" rot="0.0 0.0 0.0" size="1 1 27" color="1.0 0.74 0.18" pbr="0 0 0 2">
+													<light name="light" tags="nocull electric c2" pos="0.05 0.17 1.35" rot="0.0 0.0 0.0" type="capsule" color="1.0 0.78 0.33" scale="0.1" size="2.5 0.1" reach="10"/>
+												</voxbox>
+											</voxbox>
+										</group>
+									</voxbox>
+								</script>
+							</group>
 						</group>
 						<group name="Counter" prop0="material=masonry" prop1="color=1.0 0.83 0.58" prop2="pbr=0.3 0.7 0 0">
 							<voxbox name="cutter" pos="-0.1 1.2 1.2" size="2 1 13" brush="hole"/>
