@@ -3684,6 +3684,209 @@
 							<trigger name="EnterChecker" tags="enterCheck" pos="0.0 0.0 -1.1" type="box" size="5 2 4"/>
 						</script>
 					</group>
+					<group name="Staircase Shelf" pos="15.6 4.4 12.1" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
+						<voxbox name="Slanted Bit" pos="0.05 0.0 0.0" rot="45 0 0" size="20 51 1"/>
+						<voxbox name="Edge Bit" pos="0.05 0.0 3.6" rot="0 0 0" size="20 1 1">
+							<voxbox name="Edge Bit" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" size="1 33 1"/>
+							<voxbox name="Edge Bit" pos="0.0 0.1 -0.8" rot="0.0 0.0 0.0" size="1 27 1"/>
+							<voxbox name="Edge Bit" pos="0.0 0.1 -1.6" rot="0.0 0.0 0.0" size="1 19 1"/>
+							<voxbox name="Edge Bit" pos="0.0 0.1 -2.4" rot="0.0 0.0 0.0" size="1 11 1"/>
+							<voxbox name="Edge Bit" pos="1.9 0.1 0.0" rot="0.0 0.0 0.0" size="1 33 1"/>
+							<voxbox name="Edge Bit" pos="0.95 0.1 0.0" rot="0.0 0.0 0.0" size="1 33 1"/>
+							<voxbox name="Edge Bit" pos="0.95 0.1 -0.8" rot="0.0 0.0 0.0" size="1 27 1"/>
+							<voxbox name="Edge Bit" pos="0.95 0.1 -1.6" rot="0.0 0.0 0.0" size="1 19 1"/>
+							<voxbox name="Edge Bit" pos="0.95 0.1 -2.4" rot="0.0 0.0 0.0" size="1 11 1"/>
+							<voxbox name="Edge Bit" pos="0.1 0.8 0.0" rot="0.0 0.0 0.0" size="18 1 1"/>
+							<voxbox name="Edge Bit" pos="0.1 1.6 0.0" rot="0.0 0.0 0.0" size="18 1 1"/>
+							<voxbox name="Edge Bit" pos="0.1 2.4 0.0" rot="0.0 0.0 0.0" size="18 1 1"/>
+							<voxbox name="Edge Bit" pos="0.0 3.4 -0.1" rot="0.0 0.0 0.0" size="20 1 2"/>
+							<voxbox name="Edge Bit" pos="1.9 0.1 -2.4" rot="0.0 0.0 0.0" size="1 11 1"/>
+							<voxbox name="Edge Bit" pos="1.9 0.1 -1.6" rot="0.0 0.0 0.0" size="1 19 1"/>
+							<voxbox name="Edge Bit" pos="1.9 0.1 -0.8" rot="0.0 0.0 0.0" size="1 27 1"/>
+						</voxbox>
+						<voxbox name="Floor Bit" pos="0.05 0.0 0.1" rot="0 0 0" size="20 1 35"/>
+						<voxbox name="Shelf Bit" pos="0.05 0.8 0.9" rot="0 0 0" size="20 1 27"/>
+						<voxbox name="Shelf Bit" pos="0.05 1.6 1.7" rot="0 0 0" size="20 1 19"/>
+						<voxbox name="Shelf Bit" pos="0.05 2.4 2.5" rot="0 0 0" size="20 1 11"/>
+					</group>
+					<group name="Wall Desk" pos="10.6 4.4 10.6" rot="0 90 0" layer="-furniture">
+						<voxbox name="Desk" pos="0.0 1.1 -0.1" rot="0.0 -90.0 0.0" texture="23 0.9" size="51 2 10" color="1.0 0.83 0.64"/>
+						<voxbox name="Cork" pos="0.0 1.3 0.1" rot="0.0 -90.0 0.0" texture="23 0.6" size="47 15 1" offset="0 0 1" color="1.0 0.66 0.29">
+							<voxbox pos="0.1 0.1 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 0.3 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 0.5 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 1.1 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 0.7 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 0.9 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.1 1.3 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.3 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.5 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.7 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="0.9 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.1 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.3 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.5 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.7 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="1.9 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.1 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.3 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.5 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.7 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="2.9 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.1 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.3 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.5 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.7 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="3.9 1.3 0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.1 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.3 1.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 0.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 0.3 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 0.5 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 1.1 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 0.7 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 0.9 -0.0" size="1 1 2" brush="hole"/>
+							<voxbox pos="4.5 1.3 -0.0" size="1 1 2" brush="hole"/>
+						</voxbox>
+						<voxbox name="Cork Back" pos="0.05 1.3 0.1" rot="0.0 -90.0 0.0" texture="23 0.9" size="47 15 1" color="0.53 0.35 0.17"/>
+						<group name="Metal Bits" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0">
+							<voxbox name="Bar" pos="0.0 1.0 0.2" rot="0.0 -90.0 0.0" texture="4 0.8" size="45 2 1"/>
+							<voxbox name="Bar" pos="0.0 1.3 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1"/>
+							<voxbox name="Bar" pos="0.0 2.8 0.1" rot="0.0 -90.0 0.0" texture="4 0.8" size="47 1 1"/>
+							<voxbox name="Bar" pos="0.0 1.3 4.8" rot="0.0 -90.0 0.0" texture="4 0.8" size="1 16 1"/>
+							<voxbox name="Bar" pos="0.0 0.0 4.7" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1"/>
+							<voxbox name="Bar" pos="0.0 0.5 4.7" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1"/>
+							<voxbox name="Bar" pos="0.0 0.5 0.0" rot="45.0 -90.0 0.0" texture="4 0.8" size="2 11 1"/>
+							<voxbox name="Bar" pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" texture="4 0.8" size="2 12 1"/>
+							<voxbox name="Bar" pos="-0.6 1.1 0.2" rot="45.0 -90.0 0.0" texture="4 0.8" size="45 2 1"/>
+						</group>
+					</group>
 				</group>
 				<group name="Loose Furniture" layer="-furniture">
 					<group name="Media Case" pos="12.7 0.0 0.5" rot="0 -90 0" prop0="prop=true">
@@ -4417,6 +4620,26 @@
 								<voxbox name="Arm" pos="0.0 2.0 0.0" rot="0 0 -43.5" size="1 12 1"/>
 							</voxbox>
 						</voxbox>
+					</group>
+					<group name="Easel" pos="14.5 4.4 12.6" rot="0 30 0">
+						<group name="Front Bit" pos="0.1 0.0 0.1" rot="0 0 -10">
+							<voxbox name="Arm" pos="-0.1 0.0 0.3" rot="00 0 0" prop="true" size="1 23 1">
+								<voxbox name="Arm" pos="-0.0 -0.0 -0.5" rot="10.0 0.0 0.0" size="1 20 1"/>
+								<voxbox name="Arm" pos="-0.08 0.6 -0.5" rot="0.0 0.0 0.0" size="1 1 11"/>
+								<voxbox name="Arm" pos="0.05 1.7 -0.25" rot="0.0 0.0 0.0" size="1 1 6"/>
+								<voxbox name="Arm" pos="0.7 0.1 0.0" rot="0.0 0.0 21.0" size="1 19 1"/>
+								<voxbox name="Arm" pos="-0.0 -0.01736 0.50152" rot="-10.0 0.0 0.0" size="1 20 1"/>
+							</voxbox>
+						</group>
+						<group name="Canvas" pos="0.2 0.9 0.0" rot="0 0 -10">
+							<voxbox name="Arm" pos="-0.15 -0.15 0.0" rot="0 0 0" prop="true" size="1 1 9">
+								<voxbox name="Arm" pos="0.0 1.0 -0.0" rot="0.0 0.0 0.0" size="1 1 9"/>
+								<voxbox name="Fabric" pos="-0.03 -0.05 -0.05" rot="0.0 0.0 0.0" density="0.5" size="1 12 10" color="1.0 0.92 0.83"/>
+								<voxbox name="Arm" pos="0.0 0.5 0.1" rot="0.0 0.0 0.0" size="1 1 7"/>
+								<voxbox name="Arm" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" size="1 9 1"/>
+								<voxbox name="Arm" pos="0.0 0.1 0.8" rot="0.0 0.0 0.0" size="1 9 1"/>
+							</voxbox>
+						</group>
 					</group>
 				</group>
 				<group name="Random Bits" layer="-extra">
