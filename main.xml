@@ -4625,7 +4625,7 @@
 						<group name="Front Bit" pos="0.1 0.0 0.1" rot="0 0 -10">
 							<voxbox name="Arm" pos="-0.1 0.0 0.3" rot="00 0 0" prop="true" size="1 23 1">
 								<voxbox name="Arm" pos="-0.0 -0.0 -0.5" rot="10.0 0.0 0.0" size="1 20 1"/>
-								<voxbox name="Arm" pos="-0.08 0.6 -0.5" rot="0.0 0.0 0.0" size="1 1 11"/>
+								<voxbox name="Arm" pos="-0.18 0.6 -0.5" rot="0.0 0.0 0.0" size="2 1 11"/>
 								<voxbox name="Arm" pos="0.05 1.7 -0.25" rot="0.0 0.0 0.0" size="1 1 6"/>
 								<voxbox name="Arm" pos="0.7 0.1 0.0" rot="0.0 0.0 21.0" size="1 19 1"/>
 								<voxbox name="Arm" pos="-0.0 -0.01736 0.50152" rot="-10.0 0.0 0.0" size="1 20 1"/>
@@ -4642,12 +4642,13 @@
 						</group>
 					</group>
 					<group name="Painter's Bench" pos="10.8 4.4 17.7" rot="0 -15 0">
-						<voxbox name="Arm" pos="0.0 0.0 0.0" prop="true" size="1 8 1"/>
-						<voxbox name="Arm" pos="0.0 0.0 0.5" prop="true" size="1 8 1"/>
-						<voxbox name="Arm" pos="0.5 0.0 0.5" prop="true" size="1 8 1"/>
-						<voxbox name="Arm" pos="0.5 0.0 -0.0" prop="true" size="1 8 1"/>
-						<voxbox name="Top" pos="-0.1 0.8 -0.1" prop="true" size="8 1 8"/>
-						<voxbox name="Top" pos="-0.05 0.7 -0.05" prop="true" size="7 1 7"/>
+						<voxbox name="Arm" pos="0.0 0.0 0.0" prop="true" size="1 8 1">
+							<voxbox name="Arm" pos="-0.0 0.0 0.5" rot="0.0 0.0 0.0" size="1 8 1"/>
+							<voxbox name="Arm" pos="0.5 0.0 0.5" rot="0.0 0.0 0.0" size="1 8 1"/>
+							<voxbox name="Arm" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" size="1 8 1"/>
+							<voxbox name="Top" pos="-0.1 0.8 -0.1" rot="0.0 0.0 0.0" size="8 1 8"/>
+							<voxbox name="Top" pos="-0.05 0.7 -0.05" rot="0.0 0.0 0.0" size="7 1 7"/>
+						</voxbox>
 					</group>
 				</group>
 				<group name="Random Bits" layer="-extra">
@@ -5219,6 +5220,25 @@
 										</voxbox>
 									</voxbox>
 								</voxbox>
+							</voxbox>
+						</group>
+						<group name="Paint Dish" pos="0.5 0.9 7.4" prop0="material=metal" prop1="color=0.8 0.8 0.8" prop2="pbr=0.1 0.1 0.1 0.0">
+							<voxbox name="Dish" prop="true" size="1 1 3">
+								<voxbox name="Dish" pos="0.1 0.0 0.0" rot="0 -22.5 0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 3"/>
 							</voxbox>
 						</group>
 					</group>
