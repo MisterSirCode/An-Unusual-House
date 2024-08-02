@@ -5312,6 +5312,7 @@
 								<voxbox name="Base" pos="0.0 0.7 0.1" size="1 1 6"/>
 								<voxbox name="Base" pos="0.7 0.7 0.1" size="1 1 6"/>
 							</voxbox>
+							<voxbox name="Plate" pos="0.5 0.8 0.1" rot="0 -10 0" prop="true" size="6 1 6" color="0.84 0.54 0.2"/>
 						</group>
 						<group name="Storage Box" pos="4.3 0.0 0.4" rot="0 -20 0">
 							<voxbox name="Base" prop="true" size="8 1 1">
