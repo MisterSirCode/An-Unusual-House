@@ -4729,6 +4729,15 @@
 								<voxbox name="Arm" pos="0.0 0.1 0.8" rot="0.0 0.0 0.0" size="1 9 1"/>
 							</voxbox>
 						</group>
+						<group name="Canvas" pos="1.3 1.48 0.3" rot="0 5 90">
+							<voxbox name="Arm" pos="-0.15 -0.15 0.0" rot="0 0 0" prop="true" size="1 1 9">
+								<voxbox name="Arm" pos="0.0 1.0 -0.0" rot="0.0 0.0 0.0" size="1 1 9"/>
+								<voxbox name="Fabric" pos="-0.03 -0.05 -0.05" rot="0.0 0.0 0.0" density="0.5" size="1 12 10" color="1.0 0.92 0.83"/>
+								<voxbox name="Arm" pos="0.0 0.5 0.1" rot="0.0 0.0 0.0" size="1 1 7"/>
+								<voxbox name="Arm" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" size="1 9 1"/>
+								<voxbox name="Arm" pos="0.0 0.1 0.8" rot="0.0 0.0 0.0" size="1 9 1"/>
+							</voxbox>
+						</group>
 						<group name="Canvas" pos="0.7 0.21 0.3" rot="0 -10 -90">
 							<voxbox name="Arm" pos="-0.15 -0.15 0.0" rot="0 0 0" prop="true" size="1 1 5">
 								<voxbox name="Arm" pos="0.0 0.6 0.0" rot="0.0 0.0 0.0" size="1 1 5"/>
@@ -4738,7 +4747,7 @@
 								<voxbox name="Arm" pos="0.0 0.1 0.4" rot="0.0 0.0 0.0" size="1 5 1"/>
 							</voxbox>
 						</group>
-						<group name="Metal Stool" pos="2.2 0.0 0.3" rot="0.0 45.0 0.0" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
+						<group name="Metal Stool" pos="2.2 0.0 0.9" rot="0.0 45.0 0.0" prop0="color=0.38 0.38 0.38" prop1="material=metal" prop2="pbr=0.1 0.1 0.5 0" prop3="density=1.5">
 							<voxbox name="Base" pos="-0.05 0.75 0.27" prop="true" size="2 1 2">
 								<voxbox name="Round Bit" pos="0.05 0.0 -0.245" rot="0.0 0.0 0.0" size="1 1 1">
 									<voxbox name="Round Bit" pos="0.1 0.0 0.0" rot="0 -16.36 0" size="1 1 1"/>
@@ -5224,21 +5233,757 @@
 						</group>
 						<group name="Paint Dish" pos="0.5 0.9 7.4" prop0="material=metal" prop1="color=0.8 0.8 0.8" prop2="pbr=0.1 0.1 0.1 0.0">
 							<voxbox name="Dish" prop="true" size="1 1 3">
-								<voxbox name="Dish" pos="0.1 0.0 0.0" rot="0 -22.5 0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 3"/>
-								<voxbox name="Dish" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 3"/>
+								<voxbox name="Dish" pos="0.1 0.0 0.0" rot="0 -22.5 0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 3">
+									<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+								</voxbox>
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+						</group>
+						<group name="Storage Box" pos="3.8 1.3 0.4" rot="0 10 0">
+							<voxbox name="Base" prop="true" size="8 1 1">
+								<voxbox name="Base" pos="0.0 0.0 0.1" size="1 1 6"/>
+								<voxbox name="Plate" pos="0.1 0.1 0.02" size="6 6 1" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.1 0.1 0.68" size="6 6 1" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.68 0.1 0.1" size="1 6 6" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.02 0.1 0.1" size="1 6 6" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.1 0.02 0.1" size="6 1 6" color="0.84 0.54 0.2"/>
+								<group name="Bent Bit" pos="0.11 0.4 0.4" rot="45 0 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.69 0.4 0.4" rot="45 180 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.4 0.4 0.69" rot="45 90 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.4 0.4 0.11" rot="45 270 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<voxbox name="Base" pos="0.0 0.1 0.0" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.1 0.0" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.1 0.7" size="1 6 1"/>
+								<voxbox name="Base" pos="0.0 0.1 0.7" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.0 0.1" size="1 1 6"/>
+								<voxbox name="Base" pos="0.0 0.0 0.7" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.7" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.0" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.1" size="1 1 6"/>
+								<voxbox name="Base" pos="0.7 0.7 0.1" size="1 1 6"/>
+							</voxbox>
+						</group>
+						<group name="Storage Box" pos="4.3 0.0 0.4" rot="0 -20 0">
+							<voxbox name="Base" prop="true" size="8 1 1">
+								<voxbox name="Base" pos="0.0 0.0 0.1" size="1 1 6"/>
+								<voxbox name="Plate" pos="0.1 0.1 0.02" size="6 6 1" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.1 0.1 0.68" size="6 6 1" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.68 0.1 0.1" size="1 6 6" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.02 0.1 0.1" size="1 6 6" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.1 0.02 0.1" size="6 1 6" color="0.84 0.54 0.2"/>
+								<voxbox name="Plate" pos="0.1 0.68 0.1" size="6 1 6" color="0.84 0.54 0.2"/>
+								<group name="Bent Bit" pos="0.11 0.4 0.4" rot="45 0 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.69 0.4 0.4" rot="45 180 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.4 0.4 0.69" rot="45 90 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<group name="Bent Bit" pos="0.4 0.4 0.11" rot="45 270 0">
+									<voxbox name="Bent Bit" pos="-0.1 -0.05 -0.5" size="1 1 10"/>
+								</group>
+								<voxbox name="Base" pos="0.0 0.1 0.0" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.1 0.0" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.1 0.7" size="1 6 1"/>
+								<voxbox name="Base" pos="0.0 0.1 0.7" size="1 6 1"/>
+								<voxbox name="Base" pos="0.7 0.0 0.1" size="1 1 6"/>
+								<voxbox name="Base" pos="0.0 0.0 0.7" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.7" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.0" size="8 1 1"/>
+								<voxbox name="Base" pos="0.0 0.7 0.1" size="1 1 6"/>
+								<voxbox name="Base" pos="0.7 0.7 0.1" size="1 1 6"/>
+							</voxbox>
+						</group>
+						<group name="Open Red Paint Can" pos="3.5 1.3 0.5" rot="0 40 90" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.0 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.0 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.0 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Green Paint Can" pos="5.4 0.9 3.1" rot="0 -45 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.15 0.4 0.1"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.15 0.4 0.1"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.15 0.4 0.1"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Purple Paint Can" pos="6.3 0.9 3.8" rot="0 -125 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.63 0.37 0.8"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.63 0.37 0.8"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.63 0.37 0.8"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Lime Paint Can" pos="6.2 0.9 5.0" rot="0 40 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.45 1.0 0.51"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.45 1.0 0.51"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.45 1.0 0.51"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Blue Paint Can" pos="5.7 0.9 4.5" rot="0 -70 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.33 0.85 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.33 0.85 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="0.33 0.85 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Yellow Paint Can" pos="6.0 1.7 4.0" rot="0 -110 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.95 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.95 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.95 0.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Pink Paint Can" pos="4.72 0.2 0.7" rot="0 -125 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.3 0.89"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.3 0.89"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.3 0.89"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+							</voxbox>
+						</group>
+						<group name="Orange Paint Can" pos="6.4 0.9 3.8" rot="0 65 0" prop0="material=metal" prop1="color=0.68 0.68 0.68" prop2="pbr=0.1 0.1 0.2">
+							<voxbox name="Bit" prop="true" size="1 4 1">
+								<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 22.5 0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 0.19239" rot="0.0 45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 0.2631" rot="0.0 67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.36 0.17"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 0.30137" rot="0.0 112.5 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.36 0.17"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 0.2631" rot="0.0 135.0 0.0" size="1 4 1">
+									<voxbox name="color" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 0.36 0.17"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 0.19239" rot="0.0 157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 0.1" rot="0.0 -180.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.50273 0.0 -0.0" rot="0.0 -157.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.46447 0.0 -0.09239" rot="0.0 -135.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.39375 0.0 -0.1631" rot="0.0 -112.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.30137 0.0 -0.20137" rot="0.0 -90.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.20137 0.0 -0.20137" rot="0.0 -67.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.10898 0.0 -0.1631" rot="0.0 -45.0 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bit" pos="0.03827 0.0 -0.09239" rot="0.0 -22.5 0.0" size="1 4 1">
+									<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
+								</voxbox>
+								<voxbox name="Bottom" pos="0.015 0.02 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="Cover" pos="0.015 0.31 0.0" size="3 1 1">
+									<voxbox name="Bit" pos="0.0 0.0 0.1" rot="0 24 0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 0.19135" rot="0.0 48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 0.25827" rot="0.0 72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 0.28917" rot="0.0 96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 0.27872" rot="0.0 120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 0.22872" rot="0.0 144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 0.14781" rot="0.0 168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.47572 0.0 0.05" rot="0.0 -168.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.45493 0.0 -0.04781" rot="0.0 -144.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.39615 0.0 -0.12872" rot="0.0 -120.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.30955 0.0 -0.17872" rot="0.0 -96.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.21009 0.0 -0.18917" rot="0.0 -72.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.11499 0.0 -0.15827" rot="0.0 -48.0 0.0" size="3 1 1"/>
+									<voxbox name="Bit" pos="0.04067 0.0 -0.09135" rot="0.0 -24.0 0.0" size="3 1 1"/>
+								</voxbox>
+								<voxbox name="white paper" pos="-0.001 0.05 0.0" rot="0.0 0.0 0.0" size="1 3 1" color="1.0 1.0 1.0"/>
 							</voxbox>
 						</group>
 					</group>
