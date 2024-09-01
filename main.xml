@@ -1608,8 +1608,8 @@
 							<voxbox name="frame" pos="-0.2 2.9 0.15" rot="180 20 0" size="2 29 1" color="1.0 1.0 1.0"/>
 							<voxbox name="frame" pos="1.5 0.0 0.15" rot="180 -20 180" size="2 29 1" color="1.0 1.0 1.0"/>
 							<voxbox name="frame" pos="-0.2 2.9 0.15" rot="200 0 0 " size="17 2 1" color="1.0 1.0 1.0"/>
-							<voxbox name="frame" pos="-0.2 0.1 0.0" rot="90 0 0 " size="17 2 2" material="masonry" color="0.77 0.77 0.77"/>
-							<voxbox name="frame" pos="-0.2 0.1 0.2" rot="110 0 0 " size="17 6 2" material="masonry" color="0.77 0.77 0.77"/>
+							<voxbox name="frame" pos="-0.2 0.05 0.0" rot="90 0 0 " size="17 2 2" material="masonry" color="0.77 0.77 0.77"/>
+							<voxbox name="frame" pos="-0.2 0.05 0.2" rot="110 0 0 " size="17 5 2" material="masonry" color="0.77 0.77 0.77"/>
 						</group>
 						<group name="inner frame" pos="8.2 0.3 10.05" rot="0 180 0">
 							<voxbox name="frame" pos="-0.2 2.9 0.15" rot="180 20 0" size="2 29 1" color="1.0 1.0 1.0"/>
@@ -1617,36 +1617,38 @@
 							<voxbox name="frame" pos="-0.2 2.9 0.15" rot="200 0 0 " size="17 2 1" color="1.0 1.0 1.0"/>
 						</group>
 						<group name="Actual Door" pos="6.9 0.5 10.4" layer="-doors" prop0="texture=17 0.4" prop1="color=1.0 1.0 1.0">
-							<voxbox name="Door" tags="nocull awake dynamic" pos="0.0 -0.1 0.0" strength="30" prop="true" size="13 26 1">
-								<voxbox name="door plate" pos="0.1 1.4 0.01" size="11 11 1" color="0.89 0.89 0.89"/>
-								<voxbox name="door plate" pos="0.1 0.1 0.01" size="11 11 1" color="0.89 0.89 0.89"/>
-								<voxbox name="Doorknob" pos="1.171 1.35 0.05" rot="0.0 180.0 -90.0" size="1 1 2" material="metal" color="0.35 0.32 0.28">
-									<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.17071 -0.00029 0.07" rot="180.0 180.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.17071 0.09971 0.07" rot="-180.0 180.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.1 0.17042 0.07" rot="-180.0 -180.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.0 0.17042 0.07" rot="0.0 0.0 -90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.07071 0.09971 0.07" rot="0.0 0.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.07071 -0.00029 0.07" rot="0.0 0.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.0 -0.071 0.07" rot="0.0 0.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+							<body name="Door Body" tags="activebodies" pos="0.6 -0.1 0.0" dynamic="true">
+								<voxbox name="Door" tags="nocull" pos="-0.6 0.0 0.0" strength="30" prop="true" size="13 26 1">
+									<joint name="hinge" pos="0.0 0.6 0.1" rot="-90" type="hinge" rotstrength="0.002" collide="false" limits="-90 0"/>
+									<joint name="hinge" pos="0.0 2.0 0.1" rot="-90" type="hinge" rotstrength="0.002" collide="false" limits="-90 0"/>
+									<voxbox name="door plate" pos="0.1 1.4 0.01" size="11 11 1" color="0.89 0.89 0.89"/>
+									<voxbox name="door plate" pos="0.1 0.1 0.01" size="11 11 1" color="0.89 0.89 0.89"/>
+									<voxbox name="Doorknob" pos="1.171 1.35 0.05" rot="0.0 180.0 -90.0" size="1 1 2" material="metal" color="0.35 0.32 0.28">
+										<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.17071 -0.00029 0.07" rot="180.0 180.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.17071 0.09971 0.07" rot="-180.0 180.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.1 0.17042 0.07" rot="-180.0 -180.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.0 0.17042 0.07" rot="0.0 0.0 -90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.07071 0.09971 0.07" rot="0.0 0.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.07071 -0.00029 0.07" rot="0.0 0.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.0 -0.071 0.07" rot="0.0 0.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+									</voxbox>
+									<voxbox name="Doorknob" pos="1.071 1.35 0.05" rot="0.0 0.0 -90.0" size="1 1 2" material="metal" color="0.35 0.32 0.28">
+										<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.17071 -0.00029 0.07" rot="180.0 180.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.17071 0.09971 0.07" rot="-180.0 180.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.1 0.17042 0.07" rot="-180.0 -180.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.0 0.17042 0.07" rot="0.0 0.0 -90.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.07071 0.09971 0.07" rot="0.0 0.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="-0.07071 -0.00029 0.07" rot="0.0 0.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
+										<voxbox pos="0.0 -0.071 0.07" rot="0.0 0.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
+									</voxbox>
+									<voxbox name="door plate" pos="0.1 1.4 -0.01" size="11 10 1" color="0.89 0.89 0.89"/>
+									<voxbox name="door plate" pos="0.1 0.1 -0.01" size="11 10 1" color="0.89 0.89 0.89"/>
 								</voxbox>
-								<voxbox name="Doorknob" pos="1.071 1.35 0.05" rot="0.0 0.0 -90.0" size="1 1 2" material="metal" color="0.35 0.32 0.28">
-									<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.1 -0.071 0.07" rot="0.0 0.0 90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.17071 -0.00029 0.07" rot="180.0 180.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.17071 0.09971 0.07" rot="-180.0 180.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.1 0.17042 0.07" rot="-180.0 -180.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.0 0.17042 0.07" rot="0.0 0.0 -90.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.07071 0.09971 0.07" rot="0.0 0.0 -45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="-0.07071 -0.00029 0.07" rot="0.0 0.0 0.0" size="1 1 1" color="0.28 0.23 0.17"/>
-									<voxbox pos="0.0 -0.071 0.07" rot="0.0 0.0 45.0" size="1 1 1" color="0.28 0.23 0.17"/>
-								</voxbox>
-								<voxbox name="door plate" pos="0.1 1.4 -0.01" size="11 10 1" color="0.89 0.89 0.89"/>
-								<voxbox name="door plate" pos="0.1 0.1 -0.01" size="11 10 1" color="0.89 0.89 0.89"/>
-								<joint name="hinge" pos="0.0 0.6 0.1" rot="-90" type="hinge" rotspring="0" collide="false" limits="-90 0"/>
-								<joint name="hinge" pos="0.0 2.0 0.1" rot="-90" type="hinge" rotspring="0" collide="false" limits="-90 0"/>
-							</voxbox>
+							</body>
 						</group>
 						<voxbox name="Header" pos="6.7 3.2 10.1" rot="0.0 0.0 0.0" size="17 3 3" color="1.0 0.8 0.57">
 							<voxagon name="Tiles" pos="2.05 0.4 0.3" rot="-20 180 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
