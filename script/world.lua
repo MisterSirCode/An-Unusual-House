@@ -1,10 +1,13 @@
 function init()
     activeList = FindBodies("activebodies", true)
+    DebugWatch("Activebodies = ", #activeList)
 end
 
 function tick()
     for tag,handle in pairs(activeList) do
         SetBodyActive(handle, true)
+        DrawBodyOutline(handle, 0, 1, 0, 1)
+        DebugWatch(tag, handle)
     end
 end
 
