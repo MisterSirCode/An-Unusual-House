@@ -3,12 +3,9 @@ function init()
 end
 
 function tick()
-    DebugWatch("Activebodies = ", activeList)
-    DebugWatch("Number = ", #activeList)
     for i=1, #activeList do
         local handle = activeList[i]
         SetBodyActive(handle, true)
-        DrawBodyOutline(handle, 0, 1, 0, 1)
     end
 end
 
