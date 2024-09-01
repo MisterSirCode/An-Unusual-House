@@ -1,13 +1,14 @@
 function init()
     activeList = FindBodies("activebodies", true)
-    DebugWatch("Activebodies = ", #activeList)
 end
 
 function tick()
-    for tag,handle in pairs(activeList) do
+    DebugWatch("Activebodies = ", activeList)
+    DebugWatch("Number = ", #activeList)
+    for i=1, #activeList do
+        local handle = activeList[i]
         SetBodyActive(handle, true)
         DrawBodyOutline(handle, 0, 1, 0, 1)
-        DebugWatch(tag, handle)
     end
 end
 
@@ -19,4 +20,4 @@ end
 --     local cameraOffsetTransform = TransformToLocalTransform(cameraTransform, Transform(worldOffset, cameraTransform.rot))
     
 --     SetCameraOffsetTransform(cameraOffsetTransform)
--- end
+-- endS
