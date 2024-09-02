@@ -6122,6 +6122,8 @@
 		<spawnpoint name="Player Spawnpoint" pos="1.8 2.5 15.3" rot="0 110 0"/>
 		<environment name="Environment" template="sunny" skyboxrot="35" constant="0 0 0" ambientexponent="2.0" nightlight="true"/>
 		<script name="World Script" file="MOD/script/world.lua"/>
+		<script name="enable tools" file="main.lua" param0="basetools=true"/>
+		<script name="enable sandbox" file="sandbox.lua" param0="basetools=true"/>
 	</group>
 </scene>
 
