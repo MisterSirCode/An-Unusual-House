@@ -1,6 +1,6 @@
 <scene version="1.6.0" shadowVolume="200 100 200">
-	<group name="House" pos="0.0 0.7 0.0" prop0="tags=nocull">
-		<voxbox name="Plate" tags="nocull ground unbreakable" pos="-102.4 -0.6 -102.4" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="1 1 1">
+	<group name="House" pos="0.0 0.0 0.0" prop0="tags=nocull">
+		<voxbox name="Plate" tags="nocull ground unbreakable" pos="-102.4 0.0 -102.4" rot="0.0 0.0 0.0" collide="true" prop="false" size="2048 2 2048" color="1 1 1">
 			<group name="Pieces" pos="102.4 1.6 102.4" rot="0.0 0.0 0.0" prop0="color=0.91 0.64 0.34" prop1="material=wood" prop2="texture=5 0.4" prop3="strength=10">
 				<group name="Insulation" pos="0.0 0.0 0.0" layer="-insul" prop0="color=0.94 0.68 0.61" prop1="texture=27 0.5">
 					<voxagon pos="0.25 0.2 0.0" rot="0 0 90" strength="1" extrude="2" material="wood" color="0.94 0.68 0.61" pbr="0 0 0 0">
@@ -801,15 +801,15 @@
 							<voxbox name="panel" pos="-0.01 7.6 10.1" rot="180 0 -10" size="1 4 101"/>
 							<voxbox name="panel" pos="-0.01 8.0 10.1" rot="180 0 -10" size="1 4 101"/>
 							<voxbox name="panel" pos="-0.01 8.4 10.1" rot="180 0 -10" size="1 4 101"/>
-							<voxbox name="panel" pos="-0.01 0.4 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 3.6 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 3.2 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 2.8 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 2.4 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 2.0 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 1.6 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 1.2 1.3" rot="180 0 -10" size="1 4 12"/>
-							<voxbox name="panel" pos="-0.01 0.8 1.3" rot="180 0 -10" size="1 4 12"/>
+							<voxbox name="panel" pos="-0.01 0.4 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 3.6 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 3.2 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 2.8 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 2.4 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 2.0 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 1.6 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 1.2 1.3" rot="180 0 -10" size="1 4 13"/>
+							<voxbox name="panel" pos="-0.01 0.8 1.3" rot="180 0 -10" size="1 4 13"/>
 						</group>
 						<group name="Side Paneling" pos="20.5 0.3 -0.1" rot="0.0 -90.0 0.0">
 							<voxbox name="panel" pos="-0.01 0.4 20.6" rot="180 0 -10" size="1 4 207"/>
@@ -1514,8 +1514,8 @@
 							<voxbox name="Side Supports" pos="13.2 2.8 8.4" rot="0" texture="5 0.4" size="6 1 17"/>
 							<voxbox name="Side Supports" pos="13.6 3.2 8.4" rot="0" texture="5 0.4" size="6 1 17"/>
 							<voxbox name="Side Supports" pos="14.0 3.6 8.4" rot="0" texture="5 0.4" size="6 1 17"/>
-							<voxbox name="Side Supports" pos="14.4 4.0 8.5" rot="0" texture="5 0.4" size="6 1 16"/>
-							<voxbox name="Side Supports" pos="14.8 4.4 8.5" rot="0" texture="5 0.4" size="6 1 16"/>
+							<voxbox name="Side Supports" pos="14.4 4.0 8.4" rot="0" texture="5 0.4" size="6 1 17"/>
+							<voxbox name="Side Supports" pos="14.8 4.4 8.4" rot="0" texture="5 0.4" size="6 1 17"/>
 						</group>
 						<group name="Drywall" layer="-plastwalls" prop0="color=0.64 0.56 0.48" prop1="material=wood" prop2="texture=12 0.2" prop3="pbr=0 0 0 0">
 							<voxbox name="Underside" pos="11.7 0.45 10.2" rot="45.0 90.0 0.0" size="19 51 2">
@@ -1574,29 +1574,29 @@
 						<vertex pos="15.4 -6.2"/>
 						<vertex pos="0.2 -6.2"/>
 					</voxagon>
-					<voxagon name="Tiles" pos="21.6 8.0 21.4" rot="30 90 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
+					<voxagon name="Tiles" pos="21.6 8.0 21.7" rot="30 90 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
 						<vertex pos="0.2 -0.4"/>
-						<vertex pos="21.8 -0.4"/>
-						<vertex pos="16.0 -7.1"/>
+						<vertex pos="22.1 -0.4"/>
+						<vertex pos="16.3 -7.1"/>
 						<vertex pos="0.2 -7.1"/>
 					</voxagon>
-					<voxagon name="Tiles" pos="9.3 8.15 21.4" rot="150 90 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
+					<voxagon name="Tiles" pos="9.3 8.15 21.7" rot="150 90 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
 						<vertex pos="0.2 -0.4"/>
-						<vertex pos="10.2 -0.4"/>
-						<vertex pos="16.0 -7.2"/>
+						<vertex pos="10.5 -0.4"/>
+						<vertex pos="16.3 -7.2"/>
 						<vertex pos="0.2 -7.2"/>
 					</voxagon>
-					<voxagon name="Tiles" pos="-0.5 8.0 11.5" rot="30 0 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
+					<voxagon name="Tiles" pos="-0.8 8.0 11.5" rot="30 0 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
 						<vertex pos="0.2 -0.4"/>
-						<vertex pos="10.2 -0.4"/>
-						<vertex pos="16.0 -7.1"/>
+						<vertex pos="10.6 -0.4"/>
+						<vertex pos="16.4 -7.1"/>
 						<vertex pos="0.2 -7.1"/>
 					</voxagon>
-					<voxagon name="Tiles" pos="-0.5 8.175 -0.8" rot="150 0 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
+					<voxagon name="Tiles" pos="-0.8 8.175 -0.8" rot="150 0 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
 						<vertex pos="0.2 -0.4"/>
-						<vertex pos="21.8 -0.4"/>
-						<vertex pos="16.0 -7.1"/>
-						<vertex pos="0.2 -7.1"/>
+						<vertex pos="22.1 -0.4"/>
+						<vertex pos="16.2 -7.2"/>
+						<vertex pos="0.2 -7.2"/>
 					</voxagon>
 				</group>
 				<group name="Doors" layer="-doors" prop0="texture=5 0.2">
@@ -4232,87 +4232,166 @@
 							</voxbox>
 						</group>
 					</group>
-					<group name="Couch" pos="-2.5 -0.8 3.7" rot="0 -180 0" prop0="prop=false" prop1="color=0.7 0.28 0.21" prop2="texture=13 0.6" prop3="pbr=0 0 0 0">
-						<group name="Host" pos="1.4 -0.6 -0.6" prop0="density=3.0">
-							<voxbox name="Frame" pos="-0.6 0.3 -2.0" texture="5 0.4" prop="true" size="12 1 40" color="0.91 0.64 0.34">
-								<voxbox name="Soft" pos="0.1 0.02 0.1" rot="0.0 0.0 0.0" size="10 1 38" color="1.0 1.0 1.0">
-									<voxbox name="Soft" pos="-0.16 -0.26 -0.15" rot="0.0 0.0 0.0" size="1 3 41"/>
-									<voxbox name="Soft" pos="-0.15 -0.26 3.96" rot="0.0 90.0 0.0" size="1 4 13"/>
-									<voxbox name="Soft" pos="-0.15 -0.26 -0.06" rot="0.0 90.0 0.0" size="1 4 13"/>
-									<voxbox name="Soft" pos="1.06 -0.26 -0.15" rot="0.0 0.0 0.0" size="1 4 41"/>
-								</voxbox>
-								<voxbox name="Frame" pos="0.1 0.1 0.0" rot="0.0 0.0 110.0" texture="5 0.4" size="10 1 40" color="0.91 0.64 0.34">
-									<voxbox name="Soft" pos="0.0 -0.02 0.2" rot="0.0 0.0 0.0" size="9 1 36" color="1.0 1.0 1.0"/>
-									<voxbox name="Soft" pos="-0.05 -0.01 -0.05" rot="0.0 0.0 0.0" texture="13 0.6" size="11 2 41"/>
-								</voxbox>
-								<voxbox name="Leg" pos="0.05 -0.3 0.05" texture="5 0.4" size="2 3 2" color="0.91 0.64 0.34"/>
-								<voxbox name="Leg" pos="0.05 -0.3 3.75" texture="5 0.4" size="2 3 2" color="0.91 0.64 0.34"/>
-								<voxbox name="Leg" pos="0.95 -0.3 3.75" texture="5 0.4" size="2 3 2" color="0.91 0.64 0.34"/>
-								<voxbox name="Leg" pos="0.95 -0.3 0.05" texture="5 0.4" size="2 3 2" color="0.91 0.64 0.34"/>
-								<voxbox name="Arm" pos="0.0 0.1 3.9" rot="0.0 90.0 100.0" texture="5 0.4" size="4 1 12" color="0.91 0.64 0.34">
-									<voxbox name="Soft" pos="0.01 -0.01 -0.09" rot="0.0 0.0 0.0" size="4 2 13">
-										<voxbox name="Soft" pos="0.4 -0.0 0.0" rot="0.0 0.0 10.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.28491 0.18765 0.0" rot="0.0 0.0 -50.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.26754 0.28613 0.0" rot="0.0 0.0 -80.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.30174 0.38009 0.0" rot="180.0 180.0 -70.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.37836 0.44437 0.0" rot="180.0 180.0 -40.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.47684 0.46174 0.0" rot="180.0 180.0 -10.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.5708 0.42754 0.0" rot="-180.0 -180.0 20.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.63508 0.35093 0.0" rot="-180.0 -180.0 50.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.65245 0.25245 0.0" rot="180.0 180.0 80.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.63508 0.15397 0.0" rot="0.0 0.0 80.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.58508 0.06736 0.0" rot="0.0 0.0 60.0" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.49848 0.01736 0.0" rot="0.0 0.0 30.0" size="1 2 13"/>
+					<group name="Couch" pos="7.45 0.4 1.2" rot="0" prop0="color=1.0 0.8 0.57" prop1="pbr=0 0 0 0" prop2="strength=20">
+						<group name="Host" pos="-0.9 0.0 0.0" prop0="density=4.0">
+							<voxbox name="Leg + Host" prop="true" size="2 4 2">
+								<group name="Fuzzy Bits" prop0="color=0.7 0.28 0.21" prop1="texture=13 0.6" prop2="density=1.0">
+									<voxbox name="Siding" pos="-0.05 0.05 -0.05" size="11 3 1"/>
+									<voxbox name="Siding" pos="1.05 0.35 0.05" rot="10 180 0" size="11 1 1">
+										<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1"/>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+										<voxbox name="Siding" pos="0.0 0.0 -0.05" rot="0.0 0.0 0.0" size="1 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+										<voxbox name="Siding" pos="1.0 0.0 -0.05" rot="0.0 0.0 0.0" size="1 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
 									</voxbox>
-								</voxbox>
-								<voxbox name="Arm" pos="1.2 0.1 0.1" rot="0.0 -90.0 100.0" texture="5 0.4" size="4 1 12" color="0.91 0.64 0.34">
-									<voxbox name="Soft" pos="0.01 -0.01 -0.01" rot="0.0 0.0 0.0" size="4 2 13">
-										<voxbox name="Soft" pos="0.4 -0.0 0.0" rot="0.0 0.0 20.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.49397 0.0342 0.0" rot="0.0 0.0 50.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.55825 0.11081 0.0" rot="0.0 0.0 70.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.59245 0.20478 0.0" rot="0.0 0.0 90.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.59245 0.30478 0.0" rot="180.0 180.0 60.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.54245 0.39138 0.0" rot="180.0 180.0 30.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.45585 0.44138 0.0" rot="-180.0 -180.0 0.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.35585 0.44138 0.0" rot="-180.0 -180.0 -30.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.26924 0.39138 0.0" rot="-180.0 -180.0 -60.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.21924 0.30478 0.0" rot="0.0 -360.0 -90.0" texture="13 0.6" size="1 2 13"/>
-										<voxbox name="Soft" pos="0.21924 0.20478 0.0" rot="0.0 0.0 -60.0" texture="13 0.6" size="1 2 13"/>
+									<voxbox name="Siding" pos="-0.05 0.35 3.35" rot="10 0 0" size="11 1 1">
+										<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="11 1 1"/>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+										<voxbox name="Siding" pos="0.0 0.0 -0.05" rot="0.0 0.0 0.0" size="1 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+										<voxbox name="Siding" pos="1.0 0.0 -0.05" rot="0.0 0.0 0.0" size="1 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="10.0 0.0 0.0" size="1 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
 									</voxbox>
-								</voxbox>
-								<group name="Detachables">
-									<voxbox name="Soft" pos="0.13 0.13 0.15" rot="0.0 0.0 0.0" prop="true" size="13 1 18">
-										<voxbox name="Soft" pos="0.05 0.07 0.05" rot="0.0 0.0 0.0" size="12 1 17" color="1.0 1.0 1.0"/>
-										<voxbox name="Soft" pos="0.0 0.14 0.0" rot="0.0 0.0 0.0" size="13 1 18"/>
-										<voxbox name="Soft" pos="-0.02 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
-										<voxbox name="Soft" pos="0.0 0.02 -0.02" rot="0 0.0 0.0" size="13 2 1"/>
-										<voxbox name="Soft" pos="0.0 0.02 1.72" rot="0 0.0 0.0" size="13 2 1"/>
-										<voxbox name="Soft" pos="1.22 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
+									<voxbox name="Siding" pos="1.05 0.4 0.15" rot="10 180 0" size="10 2 1">
+										<voxbox name="Siding" pos="0.0 0.2 0.0" rot="10.0 0.0 0.0" size="10 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="20.0 0.0 0.0" size="10 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="25.0 0.0 0.0" size="11 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="30.0 0.0 0.0" size="11 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="30.0 0.0 0.0" size="11 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
 									</voxbox>
-									<voxbox name="Soft" pos="0.3 0.43 0.15" rot="0.0 0.0 110.0" prop="true" size="10 1 18">
-										<voxbox name="Soft" pos="0.05 0.07 0.05" rot="0.0 0.0 0.0" size="9 1 17" color="1.0 1.0 1.0"/>
-										<voxbox name="Soft" pos="0.0 0.14 0.0" rot="0.0 0.0 0.0" texture="13 0.6" size="10 1 18"/>
-										<voxbox name="Soft" pos="-0.02 0.02 0.0" rot="0 0.0 0.0" texture="13 0.6" size="1 2 18"/>
-										<voxbox name="Soft" pos="0.0 0.02 -0.02" rot="0 0.0 0.0" texture="13 0.6" size="10 2 1"/>
-										<voxbox name="Soft" pos="0.0 0.02 1.72" rot="0 0.0 0.0" texture="13 0.6" size="10 2 1"/>
-										<voxbox name="Soft" pos="0.92 0.02 0.0" rot="0 0.0 0.0" texture="13 0.6" size="1 2 18"/>
+									<voxbox name="Siding" pos="-0.05 0.4 3.25" rot="10 0 0" size="11 2 1">
+										<voxbox name="Siding" pos="0.0 0.2 0.0" rot="10.0 0.0 0.0" size="11 1 1">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="20.0 0.0 0.0" size="11 1 1">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="25.0 0.0 0.0" size="11 1 1">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="30.0 0.0 0.0" size="11 1 1">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="30.0 0.0 0.0" size="11 1 1"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
 									</voxbox>
-									<voxbox name="Soft" pos="0.3 0.43 2.07" rot="0.0 0.0 110.0" prop="true" size="10 1 18">
-										<voxbox name="Soft" pos="0.05 0.07 0.05" rot="0.0 0.0 0.0" size="9 1 17" color="1.0 1.0 1.0"/>
-										<voxbox name="Soft" pos="0.0 0.14 0.0" rot="0.0 0.0 0.0" size="10 1 18"/>
-										<voxbox name="Soft" pos="-0.02 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
-										<voxbox name="Soft" pos="0.0 0.02 -0.02" rot="0 0.0 0.0" size="10 2 1"/>
-										<voxbox name="Soft" pos="0.0 0.02 1.72" rot="0 0.0 0.0" size="10 2 1"/>
-										<voxbox name="Soft" pos="0.92 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
+									<voxbox name="Siding" pos="-0.05 0.05 3.35" size="11 4 1"/>
+									<voxbox name="Siding" pos="-0.1 0.05 -0.05" size="1 4 35"/>
+									<voxbox name="Siding" pos="-0.1 0.4 -0.05" rot="0 0 10" size="1 9 35"/>
+									<voxbox name="Siding" pos="0.13 0.44 3.35" rot="0 180 -5" size="1 1 33">
+										<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -10" size="1 1 33">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -10" size="1 1 33"/>
+										</voxbox>
 									</voxbox>
-									<voxbox name="Soft" pos="0.13 0.13 2.05" rot="0.0 0.0 0.0" prop="true" size="13 1 18">
-										<voxbox name="Soft" pos="0.05 0.07 0.05" rot="0.0 0.0 0.0" size="12 1 17" color="1.0 1.0 1.0"/>
-										<voxbox name="Soft" pos="0.0 0.14 0.0" rot="0.0 0.0 0.0" size="13 1 18"/>
-										<voxbox name="Soft" pos="-0.02 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
-										<voxbox name="Soft" pos="0.0 0.02 -0.02" rot="0 0.0 0.0" size="13 2 1"/>
-										<voxbox name="Soft" pos="0.0 0.02 1.72" rot="0 0.0 0.0" size="13 2 1"/>
-										<voxbox name="Soft" pos="1.22 0.02 0.0" rot="0 0.0 0.0" size="1 2 18"/>
+									<voxbox name="Siding" pos="0.07 0.68 3.45" rot="0 180 0" size="1 1 35">
+										<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -10" size="1 1 35">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -10" size="1 1 35"/>
+										</voxbox>
 									</voxbox>
+									<voxbox name="Siding" pos="0.02 0.95 3.45" rot="0 180 0" size="1 1 35">
+										<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -10" size="1 1 35">
+											<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -15" size="1 1 35">
+												<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -20" size="1 1 35">
+													<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -30" size="1 1 35">
+														<voxbox name="Siding" pos="0.0 0.1 0.0" rot="0 0 -30" size="1 1 35"/>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+									<voxbox name="Siding" pos="0.95 0.05 0.05" size="1 3 33"/>
+									<voxbox name="Siding" pos="0.95 0.3 0.05" size="1 1 33"/>
+									<voxbox name="Siding" pos="-0.05 0.4 -0.05" rot="0.0 0.0 10.0" size="1 9 1"/>
+									<voxbox name="Siding" pos="-0.05 0.4 3.35" rot="0.0 0.0 10.0" size="1 9 1"/>
+									<voxbox name="Cushion" pos="0.13 0.4 0.19" prop="true" size="9 1 15">
+										<voxbox name="Cushion" pos="0.0 0.0 -0.05" collide="true" size="9 1 1"/>
+									</voxbox>
+									<voxbox name="Cushion" pos="0.13 0.4 1.71" prop="true" size="9 1 15">
+										<voxbox name="Cushion" pos="0.0 0.0 1.45" collide="true" size="9 1 1"/>
+									</voxbox>
+								</group>
+								<group name="Wood Bits">
+									<voxbox name="Arm" pos="0.2 0.3 0.0" size="6 1 2"/>
+									<voxbox name="Arm" pos="0.15 0.25 0.35" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 0.15" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 0.55" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 0.75" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 0.95" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 1.15" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 1.35" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 1.55" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 1.75" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 1.95" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 2.15" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 2.35" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 2.55" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 2.75" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 2.95" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.15 0.25 3.15" size="7 1 1"/>
+									<voxbox name="Arm" pos="0.0 0.3 0.2" size="2 1 30"/>
+									<voxbox name="Arm" pos="0.8 0.3 0.2" size="2 1 30"/>
+									<voxbox name="Arm" pos="0.2 0.3 3.2" size="6 1 2"/>
+									<voxbox name="Legs" pos="0.8 0.0 0.0" size="2 4 2"/>
+									<voxbox name="Armrest" pos="0.2 0.4 0.1" rot="20 180 0" size="2 3 1">
+										<voxbox name="Armrest" pos="-0.8 0.0 0.0" rot="0.0 0.0 0.0" size="2 3 1"/>
+										<voxbox name="Armrest" pos="-0.6 0.2 0.0" rot="0.0 0.0 0.0" size="6 1 1"/>
+									</voxbox>
+									<voxbox name="Backrest" pos="0.05 0.4 0.05" rot="10 -90 0" size="2 8 1">
+										<voxbox name="Armrest" pos="3.1 0.0 0.0" rot="0.0 0.0 0.0" size="2 8 1"/>
+										<voxbox name="Armrest" pos="1.55 0.0 0.0" rot="0.0 0.0 0.0" size="2 8 1"/>
+										<voxbox name="Armrest" pos="0.15 0.7 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="0.15 0.45 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="0.15 0.2 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="0.15 -0.05 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="1.75 0.7 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="1.75 0.45 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="1.75 0.2 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+										<voxbox name="Armrest" pos="1.75 -0.05 0.0" rot="0.0 0.0 0.0" size="14 1 1"/>
+									</voxbox>
+									<voxbox name="Armrest" pos="0.8 0.4 3.3" rot="20 0 0" size="2 3 1">
+										<voxbox name="Armrest" pos="-0.8 0.0 0.0" rot="0.0 0.0 0.0" size="2 3 1"/>
+										<voxbox name="Armrest" pos="-0.6 0.2 0.0" rot="0.0 0.0 0.0" size="6 1 1"/>
+									</voxbox>
+									<voxbox name="Legs" pos="0.0 0.0 3.2" size="2 4 2"/>
+									<voxbox name="Legs" pos="0.8 0.0 3.2" size="2 4 2"/>
 								</group>
 							</voxbox>
 						</group>
@@ -6002,6 +6081,13 @@
 							</voxbox>
 						</group>
 					</group>
+					<group name="Bar Cutter" pos="5.45 1.7 2.2">
+						<voxbox pos="0.0 0.0 0.0" size="6 20 40" brush="hole"/>
+						<voxbox name="wall" pos="0.05 0.0 0.0" rot="0.0 0.0 0.0" texture="12 0.2" size="5 20 1" color="0.64 0.56 0.48"/>
+						<voxbox name="wall" pos="0.05 0.0 3.9" rot="0.0 0.0 0.0" texture="12 0.2" size="5 20 1" color="0.64 0.56 0.48"/>
+						<voxbox name="wall" pos="0.05 1.9 0.1" rot="0.0 0.0 0.0" texture="12 0.2" size="5 1 38" color="0.64 0.56 0.48"/>
+						<voxbox name="wall" pos="0.0 0.0 0.05" rot="0.0 0.0 0.0" texture="12 0.2" size="6 1 39" color="1.0 1.0 1.0"/>
+					</group>
 				</group>
 				<group name="Conduit and Vents"/>
 				<group name="Outlets and Devices">
@@ -6119,7 +6205,7 @@
 		</voxbox>
 	</group>
 	<group name="World Stuff">
-		<spawnpoint name="Player Spawnpoint" pos="1.8 2.5 15.3" rot="0 110 0"/>
+		<spawnpoint name="Player Spawnpoint" pos="1.8 3.8 15.3" rot="0 110 0"/>
 		<environment name="Environment" template="sunny" skyboxrot="35" constant="0 0 0" ambientexponent="2.0" nightlight="true"/>
 		<script name="World Script" file="MOD/script/world.lua"/>
 		<script name="enable tools" file="main.lua" param0="basetools=true"/>
