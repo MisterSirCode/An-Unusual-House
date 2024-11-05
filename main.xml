@@ -891,7 +891,7 @@
 						<voxbox name="Hole Cutter" pos="15.4 3.9 10.0" rot="0.0 180.0 0.0" size="49 5 15" brush="hole"/>
 					</group>
 				</group>
-				<group name="Wood Stuff" pos="10.3 -0.5 10.2" prop0="material=wood" prop1="strength=30" prop2="color=1.0 0.8 0.57">
+				<group name="Wood Stuff" pos="10.3 -0.5 10.2" prop0="material=wood" prop1="strength=60" prop2="color=1.0 0.8 0.57">
 					<group name="Roof Cut" pos="-10.3 8.9 -10.2" layer="-wood" prop0="tags=nocull" prop2="tag">
 						<group name="supports">
 							<group name="rafter">
@@ -1376,6 +1376,23 @@
 								</group>
 							</group>
 						</compound>
+						<group name="loose" pos="1.8 0.5 0.8" rot="0.0 0.0 0.0" prop0="tags=nocull activebodies">
+							<body pos="2.0 0.0 0.2" dynamic="true">
+								<voxbox name="plank_396" pos="-2.0 0.0 -0.3" rot="0 5 0" prop="true" size="40 1 3"/>
+							</body>
+							<body pos="2.0 0.1 0.0" dynamic="true">
+								<voxbox name="plank_396" pos="-2.0 0.0 -0.3" prop="true" size="40 1 3"/>
+							</body>
+							<body pos="1.4 0.3 -0.1" dynamic="true">
+								<voxbox name="plank_396" pos="-1.0 -0.1 -0.2" rot="0 2 0" prop="true" size="20 1 3"/>
+							</body>
+							<body pos="2.8 0.5 0.0" dynamic="true">
+								<voxbox name="plank_396" pos="-2.3 -0.2 -0.3" rot="0 -2 0" prop="true" size="20 1 3"/>
+							</body>
+							<body pos="0.9 0.0 -0.48" dynamic="true">
+								<voxbox name="plank_396" pos="0.0 0.0 0.0" rot="-1 0 0" texture="9 0.7" prop="true" size="20 10 1" color="0.99 0.76 0.49"/>
+							</body>
+						</group>
 					</group>
 					<group name="Staircase" pos="-10.3 0.5 -10.2" rot="0.0 0.0 0.0" layer="-stairs">
 						<voxbox name="Hole Cutter" pos="15.2 3.8 10.1" rot="0.0 180.0 0.0" size="48 5 17" brush="hole"/>
@@ -2222,6 +2239,7 @@
 							</group>
 						</group>
 					</group>
+					<group name="Tools" pos="19.1 1.8 13.6"/>
 				</group>
 				<group name="Crown Molding" pos="0.0 -0.1 0.0" layer="-molding" prop0="texture=5 0.2">
 					<voxbox name="main" pos="6.0 0.5 0.35" rot="0.0 0.0 0.0" texture="11 0.4" size="68 1 1" color="1 1 1">
