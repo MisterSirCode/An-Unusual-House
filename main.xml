@@ -580,7 +580,7 @@
 								</voxagon>
 							</group>
 						</voxbox>
-						<voxbox name="floor" pos="10.5 0.3 10.4" texture="5 0.2" size="96 2 97" material="masonry" color="0.77 0.77 0.77" pbr="0 0.2 0 0"/>
+						<voxbox name="floor" pos="10.5 0.3 10.4" texture="5 0.4" size="96 2 97" material="masonry" color="0.77 0.77 0.77" pbr="0 0.2 0 0"/>
 					</group>
 					<group name="Flooring" pos="0.0" layer="-topfloors" prop0="color=0.63 0.37 0.21" prop1="pbr=0.1 0.1 0 0">
 						<voxbox name="floor" pos="0.4 4.3 0.4" texture="11 0.4" size="51 1 96"/>
@@ -2004,8 +2004,8 @@
 						<voxbox name="frame" pos="-0.2 3.6 0.15" rot="180 20 0" size="2 36 1" color="1.0 1.0 1.0"/>
 						<voxbox name="frame" pos="7.4 0.0 0.15" rot="180 -20 180" size="2 36 1" color="1.0 1.0 1.0"/>
 						<voxbox name="frame" pos="-0.2 3.6 0.15" rot="200 0 0 " size="76 2 1" color="1.0 1.0 1.0"/>
-						<voxbox name="frame" pos="-0.2 0.2 -0.5" rot="90 0 0 " size="76 7 2" material="masonry" color="0.77 0.77 0.77"/>
-						<voxbox name="frame" pos="-0.2 0.2 0.2" rot="102 0 0 " size="76 10 2" material="masonry" color="0.77 0.77 0.77"/>
+						<voxbox name="frame" pos="-0.2 0.2 -0.5" rot="90 0 0 " texture="9 0.4" size="76 7 2" material="masonry" color="0.77 0.77 0.77"/>
+						<voxbox name="frame" pos="-0.2 0.2 0.2" rot="102 0 0 " texture="9 0.4" size="76 10 2" material="masonry" color="0.77 0.77 0.77"/>
 					</group>
 					<group name="Fixed Renovations" pos="10.5 0.5 10.5">
 						<group name="Wall Desk" pos="9.6 0.0 3.2" layer="-furniture">
@@ -2529,6 +2529,22 @@
 								<voxbox name="Case" pos="0.1 0.1 0.1" size="7 10 2" brush="hole"/>
 								<voxbox name="Case" tags="nocull explosive=0.5" pos="0.2 0.2 0.3" size="5 8 2" brush="hole"/>
 								<voxbox name="Door Cutter" pos="0.1 0.1 0.4" size="7 10 1" brush="hole"/>
+								<group name="Breakers" pos="0.155 0.15 0.05">
+									<voxbox tags="explosive=0.1" pos="0.0 0.11 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.11 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.22 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.22 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.33 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.33 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.44 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.44 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.55 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.55 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.66 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.66 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.0 0.77 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+									<voxbox tags="explosive=0.1" pos="0.31 0.77 0.0" size="3 1 2" material="plaster" color="0.19 0.19 0.19" pbr="0.1 0.1 0 0"/>
+								</group>
 								<voxbox name="Wall Piece" pos="0.15 1.2 0.1" rot="0.0 0.0 0.0" size="1 8 1">
 									<voxbox name="Wall Piece" pos="0.1 0.0 0.0" rot="0.0 -45 0.0" size="1 8 1"/>
 									<voxbox name="Wall Piece" pos="0.17071 0.0 0.07071" rot="0.0 -90.0 0.0" size="1 8 1"/>
@@ -2548,7 +2564,7 @@
 						</script>
 					</group>
 					<group name="Light Fixtures">
-						<group name="Workshop Dip Light" pos="13.15 7.9 12.7" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Workshop Dip Light" pos="13.15 7.9 12.7" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lhc7" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2577,7 +2593,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Workshop Corner Light" pos="13.15 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Workshop Corner Light" pos="13.15 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lhc7" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2606,7 +2622,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Workshop Corner Light" pos="17.45 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Workshop Corner Light" pos="17.45 7.9 18.4" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lhc7" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2635,7 +2651,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Garage Maintenence Light" pos="13.1 3.9 11.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Garage Maintenence Light" pos="13.1 3.9 11.8" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lhc1" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2664,7 +2680,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Frontroom Mood Light" pos="11.15 3.9 1.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Frontroom Mood Light" pos="11.15 3.9 1.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 -0.1 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lighthost" pos="-0.1 0.1 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2691,7 +2707,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Frontroom Main Light" pos="8.6 3.9 1.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Frontroom Main Light" pos="8.6 3.9 1.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lighthost" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2720,7 +2736,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Frontroom Mood Light" pos="11.15 3.9 5.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Frontroom Mood Light" pos="11.15 3.9 5.45" rot="180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 -0.1 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lighthost" pos="-0.1 0.1 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2747,7 +2763,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Frontroom Main Light" pos="8.6 3.9 5.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Frontroom Main Light" pos="8.6 3.9 5.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" tags="lighthost" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2776,7 +2792,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="First Floor Hallway Light" pos="8.6 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="First Floor Hallway Light" pos="8.6 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2805,7 +2821,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="First Floor Hallway Light" pos="18.1 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="First Floor Hallway Light" pos="18.1 3.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2834,7 +2850,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Second Floor Hallway Light" pos="8.6 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Second Floor Hallway Light" pos="8.6 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2863,7 +2879,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Second Floor Hallway Light" pos="18.1 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Second Floor Hallway Light" pos="18.1 7.9 8.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2892,7 +2908,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Second Floor Bedroom #1 Light" pos="16.6 7.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Second Floor Bedroom #1 Light" pos="16.6 7.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2921,7 +2937,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="First Floor Bathroom Light" pos="16.6 3.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="First Floor Bathroom Light" pos="16.6 3.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -2950,7 +2966,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Second Floor Bedroom #1 Light" pos="9.3 7.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Second Floor Bedroom #1 Light" pos="9.3 7.9 3.45" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -3081,7 +3097,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="External Lamp" pos="9.9 3.7 19.9" rot="90 0 0" prop0="color=1.0 1.0 1.0">
+						<group name="External Lamp" pos="9.9 3.7 19.9" rot="90 0 0" prop0="color=1.0 1.0 1.0" prop1="tags=nocull host">
 							<script name="SLM" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="base" pos="0.0 0.0 -0.2" size="2 1 1">
 									<voxbox name="Plate" tags="nocull host" pos="0.0 -0.0 -0.2" rot="0.0 0.0 0.0" size="1 1 2"/>
@@ -3151,7 +3167,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Simple Roof Light" pos="3.15 3.9 3.65" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Simple Roof Light" pos="3.15 3.9 3.65" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -3180,7 +3196,7 @@
 								</voxbox>
 							</script>
 						</group>
-						<group name="Simple Roof Light" pos="3.15 3.9 7.95" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic">
+						<group name="Simple Roof Light" pos="3.15 3.9 7.95" rot="-180.0 0.0 0.0" prop0="color=1 1 1 1" prop1="material=plastic" prop2="tags=nocull host">
 							<script name="SLM" pos="0.1 0.0 0.3" file="MOD/script/simpleLightManager.lua">
 								<voxbox name="Plastic Casing" pos="-0.1 0.0 -0.3" size="1 1 2">
 									<voxbox name="Plastic Casing" pos="0.1 0.0 0.0" rot="0.0 -22.5 0.0" size="1 1 2"/>
@@ -3429,7 +3445,7 @@
 									<voxbox pos="-0.05 0.1 -0.3" size="1 2 6" brush="hole"/>
 								</body>
 							</group>
-							<group name="Mood Lighting">
+							<group name="Mood Lighting" prop0="tags=nocull host">
 								<voxbox pos="0.3 -0.1 0.5" rot="0 90 0" size="3 1 3"/>
 								<script name="SLM" pos="0.4 0.0 6.7" rot="-180.0 -180.0 0.0" file="MOD/script/simpleLightManager.lua">
 									<voxbox name="base" pos="-0.2 0.0 0.0" size="3 1 29">
@@ -4129,7 +4145,7 @@
 								<voxbox name="binder" pos="-0.03 -0.05 0.37" rot="0.0 0.0 0.0" prop="false" size="2 7 1" color="0.1 0.21 0.48"/>
 								<voxbox name="cover" pos="0.09 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 7 5" color="0.1 0.21 0.48"/>
 							</voxbox>
-							<voxbox name="paper" pos="0.15 -0.05 1.05" rot="0.0 -30.0 90.0" size="1 6 4" color="1.0 1.0 1.0">
+							<voxbox name="paper" pos="0.15 -0.05 0.85" rot="0.0 20.0 90.0" size="1 6 4" color="1.0 1.0 1.0">
 								<voxbox name="cover" pos="-0.05 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 7 5" color="0.2 0.29 0.4"/>
 								<voxbox name="binder" pos="-0.03 -0.05 0.37" rot="0.0 0.0 0.0" prop="false" size="2 7 1" color="0.2 0.29 0.4"/>
 								<voxbox name="cover" pos="0.09 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 7 5" color="0.2 0.29 0.4"/>
@@ -4139,7 +4155,7 @@
 								<voxbox name="binder" pos="-0.03 -0.05 0.37" rot="0.0 0.0 0.0" prop="false" size="2 7 1" color="0.59 0.33 0.08"/>
 								<voxbox name="cover" pos="0.09 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 7 5" color="0.59 0.33 0.08"/>
 							</voxbox>
-							<voxbox name="paper" pos="0.05 0.19 0.95" rot="0.0 -13.0 90.0" size="1 5 4" color="1.0 1.0 1.0">
+							<voxbox name="paper" pos="1.25 0.65 2.65" rot="0.0 -13.0 90.0" size="1 5 4" color="1.0 1.0 1.0">
 								<voxbox name="cover" pos="-0.05 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 6 5" color="0.46 0.33 0.57"/>
 								<voxbox name="binder" pos="-0.03 -0.05 0.37" rot="0.0 0.0 0.0" prop="false" size="2 6 1" color="0.46 0.33 0.57"/>
 								<voxbox name="cover" pos="0.09 -0.05 -0.05" rot="0.0 0.0 0.0" prop="false" size="1 6 5" color="0.46 0.33 0.57"/>
@@ -4338,7 +4354,7 @@
 										</voxbox>
 									</voxbox>
 									<voxbox name="Siding" pos="0.95 0.05 0.05" size="1 3 33"/>
-									<voxbox name="Siding" pos="0.95 0.3 0.05" size="1 1 33"/>
+									<voxbox name="Siding" pos="0.95 0.31 0.05" size="1 1 33"/>
 									<voxbox name="Siding" pos="-0.05 0.4 -0.05" rot="0.0 0.0 10.0" size="1 9 1"/>
 									<voxbox name="Siding" pos="-0.05 0.4 3.35" rot="0.0 0.0 10.0" size="1 9 1"/>
 									<voxbox name="Cushion" pos="0.13 0.4 0.19" prop="true" size="9 1 15">
@@ -4457,6 +4473,38 @@
 							<voxbox name="Leg" pos="0.45 -0.5 0.05" rot="0.0 0.0 0.0" size="1 5 1"/>
 							<voxbox name="Leg" pos="0.45 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
 							<voxbox name="Leg" pos="0.05 -0.5 0.45" rot="0.0 0.0 0.0" size="1 5 1"/>
+						</voxbox>
+					</group>
+					<group name="Coffee Table" pos="8.6 0.4 1.3" prop0="color=0.7 0.39 0.19" prop1="pbr=0.1 0.1 0 0" prop2="density=3.0">
+						<voxbox name="Tabletop" pos="0.0 0.6 0.3" prop="true" size="15 1 25">
+							<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="13 1 23" brush="hole" color="0.4 0.22 0.1"/>
+							<voxbox name="Tabletop" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="13 1 23" color="0.4 0.22 0.1">
+								<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="11 1 21" brush="hole"/>
+								<voxbox name="Tabletop" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="11 1 21"/>
+							</voxbox>
+							<voxbox name="Tabletop" pos="0.05 -0.1 0.05" rot="0.0 0.0 0.0" size="14 1 24">
+								<voxbox name="Cutter" pos="0.1 -0.1 0.1" size="12 2 22" brush="hole"/>
+							</voxbox>
+							<voxbox name="Leg" pos="0.1 -0.6 0.1" rot="0.0 0.0 0.0" size="2 6 2"/>
+							<voxbox name="Leg" pos="1.2 -0.6 0.1" rot="0.0 0.0 0.0" size="2 6 2"/>
+							<voxbox name="Leg" pos="1.2 -0.6 2.2" rot="0.0 0.0 0.0" size="2 6 2"/>
+							<voxbox name="Leg" pos="0.1 -0.6 2.2" rot="0.0 0.0 0.0" size="2 6 2"/>
+						</voxbox>
+					</group>
+					<group name="Coffee Table" pos="6.4 0.4 4.7" prop0="color=0.7 0.39 0.19" prop1="pbr=0.1 0.1 0 0" prop2="density=3.0">
+						<voxbox name="Tabletop" pos="0.0 0.6 0.3" prop="true" size="9 1 9">
+							<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="7 1 7" brush="hole" color="0.4 0.22 0.1"/>
+							<voxbox name="Tabletop" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="7 1 7" color="0.4 0.22 0.1">
+								<voxbox name="Cutter" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="5 1 5" brush="hole"/>
+								<voxbox name="Filler" pos="0.1 0.0 0.1" rot="0.0 0.0 0.0" size="5 1 5"/>
+							</voxbox>
+							<voxbox name="Tabletop" pos="0.05 -0.1 0.05" rot="0.0 0.0 0.0" size="8 1 8">
+								<voxbox name="Cutter" pos="0.1 -0.1 0.1" size="6 2 6" brush="hole"/>
+							</voxbox>
+							<voxbox name="Leg" pos="0.1 -0.6 0.1" rot="0.0 0.0 0.0" size="1 6 1"/>
+							<voxbox name="Leg" pos="0.7 -0.6 0.1" rot="0.0 0.0 0.0" size="1 6 1"/>
+							<voxbox name="Leg" pos="0.7 -0.6 0.7" rot="0.0 0.0 0.0" size="1 6 1"/>
+							<voxbox name="Leg" pos="0.1 -0.6 0.7" rot="0.0 0.0 0.0" size="1 6 1"/>
 						</voxbox>
 					</group>
 					<group name="Garage Desk Chairs">
@@ -4741,6 +4789,56 @@
 							<voxbox name="Arm" pos="0.5 0.0 0.0" rot="0.0 0.0 0.0" size="1 8 1"/>
 							<voxbox name="Top" pos="-0.1 0.8 -0.1" rot="0.0 0.0 0.0" size="8 1 8"/>
 							<voxbox name="Top" pos="-0.05 0.7 -0.05" rot="0.0 0.0 0.0" size="7 1 7"/>
+						</voxbox>
+					</group>
+					<group name="Paint Dish" pos="4.75 1.6 4.75" prop0="material=metal" prop1="color=0.8 0.8 0.8" prop2="pbr=0.1 0.1 0.1 0.0">
+						<voxbox name="Dish" prop="true" size="1 1 3">
+							<voxbox name="Dish" pos="0.1 0.0 0.0" rot="0 -22.5 0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.19239 0.0 0.03827" rot="0.0 -45.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.2631 0.0 0.10898" rot="0.0 -67.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.30137 0.0 0.20137" rot="0.0 -90.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.30137 0.0 0.30137" rot="0.0 -112.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.2631 0.0 0.39375" rot="0.0 -135.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.19239 0.0 0.46447" rot="0.0 -157.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.1 0.0 0.50273" rot="0.0 180.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.0 0.0 0.50273" rot="0.0 157.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.09239 0.0 0.46447" rot="0.0 135.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.1631 0.0 0.39375" rot="0.0 112.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.20137 0.0 0.30137" rot="0.0 90.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.20137 0.0 0.20137" rot="0.0 67.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.1631 0.0 0.10898" rot="0.0 45.0 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="-0.09239 0.0 0.03827" rot="0.0 22.5 0.0" size="1 1 3">
+								<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
+							</voxbox>
+							<voxbox name="Dish" pos="0.0 0.0 0.0" rot="-70.0 0.0 0.0" size="2 1 1"/>
 						</voxbox>
 					</group>
 				</group>
@@ -6418,7 +6516,7 @@
 					</group>
 					<group name="Lightswitch - Frontroom" pos="8.8 0.4 10.0" prop0="material=wood" prop1="color=1 1 1 1">
 						<script name="Switch" file="MOD/script/switch.lua">
-							<voxbox name="Plate Cover" tags="interact=FrontroomLights off target=c3" pos="0.1 1.3 -0.02" size="2 3 1">
+							<voxbox name="Plate Cover" tags="interact=FrontroomLights on target=c3" pos="0.1 1.3 -0.02" size="2 3 1">
 								<voxbox name="Switch on" tags="switchon" pos="0.05 0.15 0.1" rot="40.0 180.0 180.0" size="1 1 2"/>
 								<voxbox name="Switch off" tags="switchoff invisible" pos="0.15 0.15 0.1" rot="40.0 180.0 0.0" size="1 1 2"/>
 							</voxbox>
@@ -6489,6 +6587,7 @@
 		<script name="World Script" file="MOD/script/world.lua"/>
 		<script name="enable tools" file="main.lua" param0="basetools=true"/>
 		<script name="enable sandbox" file="sandbox.lua" param0="basetools=true"/>
+		<location name="Vehicle Spawner" tags="vehicleSpawn" pos="3.0 3.7 15.2"/>
 	</group>
 </scene>
 
