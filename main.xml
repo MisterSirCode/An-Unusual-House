@@ -6587,7 +6587,7 @@
 		<script name="World Script" file="MOD/script/world.lua"/>
 		<script name="enable tools" file="main.lua" param0="basetools=true"/>
 		<script name="enable sandbox" file="sandbox.lua" param0="basetools=true"/>
-		<location name="Vehicle Spawner" tags="vehicleSpawn" pos="3.0 3.7 15.2"/>
+		<instance pos="14.2 2.1 17.6" rot="0.0 90.0 0.0" file="MOD/vehicles/dacia/1310_3.xml"/>
 	</group>
 </scene>
 
