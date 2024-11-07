@@ -1,0 +1,13 @@
+WIP! Still many updates to go.
+
+BE WARNED. This is the most realistic / performance-heavy house I could make (and its not even done yet), so it may have performance limitations on older hardware. Sorry for the minimal updates... I'm doing college stuff
+
+Thanks to YuLun for the sectional gate script. It was edited just a little to work with my electrical system. Original garage doors can be found here: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2960021206]Sectional Garage Door[/url]
+
+[hr][/hr]
+
+[h2]Why is the house ever so slightly bigger then most teardown homes?[/h2]
+
+I found that this size was optimal for detail / realism while still being pretty interactive ingame and NOT using any scaled voxels. Eventually the game is supposed to get features to control the player height / scale, and I might adjust that down the line.
+
+Anyhow I built this house based after some place I went as a kid, so... I suppose if you want a story-based answer, its more realistic to the way I saw it back then ;)

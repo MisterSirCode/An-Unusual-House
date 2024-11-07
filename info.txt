@@ -1,3 +1,4 @@
 name = An Unusual House V4
-author = MisterSirCode, YuLun-bili
-description = The most realistic / performance-heavy house I could make. Sorry for the minimal updates... Im doing college stuff
+author = MisterSirCode, YuLun, Headcrab
+description = [noupload] The most realistic / performance-heavy house I could make
+tags = map
