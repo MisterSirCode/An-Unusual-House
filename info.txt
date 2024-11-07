@@ -1,3 +1,3 @@
-name = An Unusual House V3
-author = SirCode
+name = An Unusual House V4
+author = SirCode, YuLun
 description = The most realistic / performance-heavy house I could make. Sorry for the minimal updates... Im doing college stuff
