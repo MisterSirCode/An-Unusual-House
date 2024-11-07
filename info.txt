@@ -1,4 +1,4 @@
-name = An Unusual House V4
+name = An Unusual House
 author = MisterSirCode, YuLun, Headcrab
-description = [noupload] The most realistic / performance-heavy house I could make
+description = [noupload] The most realistic / performance-heavy house I could make. Thanks to YuLun for the Garage Door script, and Headcrab for the Dacia 1310 vehicle!
 tags = map
