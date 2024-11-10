@@ -1612,7 +1612,7 @@
 					<voxagon name="Tiles" pos="-0.8 8.175 -0.8" rot="150 0 0" texture="27" density="1.0" strength="30" axis="y" extrude="2" material="wood" color="0.18 0.13 0.1">
 						<vertex pos="0.2 -0.4"/>
 						<vertex pos="22.1 -0.4"/>
-						<vertex pos="16.2 -7.2"/>
+						<vertex pos="16.3 -7.2"/>
 						<vertex pos="0.2 -7.2"/>
 					</voxagon>
 				</group>
@@ -3653,8 +3653,20 @@
 							</group>
 						</group>
 					</group>
-					<group name="Bathtub" pos="13.3 0.4 0.4" prop0="color=1 1 1 1" prop1="material=masonry" prop2="pbr=0.1 0.1 0 0">
-						<voxbox size="20 1 56"/>
+					<group name="Bathtub" pos="13.3 0.4 0.4" prop0="color=1 1 1 1" prop1="material=masonry" prop2="pbr=0.1 0.1 0 0" prop3="texture=11 0.1">
+						<voxbox name="Porcelain" size="20 1 56"/>
+						<voxbox name="Porcelain" pos="0.0 0.1 0.0" size="1 34 56">
+							<voxbox name="Porcelain" pos="0.1 0.2 0.1" rot="0.0 0.0 200.0" size="1 3 54"/>
+						</voxbox>
+						<voxbox name="Porcelain" pos="1.9 0.1 0.1" size="1 2 54">
+							<voxbox name="Porcelain" pos="0.0 0.2 5.4" rot="0.0 180.0 200.0" size="1 3 54"/>
+						</voxbox>
+						<voxbox name="Porcelain" pos="0.1 0.1 0.0" size="19 34 1">
+							<voxbox name="Porcelain" pos="1.8 0.2 0.1" rot="0.0 -90.0 200.0" size="1 3 18"/>
+						</voxbox>
+						<voxbox name="Porcelain" pos="0.1 0.1 5.5" size="19 34 1">
+							<voxbox name="Porcelain" pos="0.0 0.2 0.0" rot="0.0 90.0 200.0" size="1 3 18"/>
+						</voxbox>
 					</group>
 					<group name="Garage Door" pos="12.0 0.3 15.6" rot="0.0 90.0 0.0" prop0="color=1 1 1">
 						<voxbox name="Precutter" pos="-3.7 3.6 -1.5" size="74 3 43" brush="hole"/>
@@ -5163,6 +5175,78 @@
 						<group name="Linen Roll" pos="5.05 0.225 5.1" rot="45 2 0" prop0="color=0.1 0.3 0.05">
 							<voxbox name="Core" pos="0.0 -0.05 -0.05" prop="true" size="15 1 1" color="0.91 0.61 0.28">
 								<voxbox name="Band" pos="0.3 -0.07374 0.10303" rot="-45.0 0.0 0.0" size="9 1 1">
+									<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+									<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+									<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+										<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+										<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+										<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+											<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+											<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+											<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+												<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+												<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+												<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+													<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+													<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+													<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+														<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+														<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+														<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+															<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+															<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+															<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+																<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+																<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</group>
+						<group name="Linen Roll" pos="5.15 2.625 4.7" rot="45 -2 0" prop0="color=0.85 0.64 0.0">
+							<voxbox name="Core" pos="0.0 -0.05 -0.05" prop="true" size="15 1 1" color="0.91 0.61 0.28">
+								<voxbox name="Band" pos="0.3 -0.074 0.103" rot="-45.0 0.0 0.0" size="9 1 1">
+									<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+									<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+									<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+										<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+										<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+										<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+											<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+											<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+											<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+												<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+												<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+												<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+													<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+													<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+													<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+														<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+														<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+														<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+															<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+															<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+															<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
+																<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
+																<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</group>
+						<group name="Linen Roll" pos="5.05 1.825 4.7" rot="45 -10 0" prop0="color=0.85 0.22 0.0">
+							<voxbox name="Core" pos="0.0 -0.05 -0.05" prop="true" size="15 1 1" color="0.91 0.61 0.28">
+								<voxbox name="Band" pos="0.3 -0.074 0.103" rot="-45.0 0.0 0.0" size="9 1 1">
 									<voxbox name="Bent" pos="0.9 0.0 0.0" rot="0.0 0.0 30" size="2 1 1"/>
 									<voxbox name="Bent" pos="0.0 0.0 0.1" rot="0.0 180.0 30" size="2 1 1"/>
 									<voxbox name="Band" pos="0.0 0.0 0.1" rot="-45.0 0.0 0.0" size="9 1 1">
