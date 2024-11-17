@@ -1,4 +1,4 @@
-# An-Unusual-House
+# An Unusual House
 
 The most advanced house I could create with teardown. Currently a Work-In-Progress.
 
