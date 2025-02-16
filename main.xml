@@ -7943,8 +7943,8 @@
 		<script name="enable tools" file="main.lua" param0="basetools=true"/>
 		<script name="enable sandbox" file="sandbox.lua" param0="basetools=true"/>
 		<instance pos="14.2 7.3 17.6" rot="0.0 90.0 0.0" file="MOD/vehicles/dacia/1310_3.xml"/>
-		<voxscript tags="nocull ground" pos="102.4 -3.5 -102.4" rot="0.0 -90.0 0.0" texture="6 0.5" blendtexture="4 0.1" file="BUILT-IN/voxscript/ground.lua">
-			<parameters file="MOD/voxscript/terrain.png" scale="128" hollow="false"/>
+		<voxscript tags="nocull ground" pos="102.4 -3.5 -102.4" rot="0.0 -90.0 0.0" texture="6 1" blendtexture="4 0.1" file="BUILT-IN/voxscript/ground.lua">
+			<parameters file="MOD/voxscript/terrain.png" scale="130" hollow="false"/>
 		</voxscript>
 	</group>
 </scene>
